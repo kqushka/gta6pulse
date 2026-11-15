@@ -337,6 +337,82 @@ nav a:hover:before{box-shadow:0 0 10px currentColor;transform:scale(1.35)}
 @media(max-width:900px){.section{padding:42px 22px;margin:16px 0 22px}.section-head{align-items:flex-start;flex-direction:column;gap:12px}.section-head>p{max-width:650px}}
 @media(max-width:600px){.section{padding:32px 15px 38px;border-radius:17px;margin:13px 0 18px}.section:before{left:15px;right:15px}.section-head{margin-bottom:22px}.section-head h2{font-size:31px}.section-head>p{font-size:12px}#stories .article{padding:17px}#people .person-copy{padding:18px}#people .person h3{font-size:29px}}
 
+
+/* FINAL TYPE PASS — clearer reading + unmistakable Leonida welcome */
+body{font-size:18px;line-height:1.82}
+nav a{font-size:12px;letter-spacing:.65px;padding:11px 13px}
+.section-head h2{font-size:clamp(38px,4.6vw,54px);letter-spacing:.35px}
+.section-head>p{font-size:16px;line-height:1.8;color:#e1d8e7}
+.section-head .overline{font-size:11px}
+#latest .feature-copy p,#stories .article p,#facts .facts-intro{font-size:16px;line-height:1.9;color:#eee6f0}
+#latest .feature h3{font-size:clamp(29px,3.3vw,42px);line-height:1.12}
+#stories .article h3{font-size:clamp(25px,2.4vw,30px)}
+#people .person p{font-size:17px;line-height:1.9}
+#world .place h3{font-size:29px}
+#world .place p{font-size:15px;line-height:1.75;color:#f0e8f2}
+#facts .fact strong{font-size:29px}
+#facts .fact span{font-size:16px;line-height:1.8;color:#e6ddea}
+#theories .card h3{font-size:28px}
+#theories .card p{font-size:16px;line-height:1.85;color:#e5dce9}
+#trailers .video strong{font-size:clamp(24px,2.3vw,30px)}
+#trailers .video small{font-size:13px}
+.read{font-size:13px}
+.hero{min-height:690px;gap:42px}
+.hero-title-wrap{padding:24px 22px 26px 25px;margin-left:-25px;border-left:3px solid var(--pink);background:linear-gradient(100deg,#ffffff0a 0%,#ffffff03 72%,transparent);border-radius:0 18px 18px 0}
+.hero-title-wrap:before{content:"VI / 2026";position:absolute;right:17px;top:12px;color:#ffffff58;font:800 10px Manrope,sans-serif;letter-spacing:3px}
+.hero-title-wrap:after{content:"";position:absolute;left:25px;right:22px;bottom:10px;height:1px;background:linear-gradient(90deg,#ff4fa3aa,#67e5e655,transparent)}
+.hero-ghost{top:22%;left:-1%;font-size:clamp(86px,12vw,158px);letter-spacing:-7px;color:#ffffff0a}
+.hero h1.hero-title{max-width:900px;gap:0;font-size:clamp(52px,6.2vw,84px);line-height:.96;letter-spacing:-1.7px}
+.hero-title-first{max-width:100%;font-size:clamp(43px,5.1vw,70px);line-height:1.04;letter-spacing:-1.1px;color:#fff;text-wrap:balance}
+.hero-title-pre{margin:20px 0 3px 5px;font-size:clamp(14px,1.25vw,17px);letter-spacing:3.1px;color:#d9cde1}
+.hero-title-second{margin-left:-5px;white-space:normal}
+.hero-title-second em{font-size:clamp(88px,11.2vw,148px);line-height:.92;letter-spacing:-4px;background:linear-gradient(105deg,#fff0d9 0%,#ff79b7 32%,#ff4fa3 62%,#ffb36d 100%);background-clip:text;-webkit-background-clip:text;filter:drop-shadow(0 10px 24px #ff4fa344)}
+.hero-title-second em:after{height:7px;bottom:-12px;right:4px}
+.hero-title-sticker{right:8px;bottom:4px;width:68px;height:68px;font-size:8px;border-width:2px;background:#10172af0;box-shadow:0 0 0 6px #67e5e610,0 0 30px #67e5e633}
+.hero-title-mark{font-size:11px;letter-spacing:2.7px;margin-bottom:19px}
+.hero-title-mark-no{font-size:10px;color:#c4b7ce}
+.hero-title-caption{font-size:10px;letter-spacing:2.2px;color:#d6cbdc}
+.hero-copy{font-size:17px;line-height:1.9;color:#f0e9f2;max-width:570px}
+@media(max-width:900px){
+ .hero{min-height:0;padding-top:48px}
+ .hero-title-wrap{max-width:760px}
+ .hero-title-first{font-size:clamp(43px,7vw,68px)}
+ .hero-title-second em{font-size:clamp(88px,14vw,130px)}
+ .section-head h2{font-size:clamp(36px,6vw,48px)}
+}
+@media(max-width:600px){
+ body{font-size:16px;line-height:1.78}
+ nav a{font-size:10px;padding:10px 11px}
+ .hero{padding-top:36px;gap:23px}
+ .hero-title-wrap{padding:20px 12px 25px 15px;margin-left:-15px;border-left-width:3px}
+ .hero-title-wrap:before{right:10px;top:8px;font-size:8px;letter-spacing:2px}
+ .hero-title-wrap:after{left:15px;right:12px}
+ .hero-ghost{top:25%;left:0;font-size:20vw;letter-spacing:-3px}
+ .hero-title-mark{font-size:8px;letter-spacing:1.4px}
+ .hero-title-mark-no{font-size:7px;letter-spacing:.5px}
+ .hero h1.hero-title{font-size:clamp(42px,11vw,58px);letter-spacing:-.8px}
+ .hero-title-first{font-size:clamp(37px,9.4vw,53px);line-height:1.02;max-width:100%}
+ .hero-title-pre{font-size:11px;letter-spacing:1.5px;margin:15px 0 4px 2px}
+ .hero-title-second{margin-left:-2px}
+ .hero-title-second em{font-size:clamp(67px,17.8vw,102px);letter-spacing:-2.5px}
+ .hero-title-second em:after{height:4px;bottom:-8px}
+ .hero-title-sticker{width:49px;height:49px;font-size:5px;right:3px;bottom:-1px}
+ .hero-title-caption{font-size:7px;letter-spacing:.8px;gap:6px;flex-wrap:wrap;margin:16px 0}
+ .hero-copy{font-size:15px;line-height:1.8}
+ .section-head h2{font-size:34px}
+ .section-head>p{font-size:15px;line-height:1.75}
+ #latest .feature-copy p,#stories .article p,#facts .facts-intro{font-size:15px}
+ #stories .article h3{font-size:25px}
+ #people .person p{font-size:15px}
+ #world .place h3{font-size:23px}
+ #world .place p{font-size:13px}
+ #facts .fact span{font-size:15px}
+ #theories .card h3{font-size:25px}
+ #theories .card p{font-size:15px}
+ #trailers .video strong{font-size:21px}
+ #trailers .video small{font-size:11px}
+}
+
 </style>
 </head>
 <body>
@@ -348,7 +424,7 @@ nav a:hover:before{box-shadow:0 0 10px currentColor;transform:scale(1.35)}
 <main class="wrap">
 <section class="hero">
 <div><div class="eyebrow">Независимый журнал о GTA VI</div>
-<div class="hero-title-mark"><span class="hero-title-mark-line"></span><span>THE STATE OF MIND</span><span class="hero-title-mark-no">26° 07\u2032 N / 80° 08\u2032 W</span></div><div class="hero-title-wrap"><span class="hero-ghost" aria-hidden="true">LEONIDA</span><h1 class="hero-title"><span class="hero-title-first">Добро пожаловать</span><span class="hero-title-pre">в штат, где</span><span class="hero-title-second"><em>Леонида.</em></span></h1><div class="hero-title-sticker"><span>NO RULES.</span><span>JUST STORIES.</span></div></div><div class="hero-title-caption"><span>VICE CITY</span><i></i><span>THE SUNSHINE STATE</span><i></i><span>EST. 2026</span></div>
+<div class="hero-title-mark"><span class="hero-title-mark-line"></span><span>THE STATE OF MIND</span><span class="hero-title-mark-no">26° 07\u2032 N / 80° 08\u2032 W</span></div><div class="hero-title-wrap"><span class="hero-ghost" aria-hidden="true">LEONIDA</span><h1 class="hero-title"><span class="hero-title-first">ДОБРО ПОЖАЛОВАТЬ</span><span class="hero-title-pre">ТВОЯ НОВАЯ ТЕРРИТОРИЯ —</span><span class="hero-title-second"><em>ЛЕОНИДА.</em></span></h1><div class="hero-title-sticker"><span>NO RULES.</span><span>JUST STORIES.</span></div></div><div class="hero-title-caption"><span>VICE CITY</span><i></i><span>THE SUNSHINE STATE</span><i></i><span>EST. 2026</span></div>
 <p class="hero-copy">Vice City не спит. Мы собираем подтверждённые новости, внимательно разбираем официальные материалы Rockstar и отделяем факты от фанатских догадок. Без фейков и пустых обещаний.</p>
 <div class="actions"><a class="btn" href="#latest">Читать свежие новости ↗</a><a class="btn ghost" href="#trailers">Смотреть трейлеры ▶</a></div><div class="home-countdown" aria-label="Обратный отсчёт до выхода GTA VI"><div class="home-countdown-copy"><span class="countdown-kicker">ОБРАТНЫЙ ОТСЧЁТ</span><strong>До выхода GTA VI</strong><small>19 ноября 2026 · Леонида ждёт</small></div><div class="home-countdown-time" id="homeCountdown" aria-live="polite"><span><b>—</b><small>дней</small></span><span><b>—</b><small>часов</small></span><span><b>—</b><small>минут</small></span><span><b>—</b><small>секунд</small></span></div><a class="countdown-link" href="walkthroughs.html">Прохождения GTA VI ↗</a></div></div>
 <div class="scene hero-photo" aria-label="Официальный арт Джейсона и Люсии в Леониде"><img class="hero-art" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия на крыше в Леониде" fetchpriority="high" decoding="async" onerror="this.style.display='none'"><div class="scene-stamp">VICE CITY · LEONIDA / 2026</div><div class="scene-label"><small>THE SUNSHINE STATE</small>NEVER SLEEPS.</div><div class="hero-photo-index">GTA VI <span>—</span> THE NEW ERA</div></div>
