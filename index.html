@@ -221,6 +221,16 @@ nav a{font-size:13px;font-weight:700;letter-spacing:.35px}
  nav a{font-size:12px}
 }
 
+
+/* Real YouTube trailer thumbnails */
+#trailers .video{position:relative;overflow:hidden;isolation:isolate;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end;padding:25px 24px;background:#171329}
+#trailers .video .video-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2;opacity:.78;transition:transform .45s,opacity .3s}
+#trailers .video:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#100d20f5 0%,#100d2099 45%,#100d2020 100%);pointer-events:none}
+#trailers .video .play,#trailers .video strong,#trailers .video small{position:relative;z-index:1}
+#trailers .video:hover .video-thumb{transform:scale(1.06);opacity:.95}
+#trailers .video .play{align-self:flex-start;margin-bottom:18px}
+@media(max-width:600px){#trailers .video{min-height:225px}}
+
 </style>
 </head>
 <body>
@@ -249,10 +259,10 @@ nav a{font-size:13px;font-weight:700;letter-spacing:.35px}
 <section class="section" id="trailers">
 <div class="section-head"><div><div class="overline">Смотреть и пересматривать</div><h2>Трейлеры и видео</h2></div><p>Все четыре ролика открываются напрямую на YouTube — нажми на карточку нужного видео.</p></div>
 <div class="trailers">
-<a class="video" href="https://www.youtube.com/watch?v=rz1B4B2yBZY" target="_blank" rel="noopener"><span class="play">▶</span><strong>Launch<br>Trailer</strong><small>15 октября 2026 · Смотреть на YouTube ↗</small></a>
-<a class="video" href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank" rel="noopener"><span class="play">▶</span><strong>An Extended<br>Look</strong><small>27 августа 2026 · Смотреть на YouTube ↗</small></a>
-<a class="video" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noopener"><span class="play">▶</span><strong>Trailer<br>2</strong><small>6 мая 2025 · Смотреть на YouTube ↗</small></a>
-<a class="video" href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" rel="noopener"><span class="play">▶</span><strong>Trailer<br>1</strong><small>4 декабря 2023 · Смотреть на YouTube ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=rz1B4B2yBZY" target="_blank" rel="noopener"><img class="video-thumb" src="https://i.ytimg.com/vi/rz1B4B2yBZY/hqdefault.jpg" alt="Кадр из GTA VI Launch Trailer" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="play">▶</span><strong>Launch<br>Trailer</strong><small>15 октября 2026 · Смотреть на YouTube ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank" rel="noopener"><img class="video-thumb" src="https://i.ytimg.com/vi/tJbzMqJGH4k/hqdefault.jpg" alt="Кадр из GTA VI An Extended Look" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="play">▶</span><strong>An Extended<br>Look</strong><small>27 августа 2026 · Смотреть на YouTube ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noopener"><img class="video-thumb" src="https://i.ytimg.com/vi/VQRLujxTm3c/hqdefault.jpg" alt="Кадр из GTA VI Trailer 2" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="play">▶</span><strong>Trailer<br>2</strong><small>6 мая 2025 · Смотреть на YouTube ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" rel="noopener"><img class="video-thumb" src="https://i.ytimg.com/vi/QdBZY2fkU-0/hqdefault.jpg" alt="Кадр из GTA VI Trailer 1" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="play">▶</span><strong>Trailer<br>1</strong><small>4 декабря 2023 · Смотреть на YouTube ↗</small></a>
 </div>
 <p class="note">Все ссылки ведут прямо на официальный канал Rockstar Games на YouTube.</p>
 </section>
