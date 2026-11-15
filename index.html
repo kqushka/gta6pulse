@@ -291,6 +291,52 @@ nav a:hover:before{box-shadow:0 0 10px currentColor;transform:scale(1.35)}
 @media(max-width:900px){.nav{flex-wrap:wrap;padding:10px 0}.hero{grid-template-columns:1fr;gap:20px}.hero-title-wrap{max-width:720px}.hero-ghost{font-size:clamp(70px,14vw,130px)}.hero-title-second em{font-size:clamp(82px,13vw,125px)}.hero-photo{transform:none}}
 @media(max-width:600px){.nav{padding:10px 0;gap:9px}nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;border-radius:15px;padding:5px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{padding:9px 10px;font-size:9px}.hero{padding-top:38px;min-height:0}.hero-title-mark{font-size:8px;letter-spacing:1.7px;gap:7px}.hero-title-mark-no{font-size:7px;letter-spacing:.7px}.hero h1.hero-title{font-size:clamp(39px,10.4vw,58px);letter-spacing:-.7px}.hero-title-pre{font-size:15px;margin-top:10px}.hero-title-second em{font-size:clamp(73px,19vw,106px);letter-spacing:-2px}.hero-title-sticker{width:57px;height:57px;font-size:6px;right:1px;bottom:0}.hero-ghost{font-size:19vw;left:-2%}.hero-title-caption{gap:7px;font-size:7px;letter-spacing:1.1px;margin:17px 0}.hero-copy{font-size:14px}.hero-photo{height:290px}}
 
+
+/* Section gallery system: distinct, polished editorial panels */
+.section{position:relative;margin:20px 0 28px;padding:54px 30px 58px;border:1px solid #ffffff13;border-radius:24px;background:linear-gradient(135deg,#ffffff08,#ffffff02 48%,#67e5e605);box-shadow:0 24px 70px #05030b22;overflow:hidden;isolation:isolate}
+.section:before{content:"";position:absolute;z-index:-1;top:0;left:30px;right:30px;height:1px;background:linear-gradient(90deg,transparent,#ff4fa388,#67e5e688,transparent)}
+.section:after{content:"";position:absolute;z-index:-1;right:-100px;top:-130px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,#9c80ff12,transparent 68%);pointer-events:none}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:30px}
+.section-head>div{position:relative}
+.section-head .overline{display:inline-flex;align-items:center;gap:8px;margin-bottom:11px;padding:6px 10px;border:1px solid #67e5e633;border-radius:99px;background:#67e5e60b;color:var(--cyan);font-size:9px;font-weight:900;letter-spacing:2px}
+.section-head h2{position:relative;margin:0;font:700 clamp(30px,4vw,46px)/1.05 Oswald,sans-serif;letter-spacing:.2px;text-transform:uppercase}
+.section-head h2:after{content:"";display:block;width:58px;height:3px;margin-top:12px;background:linear-gradient(90deg,var(--pink),var(--cyan));transform:skewX(-25deg)}
+.section-head>p{max-width:440px;margin:0 0 3px;color:#c9bed2;font-size:13px;line-height:1.8}
+#latest .feature{overflow:hidden;border:1px solid #ffffff20;border-radius:20px;background:linear-gradient(120deg,#ff4fa315,#1b1730 52%,#67e5e610);box-shadow:0 20px 55px #0004}
+#latest .feature-copy{padding:clamp(22px,4vw,42px)}
+#latest .feature h3{font:600 clamp(24px,3vw,36px)/1.15 Oswald,sans-serif}
+#latest .feature p{color:#d1c6d9;line-height:1.85}
+#trailers .video{overflow:hidden;border:1px solid #ffffff22;border-radius:16px;box-shadow:0 15px 38px #0004;transition:transform .3s,border-color .3s,box-shadow .3s}
+#trailers .video:hover{transform:translateY(-7px);border-color:#ff4fa399;box-shadow:0 22px 50px #ff4fa322}
+#trailers .video:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,#090713d9 100%);pointer-events:none}
+#trailers .video .play{z-index:2;width:48px;height:48px;display:grid;place-items:center;border:1px solid #ffffff88;border-radius:50%;background:#ff4fa3dd;box-shadow:0 0 28px #ff4fa366}
+#trailers .video strong,#trailers .video small{z-index:2}
+#stories .article-list{gap:18px}
+#stories .article{padding:22px;border:1px solid #ffffff18;border-radius:17px;background:linear-gradient(145deg,#211a39dd,#151226ee);box-shadow:0 14px 35px #0003;transition:transform .25s,border-color .25s}
+#stories .article:hover{transform:translateY(-4px);border-color:#67e5e655}
+#stories .article h3{font:600 23px/1.2 Oswald,sans-serif}
+#stories .article-image{border-radius:12px}
+#people .person{overflow:hidden;border:1px solid #ffffff20;border-radius:20px;background:#171329;box-shadow:0 22px 55px #0005}
+#people .person img{transition:transform .7s}
+#people .person:hover img{transform:scale(1.035)}
+#people .person-copy{padding:24px}
+#people .person h3{font:700 35px Oswald,sans-serif;letter-spacing:1px}
+#world .place{overflow:hidden;border:1px solid #ffffff20;border-radius:17px;background:#171329;box-shadow:0 16px 40px #0004;transition:transform .3s,border-color .3s}
+#world .place:hover{transform:translateY(-5px);border-color:#67e5e677}
+#world .place img{transition:transform .7s}
+#world .place:hover img{transform:scale(1.045)}
+#facts .facts-intro{padding:20px 22px;border-left:2px solid var(--cyan);border-radius:0 13px 13px 0;background:linear-gradient(90deg,#67e5e610,transparent);color:#d6cbdc}
+#facts .fact{overflow:hidden;border:1px solid #ffffff18;border-radius:17px;background:linear-gradient(145deg,#211a39,#151226);box-shadow:0 14px 32px #0003;transition:transform .25s,border-color .25s}
+#facts .fact:hover{transform:translateY(-5px);border-color:#ff4fa366}
+#facts .fact img{transition:transform .6s}
+#facts .fact:hover img{transform:scale(1.04)}
+#theories .card{overflow:hidden;border:1px solid #ffffff19;border-radius:18px;background:linear-gradient(145deg,#211a39ed,#151226);box-shadow:0 15px 38px #0004;transition:transform .25s,border-color .25s}
+#theories .card:hover{transform:translateY(-5px);border-color:#9c80ff88}
+#theories .card img{border-radius:11px}
+#latest .date,#stories .date{color:var(--orange);font-size:10px;font-weight:900;letter-spacing:1.5px}
+@media(max-width:900px){.section{padding:42px 22px;margin:16px 0 22px}.section-head{align-items:flex-start;flex-direction:column;gap:12px}.section-head>p{max-width:650px}}
+@media(max-width:600px){.section{padding:32px 15px 38px;border-radius:17px;margin:13px 0 18px}.section:before{left:15px;right:15px}.section-head{margin-bottom:22px}.section-head h2{font-size:31px}.section-head>p{font-size:12px}#stories .article{padding:17px}#people .person-copy{padding:18px}#people .person h3{font-size:29px}}
+
 </style>
 </head>
 <body>
@@ -343,7 +389,7 @@ nav a:hover:before{box-shadow:0 0 10px currentColor;transform:scale(1.35)}
 </section>
 <section class="section" id="world">
 <div class="section-head"><div><div class="overline">Штат контрастов</div><h2>Добро пожаловать в Леониду</h2></div><p>Rockstar описывает мир GTA VI как современный штат, вдохновлённый Флоридой. Vice City — лишь одна часть этой территории.</p></div>
-<div class="places"><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/rz1B4B2yBZY/hqdefault.jpg" alt="Обложка Launch Trailer" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg?akim=1&imdensity=1&imwidth=1600" alt="Панорама Vice City" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>VICE CITY</h3><p>Неон, пляжи, высотки и ночная жизнь.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/tJbzMqJGH4k/hqdefault.jpg" alt="Обложка An Extended Look" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Побережье Леониды" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>LEONIDA KEYS</h3><p>Острова, побережье и тропические дороги.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/VQRLujxTm3c/hqdefault.jpg" alt="Обложка Trailer 2" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0dwp8ucivdr~j.jpg?akim=1&imdensity=1&imwidth=1600" alt="Природа Леониды" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>GRASSRIVERS</h3><p>Болотистые природные пространства.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/QdBZY2fkU-0/hqdefault.jpg" alt="Обложка Trailer 1" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0xs9poewzot23.jpg?akim=1&imdensity=1&imwidth=1600" alt="Локация в Леониде" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>PORT GELLHORN</h3><p>Городская локация за пределами Vice City.</p></div></div>
+<div class="places"><div class="place"><img class="video-thumb" src="https://www.rockstargames.com/VI/_next/static/media/GTAVI_Launch_Trailer_poster.0_q-sdrgufc.s.jpg?akim=1&imdensity=1&imwidth=1600" alt="Обложка Launch Trailer" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg?akim=1&imdensity=1&imwidth=1600" alt="Панорама Vice City" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>VICE CITY</h3><p>Неон, пляжи, высотки и ночная жизнь.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/tJbzMqJGH4k/hqdefault.jpg" alt="Обложка An Extended Look" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Побережье Леониды" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>LEONIDA KEYS</h3><p>Острова, побережье и тропические дороги.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/VQRLujxTm3c/hqdefault.jpg" alt="Обложка Trailer 2" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0dwp8ucivdr~j.jpg?akim=1&imdensity=1&imwidth=1600" alt="Природа Леониды" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>GRASSRIVERS</h3><p>Болотистые природные пространства.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/QdBZY2fkU-0/hqdefault.jpg" alt="Обложка Trailer 1" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0xs9poewzot23.jpg?akim=1&imdensity=1&imwidth=1600" alt="Локация в Леониде" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>PORT GELLHORN</h3><p>Городская локация за пределами Vice City.</p></div></div>
 </section>
 <section class="section" id="facts">
 <div class="section-head"><div><div class="overline">Только подтверждённое</div><h2>Что известно об игре</h2></div><p>Короткая справка по данным официального сайта и публикаций Rockstar. Слухи сюда не попадают.</p></div>
@@ -378,7 +424,7 @@ nav a:hover:before{box-shadow:0 0 10px currentColor;transform:scale(1.35)}
 <footer><div class="wrap"><strong>GTA6PULSE</strong><p>Независимый фанатский проект для поклонников Grand Theft Auto VI. Не является официальным сайтом Rockstar Games и не связан с Take-Two Interactive. Все товарные знаки и права на оригинальные материалы принадлежат их владельцам. Тексты GTA6Pulse — авторские пересказы и комментарии к официальным публикациям.</p><p>Обновлено: 15 ноября 2026 · Источники: Rockstar Games / Newswire.</p></div></footer>
 <script>
 const translations = {
-"ОБРАТНЫЙ ОТСЧЁТ":"COUNTDOWN","До выхода GTA VI":"Until GTA VI launches","дней":"days","часов":"hours","минут":"minutes","секунд":"seconds","19 ноября 2026 · Леонида ждёт":"November 19, 2026 · Leonida awaits","Прохождения GTA VI ↗":"GTA VI Walkthroughs ↗","Лента":"News","Трейлеры":"Trailers","Разборы":"Features","Герои":"Characters","Леонида":"Leonida","Факты":"Facts","Теории":"Theories",
+"ОБРАТНЫЙ ОТСЧЁТ":"COUNTDOWN","Прохождения":"Walkthroughs","До выхода GTA VI":"Until GTA VI launches","дней":"days","часов":"hours","минут":"minutes","секунд":"seconds","19 ноября 2026 · Леонида ждёт":"November 19, 2026 · Leonida awaits","Прохождения GTA VI ↗":"GTA VI Walkthroughs ↗","Лента":"News","Трейлеры":"Trailers","Разборы":"Features","Герои":"Characters","Леонида":"Leonida","Факты":"Facts","Теории":"Theories",
 "Независимый журнал о GTA VI":"Independent GTA VI journal","Добро пожаловать":"WELCOME","в":"TO","Леониду.":"LEONIDA.",
 "Vice City не спит. Мы собираем подтверждённые новости, внимательно разбираем официальные материалы Rockstar и отделяем факты от фанатских догадок. Без фейков и пустых обещаний.":"Vice City never sleeps. We collect confirmed news, examine Rockstar's official materials and separate facts from fan theories. No fakes, no empty promises.",
 "Читать свежие новости ↗":"Read the latest news ↗","Смотреть трейлеры ▶":"Watch trailers ▶","На главной":"Featured","Пульс момента":"The latest pulse",
