@@ -183,6 +183,44 @@ nav a{font-size:12px}
 @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-photo{height:420px}.factgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.hero{gap:24px;padding-top:40px}.hero-photo{height:300px}.hero-photo .scene-label{font-size:31px;left:17px;bottom:18px}.hero-photo-index{font-size:9px;right:14px;bottom:20px}.factgrid{grid-template-columns:1fr}.fact img{height:220px}.facts-intro{font-size:15px}}
 
+
+
+/* Comfortable, clearer typography — balanced for desktop and mobile */
+html{font-size:16px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-size:17px;line-height:1.78;letter-spacing:.12px;color:#f4eff7}
+p,.section-head p,.feature-copy p,.card p,.article p,.person p,.place p,.facts-intro,.facts-note p{font-size:16.5px;line-height:1.82;color:#e9e2ee;font-weight:400}
+h1,h2,h3,.fact strong,.video strong{letter-spacing:-.35px;text-wrap:balance}
+h2{font-size:clamp(34px,4.5vw,48px);line-height:1.12;font-weight:700;color:#fff}
+h3,.card h3,.video strong{font-size:clamp(23px,2.4vw,28px);line-height:1.2;font-weight:700;color:#fff}
+nav a{font-size:13px;font-weight:700;letter-spacing:.35px}
+.hero h1{font-size:clamp(54px,7vw,88px);line-height:1.02}
+.hero-copy{font-size:18px;line-height:1.82;color:#f0eaf4}
+.eyebrow,.overline,.date,.tag,.fact .fact-kicker{font-size:11px;line-height:1.5;font-weight:800;letter-spacing:1.4px}
+.fact strong{font-size:25px;line-height:1.2;font-weight:750}
+.fact span,.fact .fact-copy span:last-child{font-size:16px;line-height:1.75;color:#eee7f2}
+.fact .fact-copy{padding:21px 22px 23px}
+.facts-intro{font-size:17px;line-height:1.82;color:#eee7f2}
+.facts-note strong{font-size:22px}
+.facts-note p{font-size:16px}
+.person h3,#people .person h3{font-size:clamp(42px,5.3vw,58px);line-height:1.05}
+.person p,#people .person p{font-size:16.5px;line-height:1.82}
+.article p{font-size:16px;line-height:1.82}
+.read,.btn{font-size:13px;font-weight:800;letter-spacing:.35px}
+.video small{font-size:13px;line-height:1.65}
+@media(max-width:600px){
+ body{font-size:16.5px;line-height:1.78}
+ p,.section-head p,.feature-copy p,.card p,.article p,.person p,.place p,.facts-intro,.facts-note p{font-size:16px;line-height:1.78}
+ h2{font-size:clamp(30px,8vw,38px)}
+ h3,.card h3,.video strong{font-size:23px}
+ .hero h1{font-size:clamp(46px,12vw,62px)}
+ .hero-copy{font-size:16.5px;line-height:1.8}
+ .fact strong{font-size:24px}
+ .fact span,.fact .fact-copy span:last-child{font-size:16px}
+ .person h3,#people .person h3{font-size:42px}
+ .person p,#people .person p{font-size:16px}
+ nav a{font-size:12px}
+}
+
 </style>
 </head>
 <body>
