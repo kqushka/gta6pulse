@@ -128,6 +128,32 @@ nav a{font-size:12px}
 #people .person .person-quote{font-weight:700;color:#fff!important;background:#090817b8;padding:13px 16px;border-left:4px solid var(--cyan);border-radius:0 4px 4px 0}
 @media(max-width:600px){#people .person .person-copy{padding:23px}#people .person h3{font-size:46px}#people .person p{font-size:16px}}
 
+
+/* Add real GTA VI artwork to every text-only content card */
+.decor-image{display:block;width:100%;height:178px;object-fit:cover;object-position:center 35%;background:#211a36;border-bottom:1px solid #ffffff25}
+.card{padding:0}
+.card .decor-image{height:190px}
+.card .tag,.card h3,.card p,.card .read,.card .num{margin-left:22px;margin-right:22px}
+.card .tag{display:block;margin-top:18px}
+.card h3{margin-top:12px}
+.card p{margin-bottom:18px}
+.card .read{margin-bottom:22px}
+.card .num{z-index:2;text-shadow:0 2px 12px #000}
+.place{position:relative;overflow:hidden;isolation:isolate;min-height:230px}
+.place .decor-image{position:absolute;inset:0;width:100%;height:100%;z-index:-2;border:0;object-fit:cover;transition:transform .4s}
+.place:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#100d20f2 0%,#100d2070 52%,#100d2010 100%)}
+.place:hover .decor-image{transform:scale(1.06)}
+.video{background:#171329}
+.video .video-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.68;transition:transform .45s,opacity .3s}
+.video:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#100d20f5 0%,#100d2066 60%,#100d2020);z-index:0}
+.video>*{z-index:1}
+.video:hover .video-thumb{transform:scale(1.05);opacity:.9}
+.feature-art{overflow:hidden}
+.feature-art .feature-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78}
+.feature-art:before{z-index:1}
+.feature-art:after{z-index:2}
+@media(max-width:600px){.card .decor-image{height:205px}.place{min-height:205px}}
+
 </style>
 </head>
 <body>
@@ -146,11 +172,11 @@ nav a{font-size:12px}
 </section>
 <section class="section" id="latest">
 <div class="section-head"><div><div class="overline">На главной</div><h2>Пульс момента</h2></div><p>Самые свежие подтверждённые события вокруг Grand Theft Auto VI — с датами и прямыми ссылками на первоисточники.</p></div>
-<div class="feature"><div class="feature-art"></div><div class="feature-copy"><div class="date">10 НОЯБРЯ 2026 · ROCKSTAR NEWSWIRE</div><h3>Предзагрузка GTA VI уже открыта</h3><p>Rockstar сообщила, что цифровую версию игры уже можно предварительно загрузить тем, кто оформил предзаказ. Компания также раскрыла технические детали консольных версий и рассказала о поддержке Remote Play и облачного стриминга.</p><a class="read" href="https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now" target="_blank" rel="noopener">Официальный источник ↗</a></div></div>
+<div class="feature"><div class="feature-art"><img class="feature-thumb" src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0xs9poewzot23.jpg?akim=1&imdensity=1&imwidth=1600" alt="Официальный кадр из мира GTA VI" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="feature-copy"><div class="date">10 НОЯБРЯ 2026 · ROCKSTAR NEWSWIRE</div><h3>Предзагрузка GTA VI уже открыта</h3><p>Rockstar сообщила, что цифровую версию игры уже можно предварительно загрузить тем, кто оформил предзаказ. Компания также раскрыла технические детали консольных версий и рассказала о поддержке Remote Play и облачного стриминга.</p><a class="read" href="https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now" target="_blank" rel="noopener">Официальный источник ↗</a></div></div>
 <div class="grid" style="margin-top:15px">
-<article class="card"><span class="num">01</span><span class="tag">9 НОЯБРЯ · СОБЫТИЕ</span><h3>Grand Theft Auto VI: The Festival</h3><p>Rockstar и PlayStation анонсировали музыкальный фестиваль в Майами на 21 ноября. В программе — артисты, связанные с игрой и её саундтреком.</p><a class="read" href="https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival" target="_blank" rel="noopener">Читать разбор ↗</a></article>
-<article class="card"><span class="num">02</span><span class="tag">5 НОЯБРЯ · ГАЛЕРЕЯ</span><h3>Новые кадры Леониды</h3><p>В официальной галерее появились дополнительные скриншоты Vice City и других уголков штата. Это один из лучших способов рассмотреть детали окружения.</p><a class="read" href="https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery" target="_blank" rel="noopener">Открыть источник ↗</a></article>
-<article class="card"><span class="num">03</span><span class="tag">29 ОКТЯБРЯ · МУЗЫКА</span><h3>Оригинальный саундтрек от Justice</h3><p>Французский дуэт Justice написал оригинальную адаптивную музыку для игры. Альбом заявлен из 30 композиций и должен выйти 11 декабря.</p><a class="read" href="https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice" target="_blank" rel="noopener">Официальный источник ↗</a></article>
+<article class="card"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg?akim=1&imdensity=1&imwidth=1600" alt="Ночной вид Vice City" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="num">01</span><span class="tag">9 НОЯБРЯ · СОБЫТИЕ</span><h3>Grand Theft Auto VI: The Festival</h3><p>Rockstar и PlayStation анонсировали музыкальный фестиваль в Майами на 21 ноября. В программе — артисты, связанные с игрой и её саундтреком.</p><a class="read" href="https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival" target="_blank" rel="noopener">Читать разбор ↗</a></article>
+<article class="card"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Lock_And_Load_landscape.0l9s5w7ih9p~3.jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="num">02</span><span class="tag">5 НОЯБРЯ · ГАЛЕРЕЯ</span><h3>Новые кадры Леониды</h3><p>В официальной галерее появились дополнительные скриншоты Vice City и других уголков штата. Это один из лучших способов рассмотреть детали окружения.</p><a class="read" href="https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery" target="_blank" rel="noopener">Открыть источник ↗</a></article>
+<article class="card"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_14.10e7v.06pcm_t.jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия в Леониде" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="num">03</span><span class="tag">29 ОКТЯБРЯ · МУЗЫКА</span><h3>Оригинальный саундтрек от Justice</h3><p>Французский дуэт Justice написал оригинальную адаптивную музыку для игры. Альбом заявлен из 30 композиций и должен выйти 11 декабря.</p><a class="read" href="https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice" target="_blank" rel="noopener">Официальный источник ↗</a></article>
 </div>
 </section>
 <section class="section" id="trailers">
@@ -180,7 +206,7 @@ nav a{font-size:12px}
 </section>
 <section class="section" id="world">
 <div class="section-head"><div><div class="overline">Штат контрастов</div><h2>Добро пожаловать в Леониду</h2></div><p>Rockstar описывает мир GTA VI как современный штат, вдохновлённый Флоридой. Vice City — лишь одна часть этой территории.</p></div>
-<div class="places"><div class="place"><h3>VICE CITY</h3><p>Неон, пляжи, высотки и ночная жизнь.</p></div><div class="place"><h3>LEONIDA KEYS</h3><p>Острова, побережье и тропические дороги.</p></div><div class="place"><h3>GRASSRIVERS</h3><p>Болотистые природные пространства.</p></div><div class="place"><h3>PORT GELLHORN</h3><p>Городская локация за пределами Vice City.</p></div></div>
+<div class="places"><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/rz1B4B2yBZY/hqdefault.jpg" alt="Обложка Launch Trailer" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg?akim=1&imdensity=1&imwidth=1600" alt="Панорама Vice City" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>VICE CITY</h3><p>Неон, пляжи, высотки и ночная жизнь.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/tJbzMqJGH4k/hqdefault.jpg" alt="Обложка An Extended Look" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Побережье Леониды" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>LEONIDA KEYS</h3><p>Острова, побережье и тропические дороги.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/VQRLujxTm3c/hqdefault.jpg" alt="Обложка Trailer 2" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0dwp8ucivdr~j.jpg?akim=1&imdensity=1&imwidth=1600" alt="Природа Леониды" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>GRASSRIVERS</h3><p>Болотистые природные пространства.</p></div><div class="place"><img class="video-thumb" src="https://i.ytimg.com/vi/QdBZY2fkU-0/hqdefault.jpg" alt="Обложка Trailer 1" loading="lazy" decoding="async" onerror="this.style.display='none'"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0xs9poewzot23.jpg?akim=1&imdensity=1&imwidth=1600" alt="Локация в Леониде" loading="lazy" decoding="async" onerror="this.style.display='none'"><h3>PORT GELLHORN</h3><p>Городская локация за пределами Vice City.</p></div></div>
 </section>
 <section class="section" id="facts">
 <div class="section-head"><div><div class="overline">Только подтверждённое</div><h2>Что известно об игре</h2></div><p>Короткая справка по данным официального сайта и публикаций Rockstar. Слухи сюда не попадают.</p></div>
@@ -197,9 +223,9 @@ nav a{font-size:12px}
 <section class="section" id="theories">
 <div class="section-head"><div><div class="overline">Фанатская лаборатория</div><h2>Теории и вопросы</h2></div><p>Это предположения сообщества, а не заявления Rockstar. Мы не смешиваем догадки с фактами.</p></div>
 <div class="grid">
-<article class="card"><span class="tag">ТЕОРИЯ · НЕ ПОДТВЕРЖДЕНО</span><h3>Насколько мир будет реагировать на игрока?</h3><p>Плотность города и количество показанных ситуаций заставляют ожидать разнообразные случайные события. Но глубина симуляции NPC пока не раскрыта полностью.</p></article>
-<article class="card"><span class="tag">ТЕОРИЯ · НЕ ПОДТВЕРЖДЕНО</span><h3>Будут ли решения менять отношения героев?</h3><p>Центральная роль дуэта Джейсона и Люсии подталкивает к вопросам о доверии и последствиях выбора. Конкретные ветки сюжета и концовки официально не описаны.</p></article>
-<article class="card"><span class="tag">ТЕОРИЯ · НЕ ПОДТВЕРЖДЕНО</span><h3>Сколько секретов спрятано в Леониде?</h3><p>Поклонники ждут отсылки к прошлым играм и скрытые активности. До выхода игры это ожидание, а не подтверждённый список пасхалок.</p></article>
+<article class="card"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_12.0saq9ns-~xj03.jpg?akim=1&imdensity=1&imwidth=1600" alt="Люсия Caminos" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="tag">ТЕОРИЯ · НЕ ПОДТВЕРЖДЕНО</span><h3>Насколько мир будет реагировать на игрока?</h3><p>Плотность города и количество показанных ситуаций заставляют ожидать разнообразные случайные события. Но глубина симуляции NPC пока не раскрыта полностью.</p></article>
+<article class="card"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_Video_Clip.024oe-y640yxp.jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон Duval" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="tag">ТЕОРИЯ · НЕ ПОДТВЕРЖДЕНО</span><h3>Будут ли решения менять отношения героев?</h3><p>Центральная роль дуэта Джейсона и Люсии подталкивает к вопросам о доверии и последствиях выбора. Конкретные ветки сюжета и концовки официально не описаны.</p></article>
+<article class="card"><img class="decor-image" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия на крыше" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="tag">ТЕОРИЯ · НЕ ПОДТВЕРЖДЕНО</span><h3>Сколько секретов спрятано в Леониде?</h3><p>Поклонники ждут отсылки к прошлым играм и скрытые активности. До выхода игры это ожидание, а не подтверждённый список пасхалок.</p></article>
 </div>
 </section>
 <section class="section">
