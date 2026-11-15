@@ -154,6 +154,35 @@ nav a{font-size:12px}
 .feature-art:after{z-index:2}
 @media(max-width:600px){.card .decor-image{height:205px}.place{min-height:205px}}
 
+
+/* Expanded fact guide */
+.facts-intro{max-width:900px;margin:0 0 25px;color:#e4d9e8;font-size:16px;line-height:1.9}
+.facts-intro p{margin:0 0 12px}
+.factgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.fact{min-height:100%;display:flex;flex-direction:column}
+.fact img{height:215px}
+.fact .fact-copy{flex:1}
+.fact .fact-copy span:last-child{font-size:15px;line-height:1.8;color:#e0d7e6}
+.facts-note{margin-top:22px;padding:22px 25px;border-left:3px solid var(--cyan);background:linear-gradient(100deg,#67e5e610,#ff4fa30a);color:#e7deeb}
+.facts-note strong{font:600 24px Oswald,sans-serif;color:var(--cyan)}
+.facts-note p{margin:7px 0 0;font-size:15px;line-height:1.8}
+/* Cinematic welcome window */
+.hero{grid-template-columns:.85fr 1.15fr;gap:34px;min-height:650px;padding:62px 0 72px}
+.hero h1{font-size:clamp(58px,7.6vw,96px);letter-spacing:-2px;text-shadow:0 7px 35px #05030b99}
+.hero h1 em{display:inline-block;padding:0 9px 5px;color:#fff;background:linear-gradient(100deg,#ff4fa3aa,#9c80ffaa 60%,#67e5e688);box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:0 2px 22px #ff4fa388}
+.hero-photo{height:500px;border:1px solid #ffffff45;border-radius:8px;background:#151329;box-shadow:0 30px 90px #03020a99,0 0 0 7px #ffffff08;isolation:isolate}
+.hero-photo:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#100d2033,transparent 40%),linear-gradient(0deg,#0c0a1acc,transparent 58%);pointer-events:none}
+.hero-photo .hero-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;transition:transform .8s}
+.hero-photo:hover .hero-art{transform:scale(1.035)}
+.hero-photo .scene-label{z-index:3;left:26px;bottom:28px;font-size:42px}
+.hero-photo .scene-stamp{z-index:3;top:22px;right:22px;background:#0b0a19c9;border-color:#ffffff55}
+.hero-photo-index{position:absolute;z-index:3;right:22px;bottom:28px;color:#fff;font:700 11px Manrope,sans-serif;letter-spacing:3px;text-shadow:0 2px 10px #000}
+.hero-photo-index span{color:var(--pink)}
+.hero .eyebrow{font-size:11px;letter-spacing:3px}
+.hero-copy{font-size:17px;line-height:1.9}
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-photo{height:420px}.factgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.hero{gap:24px;padding-top:40px}.hero-photo{height:300px}.hero-photo .scene-label{font-size:31px;left:17px;bottom:18px}.hero-photo-index{font-size:9px;right:14px;bottom:20px}.factgrid{grid-template-columns:1fr}.fact img{height:220px}.facts-intro{font-size:15px}}
+
 </style>
 </head>
 <body>
@@ -168,7 +197,7 @@ nav a{font-size:12px}
 <h1>Добро пожаловать<br>в <em>Леониду.</em></h1>
 <p class="hero-copy">Vice City не спит. Мы собираем подтверждённые новости, внимательно разбираем официальные материалы Rockstar и отделяем факты от фанатских догадок. Без фейков и пустых обещаний.</p>
 <div class="actions"><a class="btn" href="#latest">Читать свежие новости ↗</a><a class="btn ghost" href="#trailers">Смотреть трейлеры ▶</a></div></div>
-<div class="scene" aria-label="Стилизованная неоновая панорама Вайс-Сити"><div class="sun"></div><div class="horizon"></div><i class="tower t1"></i><i class="tower t2"></i><i class="tower t3"></i><i class="tower t4"></i><i class="palm left"></i><i class="palm right"></i><div class="scene-stamp">VICE CITY · LEONIDA</div><div class="scene-label"><small>THE SUNSHINE STATE</small>NEVER SLEEPS.</div></div>
+<div class="scene hero-photo" aria-label="Официальный арт Джейсона и Люсии в Леониде"><img class="hero-art" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия на крыше в Леониде" fetchpriority="high" decoding="async" onerror="this.style.display='none'"><div class="scene-stamp">VICE CITY · LEONIDA / 2026</div><div class="scene-label"><small>THE SUNSHINE STATE</small>NEVER SLEEPS.</div><div class="hero-photo-index">GTA VI <span>—</span> THE NEW ERA</div></div>
 </section>
 <section class="section" id="latest">
 <div class="section-head"><div><div class="overline">На главной</div><h2>Пульс момента</h2></div><p>Самые свежие подтверждённые события вокруг Grand Theft Auto VI — с датами и прямыми ссылками на первоисточники.</p></div>
@@ -210,14 +239,19 @@ nav a{font-size:12px}
 </section>
 <section class="section" id="facts">
 <div class="section-head"><div><div class="overline">Только подтверждённое</div><h2>Что известно об игре</h2></div><p>Короткая справка по данным официального сайта и публикаций Rockstar. Слухи сюда не попадают.</p></div>
+<div class="facts-intro"><p>GTA VI переносит серию в современную Леониду — вымышленный штат, вдохновлённый Флоридой. В центре истории — Джейсон и Люсия, а вокруг них разворачивается криминальная история о доверии, риске и попытке вырваться на новую жизнь.</p><p>Ниже — самое важное, что Rockstar уже подтвердила. Мы не выдаём догадки о геймплее за готовые факты.</p></div>
 <div class="factgrid">
-<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason and Lucia on an official GTA VI rooftop artwork" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Дата выхода</span><strong>19.11.2026</strong><span>Заявленная Rockstar дата выхода. Встречаемся в Леониде.</span></div></div>
-<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Lock_And_Load_landscape.0l9s5w7ih9p~3.jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason and Lucia in official GTA VI artwork" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Платформы</span><strong>PS5 · Xbox</strong><span>Официально указанные платформы запуска.</span></div></div>
-<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg?akim=1&imdensity=1&imwidth=1600" alt="Vice City skyline in GTA VI" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Место действия</span><strong>Leonida</strong><span>Вымышленный штат, вдохновлённый Флоридой.</span></div></div>
-<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_Video_Clip.024oe-y640yxp.jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason Duval official character image" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Главный герой</span><strong>Jason Duval</strong><span>Один из двух центральных персонажей истории.</span></div></div>
-<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_12.0saq9ns-~xj03.jpg?akim=1&imdensity=1&imwidth=1600" alt="Lucia Caminos official character image" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Главная героиня</span><strong>Lucia Caminos</strong><span>Вторая главная героиня GTA VI.</span></div></div>
-<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_14.10e7v.06pcm_t.jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason and Lucia together in GTA VI" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Главная пара</span><strong>Jason + Lucia</strong><span>Их судьбы переплетены общей криминальной историей.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия на крыше" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Дата выхода</span><strong>19 ноября 2026</strong><span>Rockstar назначила релиз на четверг, 19 ноября 2026 года. Игра выходит на консолях текущего поколения.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Lock_And_Load_landscape.0l9s5w7ih9p~3.jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия с оружием" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Платформы</span><strong>PS5 · Xbox Series X|S</strong><span>Официально заявлены PlayStation 5 и Xbox Series X|S. Версия для ПК на официальной странице пока не указана.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg?akim=1&imdensity=1&imwidth=1600" alt="Панорама Vice City" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Место действия</span><strong>Штат Леонида</strong><span>Большой вымышленный штат, вдохновлённый Флоридой. Его самые узнаваемые образы — солнечное побережье, болота, острова и шумные города.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_Video_Clip.024oe-y640yxp.jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон Дюваль" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Главный герой</span><strong>Джейсон Дюваль</strong><span>Бывший военный, выросший среди мошенников и мелких преступников. В Леонида-Кис он работает на местных наркокурьеров и задумывается о другой жизни.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_12.0saq9ns-~xj03.jpg?akim=1&imdensity=1&imwidth=1600" alt="Люсия Каминос" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Главная героиня</span><strong>Люсия Каминос</strong><span>Недавно вышла из тюрьмы Леониды. Она хочет обеспечить себе хорошую жизнь и готова действовать решительно, чтобы изменить собственную судьбу.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_14.10e7v.06pcm_t.jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия вместе" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Сюжет</span><strong>Дуэт против обстоятельств</strong><span>После неудачного дела герои оказываются втянуты в масштабный криминальный заговор. Чтобы выжить, им придётся полагаться друг на друга.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0xs9poewzot23.jpg?akim=1&imdensity=1&imwidth=1600" alt="Лодочная мастерская в Леониде" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Леонида-Кис</span><strong>Острова и побережье</strong><span>Одна из частей штата — цепочка островов и прибрежных поселений. Здесь Джейсон связан с контрабандным бизнесом и лодочной мастерской Брайана Хедера.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0dwp8ucivdr~j.jpg?akim=1&imdensity=1&imwidth=1600" alt="Природные пейзажи Леониды" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Природа и глубинка</span><strong>Grassrivers</strong><span>Болотистые просторы и дикая природа контрастируют с ярким Vice City. Леонида — не только небоскрёбы и ночные клубы.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Hero_BG.0p057ifb~cbkz.jpg?akim=1&imdensity=1&imwidth=1600" alt="Ночная жизнь Vice City" loading="lazy" decoding="async" onerror="this.style.display='none'"><div class="fact-copy"><span class="fact-kicker">Музыка</span><strong>Радио и оригинальный саундтрек</strong><span>Rockstar раскрывает музыкальную сторону игры: внутриигровое радио, отдельные музыкальные подборки и оригинальную музыку, созданную Justice.</span></div></div>
 </div>
+<div class="facts-note"><strong>Что пока неизвестно?</strong><p>Rockstar ещё не раскрыла все игровые системы, подробности исследования мира, полный список заданий и планы по будущим режимам. Поэтому мы будем добавлять сюда только то, что подтверждено официальными материалами.</p></div>
 <p class="image-credit">Изображения: официальные промоматериалы и скриншоты GTA VI, опубликованные Rockstar Games. <a class="read" href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">Официальная медиатека ↗</a></p>
 </section>
 <section class="section" id="theories">
@@ -299,7 +333,32 @@ const translations = {
 "Независимый фанатский проект для поклонников Grand Theft Auto VI. Не является официальным сайтом Rockstar Games и не связан с Take-Two Interactive. Все товарные знаки и права на оригинальные материалы принадлежат их владельцам. Тексты GTA6Pulse — авторские пересказы и комментарии к официальным публикациям.":"An independent fan project for Grand Theft Auto VI fans. This is not an official Rockstar Games website and is not affiliated with Take-Two Interactive. All trademarks and rights to original materials belong to their owners. GTA6Pulse articles are original summaries and commentary on official publications.",
 "Обновлено: 15 ноября 2026 · Источники: Rockstar Games / Newswire.":"Updated: November 15, 2026 · Sources: Rockstar Games / Newswire.",
 "<p>Джейсон вырос среди мошенников и мелких преступников. Попытка начать новую жизнь привела его в армию, но после службы он оказался в Леонида-Кис, где работает на местных наркокурьеров. Он мечтает о спокойной жизни, однако прошлое постоянно затягивает его обратно в неприятности.</p><p><strong>Что важно знать:</strong> Джейсон привык к опасной среде, умеет действовать хладнокровно и рассчитывает на себя. Знакомство с Люсией может стать для него шансом изменить жизнь — или началом ещё больших проблем.</p><p class=\"person-quote\">«Если что-то случится, я буду рядом» — одна из фраз, показывающих, насколько важна для него связь с Люсией.</p>":"Jason grew up among con artists and petty criminals. An attempt to start over took him into the Army, but after his service he ended up in the Leonida Keys, working for local drug runners. He wants an easy life, yet his past keeps pulling him back into trouble.",
-"<p>Отец научил Люсию драться ещё в детстве. Защищая семью, она оказалась в тюрьме Леониды, а на свободу вышла благодаря удаче. Теперь Люсия не хочет снова полагаться на случай: она намерена сама управлять своей судьбой.</p><p><strong>Её цель:</strong> добиться той обеспеченной и спокойной жизни, о которой мечтала её мать ещё со времён их жизни в Либерти-Сити. Но Люсия готова не просто мечтать — она действует решительно и просчитывает каждый следующий шаг.</p><p class=\"person-quote\">Для Люсии союз с Джейсоном может стать дорогой к новой жизни. Но доверие в криминальном мире всегда связано с риском.</p>":"Lucia's father taught her to fight when she was a child. Defending her family landed her in Leonida Penitentiary, and luck got her out. Now she refuses to leave her future to chance: she intends to take control of her own life."
+"<p>Отец научил Люсию драться ещё в детстве. Защищая семью, она оказалась в тюрьме Леониды, а на свободу вышла благодаря удаче. Теперь Люсия не хочет снова полагаться на случай: она намерена сама управлять своей судьбой.</p><p><strong>Её цель:</strong> добиться той обеспеченной и спокойной жизни, о которой мечтала её мать ещё со времён их жизни в Либерти-Сити. Но Люсия готова не просто мечтать — она действует решительно и просчитывает каждый следующий шаг.</p><p class=\"person-quote\">Для Люсии союз с Джейсоном может стать дорогой к новой жизни. Но доверие в криминальном мире всегда связано с риском.</p>":"Lucia's father taught her to fight when she was a child. Defending her family landed her in Leonida Penitentiary, and luck got her out. Now she refuses to leave her future to chance: she intends to take control of her own life.",
+"Короткая справка по данным официального сайта и публикаций Rockstar. Слухи сюда не попадают.":"Подробный путеводитель по подтверждённым фактам: история, герои, места, платформы и музыка. Слухи мы отмечаем отдельно.",
+"19 ноября 2026":"November 19, 2026",
+"PS5 · Xbox Series X|S":"PS5 · Xbox Series X|S",
+"Штат Леонида":"The State of Leonida",
+"Джейсон Дюваль":"Jason Duval",
+"Люсия Каминос":"Lucia Caminos",
+"Дуэт против обстоятельств":"A duo against the odds",
+"Острова и побережье":"Islands and coastline",
+"Природа и глубинка":"Nature and the wild",
+"Радио и оригинальный саундтрек":"Radio and original score",
+"Дата выхода":"Release date",
+"Платформы":"Platforms",
+"Место действия":"Setting",
+"Главный герой":"Main protagonist",
+"Главная героиня":"Main protagonist",
+"Сюжет":"Story",
+"Леонида-Кис":"Leonida Keys",
+"Grassrivers":"Grassrivers",
+"Музыка":"Music",
+"Что пока неизвестно?":"What is still unknown?",
+"Rockstar ещё не раскрыла все игровые системы, подробности исследования мира, полный список заданий и планы по будущим режимам. Поэтому мы будем добавлять сюда только то, что подтверждено официальными материалами.":"Rockstar has not revealed every game system, all exploration details, the full mission list or plans for future modes. We will add only information confirmed by official materials.",
+"GTA VI — независимый журнал о GTA VI":"GTA VI — independent GTA VI journal",
+"VICE CITY · LEONIDA / 2026":"VICE CITY · LEONIDA / 2026",
+"НЕЗАВИСИМЫЙ ЖУРНАЛ О GTA VI":"INDEPENDENT GTA VI JOURNAL",
+"Джейсон и Люсия на крыше в Леониде":"Jason and Lucia on a rooftop in Leonida"
 };
 const textNodes = [];
 const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
