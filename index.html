@@ -43,13 +43,37 @@ h1,h2,h3,p{margin-top:0}.hero h1{font:700 clamp(54px,8vw,100px)/.93 Oswald,sans-
 footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-size:11px}footer strong{font:700 22px Oswald,sans-serif;color:white;letter-spacing:2px}footer p{max-width:800px}
 @media(max-width:900px){nav{gap:11px}.hero{grid-template-columns:1fr;padding-top:45px}.scene{height:360px}.grid{grid-template-columns:repeat(2,1fr)}.trailers,.places{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.wrap{width:min(100% - 28px,1180px)}.nav{padding:12px 0;flex-wrap:wrap}.brand{font-size:22px}nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;padding:5px 0 9px}nav a{white-space:nowrap;font-size:10px}.hero{padding:40px 0 48px;min-height:auto}.hero h1{font-size:58px}.scene{height:290px}.sun{width:170px;height:170px}.section{padding:45px 0}.section-head{display:block}.section-head p{margin-top:10px}.feature{grid-template-columns:1fr}.feature-art{min-height:180px}.feature-copy{padding:24px}.grid,.article-list,.split,.factgrid{grid-template-columns:1fr}.trailers,.places{grid-template-columns:repeat(2,1fr)}.video{min-height:175px;padding:14px}.video strong{font-size:19px}.card{min-height:0}}
+
+.language-switch{display:flex;align-items:center;gap:3px;padding:4px;border:1px solid #ffffff35;border-radius:999px;background:#090817aa;box-shadow:inset 0 1px 8px #0008,0 5px 20px #0003;backdrop-filter:blur(14px)}
+.lang-option{min-width:42px;padding:8px 11px;border:0;border-radius:999px;background:transparent;color:#bfb5ca;font:800 10px Manrope,sans-serif;letter-spacing:1.5px;cursor:pointer;transition:all .22s ease}
+.lang-option:hover{color:#fff;background:#ffffff12}
+.lang-option.active{color:#160f25;background:linear-gradient(110deg,#ff78b7,#a88bff 60%,#6ee8e6);box-shadow:0 0 18px #ff65ad55,0 2px 7px #0005}
+.factgrid{grid-template-columns:repeat(3,1fr);gap:16px}
+.fact{padding:0;overflow:hidden;border-radius:5px;background:linear-gradient(145deg,#211a36,#151329 75%);transition:.22s}
+.fact:hover{transform:translateY(-5px);border-color:#ff62ad88;box-shadow:0 16px 40px #08051088}
+.fact img{display:block;width:100%;height:160px;object-fit:cover;filter:saturate(1.08);transition:transform .45s}
+.fact:hover img{transform:scale(1.045)}
+.fact .fact-copy{padding:17px 19px 20px}
+.fact strong{font-size:23px;margin-bottom:5px}
+.fact span{display:block;line-height:1.6}
+.fact .fact-kicker{display:block;color:var(--cyan);font-size:9px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:7px}
+.person{position:relative;overflow:hidden;padding:0;min-height:340px;display:flex;flex-direction:column;justify-content:end}
+.person img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.57;transition:transform .5s}
+.person:hover img{transform:scale(1.04)}
+.person:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(transparent,#171026 95%)}
+.person .person-copy{position:relative;z-index:1;padding:28px}
+.person h3{font-size:42px}
+.person p{max-width:470px}
+.image-credit{font-size:10px;color:#a99cb4;margin-top:12px}
+@media(max-width:600px){.language-switch{margin-left:auto}.factgrid{grid-template-columns:1fr}.fact img{height:190px}.person{min-height:300px}}
+
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
 <a class="brand" href="#">GTA6<b>PULSE</b><small>THE LEONIDA JOURNAL</small></a>
 <nav><a href="#latest">Лента</a><a href="#trailers">Трейлеры</a><a href="#stories">Разборы</a><a href="#people">Герои</a><a href="#world">Леонида</a><a href="#facts">Факты</a><a href="#theories">Теории</a></nav>
-<button class="lang" id="lang">RU / EN</button>
+<div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="lang-option active" data-language="ru" aria-pressed="true">RU</button><button type="button" class="lang-option" data-language="en" aria-pressed="false">EN</button></div>
 </div></header>
 <main class="wrap">
 <section class="hero">
@@ -91,7 +115,7 @@ footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-siz
 </section>
 <section class="section" id="people">
 <div class="section-head"><div><div class="overline">Те, за кем следим</div><h2>Джейсон и Люсия</h2></div><p>Главные герои истории Rockstar — партнёры по преступлениям, которым придётся полагаться друг на друга.</p></div>
-<div class="split"><div class="person"><span class="tag">ГЛАВНЫЙ ГЕРОЙ</span><h3>JASON DUVAL</h3><p>Джейсон хочет оставить неприятности позади, но его жизнь связана с криминальным миром Леониды. Официальное описание подчёркивает, что его судьба переплетена с судьбой Люсии.</p></div><div class="person"><span class="tag">ГЛАВНАЯ ГЕРОИНЯ</span><h3>LUCIA CAMINOS</h3><p>Люсия выходит из тюрьмы и пытается построить будущее на собственных условиях. Когда очередное дело идёт не по плану, ей и Джейсону приходится держаться вместе.</p></div></div>
+<div class="split"><div class="person"><img src="https://www.gtavice.net/content/images/lg/rockstar-games-official-jason-and-lucia-artwork-full.png" alt="Jason Duval and Lucia Caminos" loading="lazy"><div class="person-copy"><span class="tag">ГЛАВНЫЙ ГЕРОЙ</span><h3>JASON DUVAL</h3><p>Джейсон хочет оставить неприятности позади, но его жизнь связана с криминальным миром Леониды. Официальное описание подчёркивает, что его судьба переплетена с судьбой Люсии.</p></div></div><div class="person"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202606/1821/5e641d4c505e5a7ebc604b58b5fc7c052571ef419a328637.jpg" alt="Lucia Caminos and Jason Duval" loading="lazy"><div class="person-copy"><span class="tag">ГЛАВНАЯ ГЕРОИНЯ</span><h3>LUCIA CAMINOS</h3><p>Люсия выходит из тюрьмы и пытается построить будущее на собственных условиях. Когда очередное дело идёт не по плану, ей и Джейсону приходится держаться вместе.</p></div></div></div>
 </section>
 <section class="section" id="world">
 <div class="section-head"><div><div class="overline">Штат контрастов</div><h2>Добро пожаловать в Леониду</h2></div><p>Rockstar описывает мир GTA VI как современный штат, вдохновлённый Флоридой. Vice City — лишь одна часть этой территории.</p></div>
@@ -99,7 +123,15 @@ footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-siz
 </section>
 <section class="section" id="facts">
 <div class="section-head"><div><div class="overline">Только подтверждённое</div><h2>Что известно об игре</h2></div><p>Короткая справка по данным официального сайта и публикаций Rockstar. Слухи сюда не попадают.</p></div>
-<div class="factgrid"><div class="fact"><strong>19.11.2026</strong><span>Заявленная дата выхода</span></div><div class="fact"><strong>PS5 · Xbox</strong><span>Официально указанные платформы</span></div><div class="fact"><strong>Leonida</strong><span>Вымышленный штат, вдохновлённый Флоридой</span></div><div class="fact"><strong>Jason + Lucia</strong><span>Два центральных персонажа истории</span></div><div class="fact"><strong>30 треков</strong><span>Заявленный объём оригинального альбома Justice</span></div><div class="fact"><strong>Радио + подкасты</strong><span>Подтверждённые аудиоформаты в игре</span></div></div>
+<div class="factgrid">
+<div class="fact"><img src="https://www.gtavice.net/content/images/lg/rockstar-games-official-jason-and-lucia-artwork-full.png" alt="Jason and Lucia in official GTA VI promotional artwork" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Дата выхода</span><strong>19.11.2026</strong><span>Заявленная Rockstar дата выхода. Встречаемся в Леониде.</span></div></div>
+<div class="fact"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202606/1821/5e641d4c505e5a7ebc604b58b5fc7c052571ef419a328637.jpg" alt="Promotional GTA VI scene with Lucia and Jason" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Платформы</span><strong>PS5 · Xbox</strong><span>Официально указанные платформы запуска.</span></div></div>
+<div class="fact"><img src="https://gtaintel.com/cdn-cgi/image/width%3D1920%2Cquality%3D75%2Cformat%3Dauto%2Conerror%3Dredirect/images/screenshots/gta-6/138.webp" alt="Jason and Lucia in Leonida at sunset" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Место действия</span><strong>Leonida</strong><span>Вымышленный штат, вдохновлённый Флоридой.</span></div></div>
+<div class="fact"><img src="https://www.leftdownrightup.co.uk/images/screenshots/Jason_and_Lucia_03.jpg" alt="Jason and Lucia riding together in a car" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Главные герои</span><strong>Jason + Lucia</strong><span>Два центральных персонажа криминальной истории.</span></div></div>
+<div class="fact"><img src="https://www.igrandtheftauto.com/content/images/jason-lucia-pre-order-background-video-still.jpg?etag=6a3d9917" alt="Jason and Lucia beside a sports car" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Оригинальная музыка</span><strong>30 треков</strong><span>Заявленный объём альбома оригинального саундтрека Justice.</span></div></div>
+<div class="fact"><img src="https://img.netzwelt.de/dw1018_dh573_sw1920_sh1080_sx0_sy0_sr16x9_nu0/picture/original/2025/05/screenshots-gta-6-433658.jpg" alt="Neon nightlife in Vice City" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Звук мира</span><strong>Радио + подкасты</strong><span>Подтверждённые аудиоформаты в игровом мире.</span></div></div>
+</div>
+<p class="image-credit">Изображения: официальные промоматериалы и скриншоты GTA VI, опубликованные Rockstar Games. <a class="read" href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">Официальная медиатека ↗</a></p>
 </section>
 <section class="section" id="theories">
 <div class="section-head"><div><div class="overline">Фанатская лаборатория</div><h2>Теории и вопросы</h2></div><p>Это предположения сообщества, а не заявления Rockstar. Мы не смешиваем догадки с фактами.</p></div>
@@ -116,20 +148,95 @@ footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-siz
 </main>
 <footer><div class="wrap"><strong>GTA6PULSE</strong><p>Независимый фанатский проект для поклонников Grand Theft Auto VI. Не является официальным сайтом Rockstar Games и не связан с Take-Two Interactive. Все товарные знаки и права на оригинальные материалы принадлежат их владельцам. Тексты GTA6Pulse — авторские пересказы и комментарии к официальным публикациям.</p><p>Обновлено: 15 ноября 2026 · Источники: Rockstar Games / Newswire.</p></div></footer>
 <script>
-const translations={
-en:{
+const translations = {
 "Лента":"News","Трейлеры":"Trailers","Разборы":"Features","Герои":"Characters","Леонида":"Leonida","Факты":"Facts","Теории":"Theories",
-"Независимый журнал о GTA VI":"Independent GTA VI journal","Добро пожаловать":"Welcome","в":"to","Леониду.":"Leonida.",
+"Независимый журнал о GTA VI":"Independent GTA VI journal","Добро пожаловать":"WELCOME","в":"TO","Леониду.":"LEONIDA.",
 "Vice City не спит. Мы собираем подтверждённые новости, внимательно разбираем официальные материалы Rockstar и отделяем факты от фанатских догадок. Без фейков и пустых обещаний.":"Vice City never sleeps. We collect confirmed news, examine Rockstar's official materials and separate facts from fan theories. No fakes, no empty promises.",
-"Читать свежие новости ↗":"Read latest news ↗","Смотреть трейлеры ▶":"Watch trailers ▶","На главной":"Featured","Пульс момента":"The latest pulse",
-"Самые свежие подтверждённые события вокруг Grand Theft Auto VI — с датами и прямыми ссылками на первоисточники.":"The latest confirmed GTA VI updates, with dates and direct links to original sources.",
-"Предзагрузка GTA VI уже открыта":"GTA VI pre-load is now available",
+"Читать свежие новости ↗":"Read the latest news ↗","Смотреть трейлеры ▶":"Watch trailers ▶","На главной":"Featured","Пульс момента":"The latest pulse",
+"Самые свежие подтверждённые события вокруг Grand Theft Auto VI — с датами и прямыми ссылками на первоисточники.":"The latest confirmed Grand Theft Auto VI updates, with dates and direct links to original sources.",
+"10 НОЯБРЯ 2026 · ROCKSTAR NEWSWIRE":"NOVEMBER 10, 2026 · ROCKSTAR NEWSWIRE","Предзагрузка GTA VI уже открыта":"GTA VI pre-load is now available",
 "Rockstar сообщила, что цифровую версию игры уже можно предварительно загрузить тем, кто оформил предзаказ. Компания также раскрыла технические детали консольных версий и рассказала о поддержке Remote Play и облачного стриминга.":"Rockstar says digital pre-order customers can now pre-load the game. The company also shared console technical details and confirmed Remote Play and cloud streaming support.",
-"Официальный источник ↗":"Official source ↗","Новости с контекстом":"News with context",
-"Не копируем чужие публикации дословно: объясняем по-русски, что именно объявила Rockstar и почему это может быть важно игрокам.":"We don't copy articles: we explain what Rockstar announced and why it may matter to players.",
-"Джейсон и Люсия":"Jason & Lucia","Добро пожаловать в Леониду":"Welcome to Leonida","Что известно об игре":"What we know",
-"Теории и вопросы":"Theories & questions","Проверяй сам":"Check the sources"
-}};
-let english=false;document.getElementById('lang').addEventListener('click',()=>{english=!english;document.documentElement.lang=english?'en':'ru';document.getElementById('lang').textContent=english?'EN / RU':'RU / EN';document.querySelectorAll('body *').forEach(el=>{if(el.children.length===0){if(!el.dataset.ru)el.dataset.ru=el.textContent;const v=el.dataset.ru;el.textContent=english?(translations.en[v]||v):v;}});});
+"Официальный источник ↗":"Official source ↗","9 НОЯБРЯ · СОБЫТИЕ":"NOVEMBER 9 · EVENT","Grand Theft Auto VI: The Festival":"Grand Theft Auto VI: The Festival",
+"Rockstar и PlayStation анонсировали музыкальный фестиваль в Майами на 21 ноября. В программе — артисты, связанные с игрой и её саундтреком.":"Rockstar and PlayStation announced a music festival in Miami for November 21, featuring artists connected with the game and its soundtrack.",
+"Читать разбор ↗":"Read the story ↗","5 НОЯБРЯ · ГАЛЕРЕЯ":"NOVEMBER 5 · GALLERY","Новые кадры Леониды":"New views of Leonida",
+"В официальной галерее появились дополнительные скриншоты Vice City и других уголков штата. Это один из лучших способов рассмотреть детали окружения.":"The official gallery added more screenshots of Vice City and other parts of the state — a great way to explore environmental details.",
+"Открыть источник ↗":"Open source ↗","29 ОКТЯБРЯ · МУЗЫКА":"OCTOBER 29 · MUSIC","Оригинальный саундтрек от Justice":"Original score by Justice",
+"Французский дуэт Justice написал оригинальную адаптивную музыку для игры. Альбом заявлен из 30 композиций и должен выйти 11 декабря.":"French electronic duo Justice created original adaptive music for the game. The 30-track album is scheduled for release on December 11.",
+"Смотреть и пересматривать":"Watch and revisit","Трейлеры и видео":"Trailers & videos","Ссылки ведут на официальные страницы Rockstar. Если YouTube не открывается, используй медиараздел Rockstar.":"Links lead to official Rockstar pages. If YouTube doesn't open, use Rockstar's media library.",
+"15 октября 2026 · Rockstar ↗":"October 15, 2026 · Rockstar ↗","6 мая 2025 · YouTube ↗":"May 6, 2025 · YouTube ↗","5 декабря 2023 · Rockstar ↗":"December 5, 2023 · Rockstar ↗","27 августа 2026 · Rockstar ↗":"August 27, 2026 · Rockstar ↗",
+"Если ссылка на отдельный ролик не запускается в твоём браузере, открой ":"If an individual video link doesn't play in your browser, open ","официальную видеотеку GTA VI ↗":"the official GTA VI video library ↗"," — там собраны все пять роликов Rockstar.":" — all five Rockstar videos are listed there.",
+"Редакция GTA6Pulse":"GTA6Pulse editorial desk","Новости с контекстом":"News with context","Не копируем чужие публикации дословно: объясняем по-русски, что именно объявила Rockstar и почему это может быть важно игрокам.":"We don't copy other publications. We explain what Rockstar announced and why it may matter to players.",
+"10 НОЯБРЯ 2026 · ПОДГОТОВКА К РЕЛИЗУ":"NOVEMBER 10, 2026 · RELEASE PREPARATION","Предзагрузка: что объявила Rockstar":"Pre-load: what Rockstar announced",
+"Предварительная загрузка доступна покупателям цифровых предзаказов. Владельцы версии с кодом в коробке смогут начать загрузку после получения и активации кода. Это позволяет заранее скачать файлы и не тратить время на загрузку в день запуска.":"Pre-loading is available to customers with digital pre-orders. Boxed-code buyers can start downloading after receiving and redeeming their code. This lets players download the files ahead of launch day.",
+"Отдельно Rockstar описала технические особенности: целевой ориентир — 30 кадров в секунду при высокой детализации мира. Для PS5 Pro заявлены улучшенная чёткость через PSSR и трассируемые тени. Также упомянуты тактильная отдача DualSense, пространственный звук и Remote Play.":"Rockstar also outlined technical features: a target of 30 frames per second with a highly detailed world. PS5 Pro is set to offer improved clarity through PSSR and ray-traced shadows. DualSense haptics, spatial audio and Remote Play were also mentioned.",
+"Что это значит: если играешь на консоли, проверь свободное место и доступность предзагрузки в своём магазине. Реальная скорость и время загрузки зависят от платформы и соединения.":"Why it matters: if you play on console, check available storage and pre-load availability in your store. Download speed and time depend on your platform and connection.",
+"Первоисточник Rockstar ↗":"Rockstar original source ↗","9 НОЯБРЯ 2026 · МУЗЫКАЛЬНОЕ СОБЫТИЕ":"NOVEMBER 9, 2026 · MUSIC EVENT","Фестиваль GTA VI в Майами":"GTA VI festival in Miami",
+"Rockstar Games и PlayStation объявили о живом событии Grand Theft Auto VI: The Festival. Оно запланировано на 21 ноября в Mana Wynwood, Майами. Организаторы обещают две сцены и выступления артистов из музыкального мира игры.":"Rockstar Games and PlayStation announced a live event, Grand Theft Auto VI: The Festival, scheduled for November 21 at Mana Wynwood in Miami. Organizers promise two stages and performers connected to the game's music world.",
+"В опубликованном составе — Travis Scott, Don Toliver, Cardi B, Justice, Metro Boomin, Tainy и другие исполнители. Билеты распределялись через лотерею предпродажи; официальная страница события сообщает, что набор заявок закрыт, но доступен список ожидания.":"The announced lineup includes Travis Scott, Don Toliver, Cardi B, Justice, Metro Boomin, Tainy and others. Tickets were allocated through a pre-sale lottery; the official event page says registration is closed, but a waitlist is available.",
+"Что это значит: музыка остаётся важной частью продвижения GTA VI. Но фестиваль — отдельное реальное событие, а не внутриигровой режим.":"Why it matters: music remains an important part of GTA VI's promotion. The festival is a real-world event, not an in-game mode.",
+"5 НОЯБРЯ 2026 · ВИЗУАЛЬНЫЕ МАТЕРИАЛЫ":"NOVEMBER 5, 2026 · VISUAL MEDIA","Rockstar расширила галерею":"Rockstar expands the gallery",
+"Новая подборка официальных изображений предлагает ещё один взгляд на Vice City и окрестности. Скриншоты полезны не только как красивые кадры: по ним можно рассматривать архитектуру, транспорт, освещение, одежду и общую атмосферу разных районов.":"A new collection of official images offers another look at Vice City and its surroundings. The screenshots reveal architecture, vehicles, lighting, clothing and the atmosphere of different areas.",
+"При этом отдельный скриншот не доказывает наличие конкретной игровой механики. Мы будем отмечать визуальные наблюдения отдельно от выводов о геймплее.":"A single screenshot does not prove that a particular gameplay mechanic exists. We separate visual observations from conclusions about gameplay.",
+"Что это значит: галерея — надёжный первоисточник для знакомства с художественным стилем, но не каталог всех доступных локаций или функций.":"Why it matters: the gallery is a reliable primary source for the game's art direction, but it is not a complete catalogue of locations or features.",
+"29 ОКТЯБРЯ 2026 · САУНДТРЕК":"OCTOBER 29, 2026 · SOUNDTRACK","Justice создаёт оригинальную музыку":"Justice creates original music",
+"Rockstar подтвердила, что оригинальный саундтрек GTA VI написал французский электронный дуэт Justice. Музыка описана как адаптивная: композиции будут подстраиваться под то, как игрок проходит историю Джейсона и Люсии и исследует мир.":"Rockstar confirmed that the original GTA VI score was created by French electronic duo Justice. The music is described as adaptive: tracks will respond to how players experience Jason and Lucia's story and explore the world.",
+"В альбом войдут 30 треков. Среди названных композиций — «Flower in a Hurricane» с участием Tame Impala, SZA и King Gizzard & The Lizard Wizard, а также «Pusher» при участии Gesaffelstein. Выход альбома заявлен на 11 декабря.":"The album will contain 30 tracks. Announced songs include “Flower in a Hurricane” featuring Tame Impala, SZA and King Gizzard & The Lizard Wizard, and “Pusher” featuring Gesaffelstein. The album is scheduled for December 11.",
+"Что это значит: саундтрек задуман не только как фон — по заявлению Rockstar, он будет динамически сопровождать происходящее в игре.":"Why it matters: according to Rockstar, the score is designed to dynamically accompany the action rather than simply play in the background.",
+"15 ОКТЯБРЯ 2026 · НОВЫЙ ТРЕЙЛЕР":"OCTOBER 15, 2026 · NEW TRAILER","Вышел Launch Trailer":"The Launch Trailer is out",
+"В октябре Rockstar опубликовала Launch Trailer. В музыкальном оформлении звучит «Flower in a Hurricane» — композиция Justice с участием Tame Impala, SZA и King Gizzard & The Lizard Wizard. В центре истории по-прежнему Джейсон и Люсия, оказавшиеся внутри криминального заговора в Леониде.":"In October, Rockstar released the Launch Trailer. Its soundtrack features “Flower in a Hurricane” by Justice with Tame Impala, SZA and King Gizzard & The Lizard Wizard. Jason and Lucia remain at the centre of a criminal conspiracy in Leonida.",
+"Что это значит: трейлер — официальный рекламный материал. Монтаж может раскрывать атмосферу и отдельные сцены, но не заменяет подтверждённое описание игровых систем.":"Why it matters: a trailer is official promotional material. Its editing can reveal atmosphere and scenes, but it is not a confirmed description of game systems.",
+"8 ОКТЯБРЯ 2026 · РАДИО И ПОДКАСТЫ":"OCTOBER 8, 2026 · RADIO & PODCASTS","Музыка будет звучать не только по радио":"Music goes beyond the radio",
+"Rockstar рассказала о шести игровых радиостанциях и впервые для серии анонсировала подборку подкастов по запросу. Слушать радио и подкасты можно будет в транспорте, а также пешком — через наушники и вкладыши, связанные со смартфонами персонажей.":"Rockstar revealed six in-game radio stations and, for the first time in the series, a selection of on-demand podcasts. Players will be able to listen in vehicles and on foot through headphones connected to the characters' smartphones.",
+"Что это значит: музыкальная среда Леониды может стать частью исследования мира даже вне поездок на автомобиле. Подробности станций лучше сверять с официальной музыкальной страницей.":"Why it matters: Leonida's audio world may be part of exploration even when you're not driving. Check the official music page for station details.",
+"Те, за кем следим":"The people we're following","Джейсон и Люсия":"Jason & Lucia","Главные герои истории Rockstar — партнёры по преступлениям, которым придётся полагаться друг на друга.":"Rockstar's protagonists are partners in crime who will have to rely on each other.",
+"ГЛАВНЫЙ ГЕРОЙ":"PROTAGONIST","Джейсон хочет оставить неприятности позади, но его жизнь связана с криминальным миром Леониды. Официальное описание подчёркивает, что его судьба переплетена с судьбой Люсии.":"Jason wants to leave trouble behind, but his life is tied to Leonida's criminal world. Rockstar's official description says his fate is intertwined with Lucia's.",
+"ГЛАВНАЯ ГЕРОИНЯ":"PROTAGONIST","Люсия выходит из тюрьмы и пытается построить будущее на собственных условиях. Когда очередное дело идёт не по плану, ей и Джейсону приходится держаться вместе.":"Lucia leaves prison and tries to build a future on her own terms. When another job goes wrong, she and Jason have to stick together.",
+"Штат контрастов":"A state of contrasts","Добро пожаловать в Леониду":"Welcome to Leonida","Rockstar описывает мир GTA VI как современный штат, вдохновлённый Флоридой. Vice City — лишь одна часть этой территории.":"Rockstar describes GTA VI's world as a modern state inspired by Florida. Vice City is only one part of it.",
+"Неон, пляжи, высотки и ночная жизнь.":"Neon, beaches, high-rises and nightlife.","Острова, побережье и тропические дороги.":"Islands, coastline and tropical roads.","Болотистые природные пространства.":"Wetlands and wild landscapes.","Городская локация за пределами Vice City.":"A city beyond Vice City.",
+"Только подтверждённое":"Confirmed only","Что известно об игре":"What we know about the game","Короткая справка по данным официального сайта и публикаций Rockstar. Слухи сюда не попадают.":"A quick guide based on Rockstar's official website and publications. Rumours stay out.",
+"Дата выхода":"Release date","Заявленная Rockstar дата выхода. Встречаемся в Леониде.":"Rockstar's announced release date. See you in Leonida.",
+"Платформы":"Platforms","Официально указанные платформы запуска.":"Officially listed launch platforms.",
+"Место действия":"Setting","Вымышленный штат, вдохновлённый Флоридой.":"A fictional state inspired by Florida.",
+"Главные герои":"Main characters","Два центральных персонажа криминальной истории.":"The two central characters of the crime story.",
+"Оригинальная музыка":"Original score","Заявленный объём альбома оригинального саундтрека Justice.":"The announced track count for Justice's original score album.",
+"Звук мира":"The sound of the world","Подтверждённые аудиоформаты в игровом мире.":"Confirmed audio formats in the game world.",
+"Фанатская лаборатория":"Fan theory lab","Теории и вопросы":"Theories & questions","Это предположения сообщества, а не заявления Rockstar. Мы не смешиваем догадки с фактами.":"These are community theories, not Rockstar statements. We keep speculation separate from facts.",
+"ТЕОРИЯ · НЕ ПОДТВЕРЖДЕНО":"THEORY · UNCONFIRMED","Насколько мир будет реагировать на игрока?":"How will the world react to the player?",
+"Плотность города и количество показанных ситуаций заставляют ожидать разнообразные случайные события. Но глубина симуляции NPC пока не раскрыта полностью.":"The dense city and varied scenes suggest a range of random events, but the depth of NPC simulation has not been fully revealed.",
+"Будут ли решения менять отношения героев?":"Will choices change the protagonists' relationship?",
+"Центральная роль дуэта Джейсона и Люсии подталкивает к вопросам о доверии и последствиях выбора. Конкретные ветки сюжета и концовки официально не описаны.":"Jason and Lucia's central partnership raises questions about trust and consequences. Specific story branches and endings have not been officially described.",
+"Сколько секретов спрятано в Леониде?":"How many secrets are hidden in Leonida?",
+"Поклонники ждут отсылки к прошлым играм и скрытые активности. До выхода игры это ожидание, а не подтверждённый список пасхалок.":"Fans expect callbacks to previous games and hidden activities. Until the game is released, these remain expectations, not a confirmed list of easter eggs.",
+"Первоисточники":"Primary sources","Проверяй сам":"Check for yourself","Все новости и разборы ссылаются на первичные материалы. Если Rockstar исправит или дополнит публикацию, источник остаётся главным ориентиром.":"All news and features link to primary materials. If Rockstar updates a post, the original source remains the reference.",
+"Официальный сайт GTA VI ↗":"Official GTA VI website ↗","Rockstar Newswire ↗":"Rockstar Newswire ↗","Медиа и скриншоты ↗":"Media & screenshots ↗",
+"Независимый фанатский проект для поклонников Grand Theft Auto VI. Не является официальным сайтом Rockstar Games и не связан с Take-Two Interactive. Все товарные знаки и права на оригинальные материалы принадлежат их владельцам. Тексты GTA6Pulse — авторские пересказы и комментарии к официальным публикациям.":"An independent fan project for Grand Theft Auto VI fans. This is not an official Rockstar Games website and is not affiliated with Take-Two Interactive. All trademarks and rights to original materials belong to their owners. GTA6Pulse articles are original summaries and commentary on official publications.",
+"Обновлено: 15 ноября 2026 · Источники: Rockstar Games / Newswire.":"Updated: November 15, 2026 · Sources: Rockstar Games / Newswire."
+};
+const textNodes = [];
+const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+while (walker.nextNode()) {
+  const node = walker.currentNode;
+  if (node.parentElement && !['SCRIPT','STYLE'].includes(node.parentElement.tagName)) textNodes.push(node);
+}
+function setLanguage(lang) {
+  document.documentElement.lang = lang;
+  textNodes.forEach(node => {
+    if (node.__originalText === undefined) node.__originalText = node.nodeValue;
+    const original = node.__originalText;
+    const trimmed = original.trim();
+    if (!trimmed) return;
+    const leading = original.match(/^\s*/)[0];
+    const trailing = original.match(/\s*$/)[0];
+    const translated = translations[trimmed];
+    node.nodeValue = lang === 'en' && translated ? leading + translated + trailing : original;
+  });
+  document.querySelectorAll('.lang-option').forEach(button => {
+    const active = button.dataset.language === lang;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+}
+document.querySelectorAll('.lang-option').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+setLanguage('ru');
 </script>
 </body></html>
