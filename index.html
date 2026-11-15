@@ -720,6 +720,18 @@ nav a{flex:0 0 auto;white-space:nowrap;font-size:clamp(9px,.78vw,11px);letter-sp
 }
 @media(prefers-reduced-motion:reduce){.hero-photo:after{animation:none!important}}
 
+
+/* Welcome to Leonida — centered, bright and directly linked */
+.hero-title-wrap{width:100%;margin:20px 0 22px;text-align:center}
+.hero h1.hero-title{display:block;width:100%;max-width:none;margin:0;text-align:center}
+.welcome-leonida-link{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;max-width:100%;text-decoration:none!important;line-height:1.02;transition:filter .25s ease,transform .25s ease}
+.welcome-leonida-link:hover{filter:brightness(1.2);transform:translateY(-2px)}
+.welcome-leonida-link .hero-title-first{font-size:clamp(37px,5.2vw,70px);letter-spacing:.015em;color:#fff;text-shadow:0 0 12px #ffffff55,0 0 32px #ff4fa366}
+.welcome-leonida-second{display:block;font:900 clamp(43px,6.4vw,86px)/.98 Oswald,sans-serif;letter-spacing:.025em;background:linear-gradient(95deg,#ff78b7 5%,#ff4fd8 48%,#63eaff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 13px #ff4fa366)}
+.welcome-leonida-second span{font-size:.58em;vertical-align:middle;-webkit-text-fill-color:#70edff;color:#70edff}
+@media(max-width:600px){.hero-title-wrap{margin:16px 0 20px}.welcome-leonida-link .hero-title-first{font-size:clamp(32px,9vw,48px)}.welcome-leonida-second{font-size:clamp(42px,12vw,62px)}}
+@media(prefers-reduced-motion:reduce){.welcome-leonida-link{transition:none}}
+
 </style>
 </head>
 <body>
@@ -731,7 +743,7 @@ nav a{flex:0 0 auto;white-space:nowrap;font-size:clamp(9px,.78vw,11px);letter-sp
 <main class="wrap">
 <section class="hero">
 <div class="hero-intro-column"><div class="eyebrow">Независимый журнал о GTA VI</div><a class="leonida-intro-link" href="#world"><span class="leonida-link-icon">↗</span><span><small>ИССЛЕДУЙТЕ ШТАТ</small><strong>Что такое Леонида?</strong></span><span class="leonida-link-arrow">→</span></a>
-<div class="hero-title-wrap"><h1 class="hero-title"><span class="hero-title-first">ДОБРО ПОЖАЛОВАТЬ</span></h1></div>
+<div class="hero-title-wrap"><h1 class="hero-title"><a class="welcome-leonida-link" href="#world" aria-label="Перейти к разделу о Леониде"><span class="hero-title-first">ДОБРО ПОЖАЛОВАТЬ</span><span class="welcome-leonida-second">В ЛЕОНИДУ <span aria-hidden="true">↗</span></span></a></h1></div>
 <p class="hero-copy">Vice City не спит. Мы собираем подтверждённые новости, внимательно разбираем официальные материалы Rockstar и отделяем факты от фанатских догадок. Без фейков и пустых обещаний.</p>
 <div class="actions"><a class="btn" href="#latest">Читать свежие новости ↗</a><a class="btn ghost" href="#trailers">Смотреть трейлеры ▶</a></div><div class="home-countdown" aria-label="Обратный отсчёт до выхода GTA VI"><div class="home-countdown-copy"><span class="countdown-kicker">ОБРАТНЫЙ ОТСЧЁТ</span><strong>До выхода GTA VI</strong><small>19 ноября 2026 · Леонида ждёт</small></div><div class="home-countdown-time" id="homeCountdown" aria-live="polite"><span><b>—</b><small>дней</small></span><span><b>—</b><small>часов</small></span><span><b>—</b><small>минут</small></span><span><b>—</b><small>секунд</small></span></div><a class="countdown-link" href="walkthroughs.html">Прохождения GTA VI ↗</a></div></div>
 <div class="scene hero-photo" aria-label="Официальный арт Джейсона и Люсии в Леониде"><img class="hero-art" src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Джейсон и Люсия на крыше в Леониде" fetchpriority="high" decoding="async" onerror="this.style.display='none'"><div class="scene-stamp">VICE CITY · LEONIDA / 2026</div><div class="scene-label"><small>THE SUNSHINE STATE</small>NEVER SLEEPS.</div><div class="hero-photo-index">GTA VI <span>—</span> THE NEW ERA</div></div>
