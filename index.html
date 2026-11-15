@@ -67,6 +67,33 @@ footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-siz
 .image-credit{font-size:10px;color:#a99cb4;margin-top:12px}
 @media(max-width:600px){.language-switch{margin-left:auto}.factgrid{grid-template-columns:1fr}.fact img{height:190px}.person{min-height:300px}}
 
+
+/* Readability and image polish */
+body{font-size:17px;line-height:1.8}
+nav a{font-size:12px}
+.hero-copy{font-size:17px;line-height:1.85;color:#eee5f0}
+.eyebrow,.overline,.date,.tag,.fact .fact-kicker{font-size:11px}
+.section-head p,.feature-copy p,.card p,.article p,.person p,.place p{font-size:15px;line-height:1.8;color:#e0d7e6}
+.feature-copy h3{font-size:clamp(34px,4vw,42px)}
+.card h3,.video strong{font-size:26px}
+.read,.btn{font-size:12px}
+.factgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.fact{border:1px solid #ffffff28;min-width:0}
+.fact img{width:100%;height:205px;object-fit:cover;display:block;background:#211a36}
+.fact .fact-copy{padding:19px 20px 22px}
+.fact strong{font-size:27px}
+.fact span{font-size:15px;line-height:1.7}
+.fact .fact-kicker{font-size:11px}
+.person{min-height:430px}
+.person img{opacity:.78;object-position:center 25%}
+.person .person-copy{padding:30px}
+.person h3{font-size:48px}
+.person p{font-size:16px}
+.video{min-height:230px}
+.video small{font-size:12px;line-height:1.6}
+@media(max-width:900px){.factgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){body{font-size:16px}.hero-copy{font-size:16px}.section-head p,.feature-copy p,.card p,.article p,.person p,.place p{font-size:15px}.factgrid{grid-template-columns:1fr}.fact img{height:220px}.person{min-height:370px}.person h3{font-size:42px}.card h3,.video strong{font-size:23px}}
+
 </style>
 </head>
 <body>
@@ -93,14 +120,14 @@ footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-siz
 </div>
 </section>
 <section class="section" id="trailers">
-<div class="section-head"><div><div class="overline">Смотреть и пересматривать</div><h2>Трейлеры и видео</h2></div><p>Ссылки ведут на официальные страницы Rockstar. Если YouTube не открывается, используй медиараздел Rockstar.</p></div>
+<div class="section-head"><div><div class="overline">Смотреть и пересматривать</div><h2>Трейлеры и видео</h2></div><p>Все четыре ролика открываются напрямую на YouTube — нажми на карточку нужного видео.</p></div>
 <div class="trailers">
-<a class="video" href="https://www.rockstargames.com/VI/launch-trailer" target="_blank" rel="noopener"><span class="play">▶</span><strong>Launch<br>Trailer</strong><small>15 октября 2026 · Rockstar ↗</small></a>
-<a class="video" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noopener"><span class="play">▶</span><strong>Trailer<br>2</strong><small>6 мая 2025 · YouTube ↗</small></a>
-<a class="video" href="https://www.rockstargames.com/newswire/article/8978kok9385a82/grand-theft-auto-vi-watch-trailer-1-now" target="_blank" rel="noopener"><span class="play">▶</span><strong>Trailer<br>1</strong><small>5 декабря 2023 · Rockstar ↗</small></a>
-<a class="video" href="https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing" target="_blank" rel="noopener"><span class="play">▶</span><strong>An Extended<br>Look</strong><small>27 августа 2026 · Rockstar ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=rz1B4B2yBZY" target="_blank" rel="noopener"><span class="play">▶</span><strong>Launch<br>Trailer</strong><small>15 октября 2026 · Смотреть на YouTube ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank" rel="noopener"><span class="play">▶</span><strong>An Extended<br>Look</strong><small>27 августа 2026 · Смотреть на YouTube ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noopener"><span class="play">▶</span><strong>Trailer<br>2</strong><small>6 мая 2025 · Смотреть на YouTube ↗</small></a>
+<a class="video" href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" rel="noopener"><span class="play">▶</span><strong>Trailer<br>1</strong><small>4 декабря 2023 · Смотреть на YouTube ↗</small></a>
 </div>
-<p class="note">Если ссылка на отдельный ролик не запускается в твоём браузере, открой <a class="read" href="https://www.rockstargames.com/VI/media/videos" target="_blank" rel="noopener">официальную видеотеку GTA VI ↗</a> — там собраны все пять роликов Rockstar.</p>
+<p class="note">Все ссылки ведут прямо на официальный канал Rockstar Games на YouTube.</p>
 </section>
 <section class="section" id="stories">
 <div class="section-head"><div><div class="overline">Редакция GTA6Pulse</div><h2>Новости с контекстом</h2></div><p>Не копируем чужие публикации дословно: объясняем по-русски, что именно объявила Rockstar и почему это может быть важно игрокам.</p></div>
@@ -115,7 +142,7 @@ footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-siz
 </section>
 <section class="section" id="people">
 <div class="section-head"><div><div class="overline">Те, за кем следим</div><h2>Джейсон и Люсия</h2></div><p>Главные герои истории Rockstar — партнёры по преступлениям, которым придётся полагаться друг на друга.</p></div>
-<div class="split"><div class="person"><img src="https://www.gtavice.net/content/images/lg/rockstar-games-official-jason-and-lucia-artwork-full.png" alt="Jason Duval and Lucia Caminos" loading="lazy"><div class="person-copy"><span class="tag">ГЛАВНЫЙ ГЕРОЙ</span><h3>JASON DUVAL</h3><p>Джейсон хочет оставить неприятности позади, но его жизнь связана с криминальным миром Леониды. Официальное описание подчёркивает, что его судьба переплетена с судьбой Люсии.</p></div></div><div class="person"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202606/1821/5e641d4c505e5a7ebc604b58b5fc7c052571ef419a328637.jpg" alt="Lucia Caminos and Jason Duval" loading="lazy"><div class="person-copy"><span class="tag">ГЛАВНАЯ ГЕРОИНЯ</span><h3>LUCIA CAMINOS</h3><p>Люсия выходит из тюрьмы и пытается построить будущее на собственных условиях. Когда очередное дело идёт не по плану, ей и Джейсону приходится держаться вместе.</p></div></div></div>
+<div class="split"><div class="person"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_Video_Clip.024oe-y640yxp.jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason Duval — official Rockstar character portrait" loading="lazy" decoding="async"><div class="person-copy"><span class="tag">ГЛАВНЫЙ ГЕРОЙ</span><h3>JASON DUVAL</h3><p>Джейсон хочет оставить неприятности позади, но его жизнь связана с криминальным миром Леониды. Его судьба переплетена с судьбой Люсии.</p></div></div><div class="person"><img src="https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_Video_Clip.0uqwkm_u_fu_9.jpg?akim=1&imdensity=1&imwidth=1600" alt="Lucia Caminos — official Rockstar character portrait" loading="lazy" decoding="async"><div class="person-copy"><span class="tag">ГЛАВНАЯ ГЕРОИНЯ</span><h3>LUCIA CAMINOS</h3><p>Люсия выходит из тюрьмы и пытается построить будущее на собственных условиях. Когда очередное дело идёт не по плану, ей и Джейсону приходится держаться вместе.</p></div></div></div>
 </section>
 <section class="section" id="world">
 <div class="section-head"><div><div class="overline">Штат контрастов</div><h2>Добро пожаловать в Леониду</h2></div><p>Rockstar описывает мир GTA VI как современный штат, вдохновлённый Флоридой. Vice City — лишь одна часть этой территории.</p></div>
@@ -124,12 +151,12 @@ footer{border-top:1px solid #ffffff20;padding:35px 0 50px;color:#b9aec3;font-siz
 <section class="section" id="facts">
 <div class="section-head"><div><div class="overline">Только подтверждённое</div><h2>Что известно об игре</h2></div><p>Короткая справка по данным официального сайта и публикаций Rockstar. Слухи сюда не попадают.</p></div>
 <div class="factgrid">
-<div class="fact"><img src="https://www.gtavice.net/content/images/lg/rockstar-games-official-jason-and-lucia-artwork-full.png" alt="Jason and Lucia in official GTA VI promotional artwork" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Дата выхода</span><strong>19.11.2026</strong><span>Заявленная Rockstar дата выхода. Встречаемся в Леониде.</span></div></div>
-<div class="fact"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202606/1821/5e641d4c505e5a7ebc604b58b5fc7c052571ef419a328637.jpg" alt="Promotional GTA VI scene with Lucia and Jason" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Платформы</span><strong>PS5 · Xbox</strong><span>Официально указанные платформы запуска.</span></div></div>
-<div class="fact"><img src="https://gtaintel.com/cdn-cgi/image/width%3D1920%2Cquality%3D75%2Cformat%3Dauto%2Conerror%3Dredirect/images/screenshots/gta-6/138.webp" alt="Jason and Lucia in Leonida at sunset" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Место действия</span><strong>Leonida</strong><span>Вымышленный штат, вдохновлённый Флоридой.</span></div></div>
-<div class="fact"><img src="https://www.leftdownrightup.co.uk/images/screenshots/Jason_and_Lucia_03.jpg" alt="Jason and Lucia riding together in a car" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Главные герои</span><strong>Jason + Lucia</strong><span>Два центральных персонажа криминальной истории.</span></div></div>
-<div class="fact"><img src="https://www.igrandtheftauto.com/content/images/jason-lucia-pre-order-background-video-still.jpg?etag=6a3d9917" alt="Jason and Lucia beside a sports car" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Оригинальная музыка</span><strong>30 треков</strong><span>Заявленный объём альбома оригинального саундтрека Justice.</span></div></div>
-<div class="fact"><img src="https://img.netzwelt.de/dw1018_dh573_sw1920_sh1080_sx0_sy0_sr16x9_nu0/picture/original/2025/05/screenshots-gta-6-433658.jpg" alt="Neon nightlife in Vice City" loading="lazy"><div class="fact-copy"><span class="fact-kicker">Звук мира</span><strong>Радио + подкасты</strong><span>Подтверждённые аудиоформаты в игровом мире.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason and Lucia on an official GTA VI rooftop artwork" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Дата выхода</span><strong>19.11.2026</strong><span>Заявленная Rockstar дата выхода. Встречаемся в Леониде.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Lock_And_Load_landscape.0l9s5w7ih9p~3.jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason and Lucia in official GTA VI artwork" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Платформы</span><strong>PS5 · Xbox</strong><span>Официально указанные платформы запуска.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg?akim=1&imdensity=1&imwidth=1600" alt="Vice City skyline in GTA VI" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Место действия</span><strong>Leonida</strong><span>Вымышленный штат, вдохновлённый Флоридой.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_Video_Clip.024oe-y640yxp.jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason Duval official character image" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Главный герой</span><strong>Jason Duval</strong><span>Один из двух центральных персонажей истории.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_12.0saq9ns-~xj03.jpg?akim=1&imdensity=1&imwidth=1600" alt="Lucia Caminos official character image" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Главная героиня</span><strong>Lucia Caminos</strong><span>Вторая главная героиня GTA VI.</span></div></div>
+<div class="fact"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_14.10e7v.06pcm_t.jpg?akim=1&imdensity=1&imwidth=1600" alt="Jason and Lucia together in GTA VI" loading="lazy" decoding="async"><div class="fact-copy"><span class="fact-kicker">Главная пара</span><strong>Jason + Lucia</strong><span>Их судьбы переплетены общей криминальной историей.</span></div></div>
 </div>
 <p class="image-credit">Изображения: официальные промоматериалы и скриншоты GTA VI, опубликованные Rockstar Games. <a class="read" href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">Официальная медиатека ↗</a></p>
 </section>
