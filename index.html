@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GTA6Pulse — фанатский портал о Grand Theft Auto VI: новости, персонажи, локации и гайды.">
+  <meta name="theme-color" content="#090914">
+  <title>GTA6Pulse — The Heartbeat of Leonida</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090914;--panel:#121426;--pink:#ff4fc8;--cyan:#36e5ff;--muted:#a6abc4;--line:#292d48}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(ellipse at 15% 0%,#29204a 0,transparent 38%),radial-gradient(ellipse at 90% 10%,#102e43 0,transparent 35%),var(--bg);color:#f7f7ff;font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+    a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline}.wrap{width:min(1100px,92%);margin:auto}
+    header{padding:24px 0;border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .logo{font-weight:900;letter-spacing:.08em;font-size:1.4rem}.logo span{color:var(--pink);text-shadow:0 0 18px #ff4fc877}
+    .langs button{background:transparent;color:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:20px;cursor:pointer}.langs button.active{border-color:var(--cyan);color:var(--cyan)}
+    .hero{padding:76px 0 60px;text-align:center}.eyebrow{color:var(--cyan);letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;font-weight:700}
+    h1{font-size:clamp(2.8rem,8vw,6rem);line-height:1.02;margin:14px 0;background:linear-gradient(90deg,#fff,var(--pink),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{max-width:680px;margin:18px auto;color:var(--muted);font-size:1.12rem}.pill{display:inline-block;border:1px solid #ff4fc866;color:#ffd7f4;border-radius:30px;padding:7px 14px;margin-top:15px;font-size:.85rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:28px 0 55px}.card{background:linear-gradient(145deg,#171a30dd,#101222dd);border:1px solid var(--line);border-radius:18px;padding:22px;min-height:170px}.card h3{margin:4px 0 8px}.card p{color:var(--muted);margin:0}.icon{font-size:1.7rem}
+    section{padding:10px 0 34px}h2{font-size:1.8rem;margin-bottom:8px}.muted{color:var(--muted)}.notice{border-left:3px solid var(--pink);padding:12px 16px;background:#171326;border-radius:0 12px 12px 0}
+    footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:.88rem}
+    @media(max-width:600px){.hero{padding:55px 0 35px}.nav{justify-content:center}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="logo">GTA6<span>PULSE</span></div><div class="langs"><button id="ru" class="active" onclick="setLang('ru')">RU</button> <button id="en" onclick="setLang('en')">EN</button></div></div></header>
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow" data-ru="Фанатский портал Grand Theft Auto VI" data-en="A fan portal for Grand Theft Auto VI">Фанатский портал Grand Theft Auto VI</div>
+    <h1>THE HEARTBEAT<br>OF LEONIDA</h1>
+    <p data-ru="Новости, персонажи, локации и полезные материалы о GTA 6 — в одном месте." data-en="News, characters, locations and useful guides about GTA 6 — all in one place.">Новости, персонажи, локации и полезные материалы о GTA 6 — в одном месте.</p>
+    <span class="pill" data-ru="Vice City • Leonida • Beyond" data-en="Vice City • Leonida • Beyond">Vice City • Leonida • Beyond</span>
+  </div>
+  <section><h2 data-ru="Исследуй Леониду" data-en="Explore Leonida">Исследуй Леониду</h2><p class="muted" data-ru="Выбери раздел, чтобы познакомиться с миром игры." data-en="Choose a section to explore the game world.">Выбери раздел, чтобы познакомиться с миром игры.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">📰</div><h3 data-ru="Новости" data-en="News">Новости</h3><p data-ru="Последние подтверждённые новости и официальные объявления." data-en="Latest confirmed news and official announcements.">Последние подтверждённые новости и официальные объявления.</p></article>
+      <article class="card"><div class="icon">🧍</div><h3 data-ru="Персонажи" data-en="Characters">Персонажи</h3><p data-ru="Главные герои и жители штата Леонида." data-en="Main protagonists and residents of the state of Leonida.">Главные герои и жители штата Леонида.</p></article>
+      <article class="card"><div class="icon">🌴</div><h3 data-ru="Локации" data-en="Locations">Локации</h3><p data-ru="Вайс-Сити, Леонида-Кис и другие уголки игрового мира." data-en="Vice City, Leonida Keys and other parts of the game world.">Вайс-Сити, Леонида-Кис и другие уголки игрового мира.</p></article>
+      <article class="card"><div class="icon">🎮</div><h3 data-ru="Гайды" data-en="Guides">Гайды</h3><p data-ru="Советы, механики и полезные руководства для игроков." data-en="Tips, mechanics and useful player guides.">Советы, механики и полезные руководства для игроков.</p></article>
+    </div>
+  </section>
+  <section><h2 data-ru="О проекте" data-en="About the project">О проекте</h2><p class="notice" data-ru="GTA6Pulse — независимый фанатский проект. Он не связан с Rockstar Games или Take-Two Interactive. Новости будут публиковаться после проверки источников; слухи будут явно обозначаться." data-en="GTA6Pulse is an independent fan project and is not affiliated with Rockstar Games or Take-Two Interactive. News will be published after source checks; rumours will be clearly labelled.">GTA6Pulse — независимый фанатский проект. Он не связан с Rockstar Games или Take-Two Interactive. Новости будут публиковаться после проверки источников; слухи будут явно обозначаться.</p></section>
+</main>
+<footer><div class="wrap">© GTA6Pulse • Fan-made project • Not affiliated with Rockstar Games or Take-Two Interactive.</div></footer>
+<script>
+function setLang(lang){
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-'+lang+']').forEach(el=>el.textContent=el.getAttribute('data-'+lang));
+ document.getElementById('ru').classList.toggle('active',lang==='ru');
+ document.getElementById('en').classList.toggle('active',lang==='en');
+}
+</script>
+</body></html>
