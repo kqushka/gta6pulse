@@ -413,6 +413,45 @@ nav a{font-size:12px;letter-spacing:.65px;padding:11px 13px}
  #trailers .video small{font-size:11px}
 }
 
+
+/* Restore balanced two-column hero and add a clear Leonida guide link */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(24px,3.2vw,46px);min-height:650px;padding:52px 0 68px}
+.hero>div:first-child,.hero-photo{min-width:0;width:100%}
+.hero-title-wrap{margin-left:0;padding-left:20px;max-width:100%}
+.hero-title-wrap:before{right:14px}
+.hero h1.hero-title{max-width:100%;font-size:clamp(43px,4.7vw,68px);letter-spacing:-1.2px}
+.hero-title-first{font-size:clamp(37px,4.05vw,59px);overflow-wrap:anywhere}
+.hero-title-second em{font-size:clamp(70px,8.4vw,116px);letter-spacing:-3px}
+.hero-title-sticker{right:5px;width:60px;height:60px}
+.hero-photo{height:500px;max-height: min(52vw,560px);align-self:center}
+.leonida-intro-link{display:flex;align-items:center;gap:13px;width:max-content;max-width:100%;margin:16px 0 18px;padding:11px 16px 11px 11px;border:1px solid #67e5e655;border-radius:13px;background:linear-gradient(100deg,#67e5e616,#ff4fa30d);box-shadow:0 8px 25px #0003;transition:transform .25s,border-color .25s,background .25s}
+.leonida-intro-link:hover{transform:translateY(-3px);border-color:#67e5e6bb;background:linear-gradient(100deg,#67e5e626,#ff4fa319)}
+.leonida-link-icon{display:grid;place-items:center;width:37px;height:37px;border-radius:10px;background:#67e5e61c;color:var(--cyan);font-size:21px}
+.leonida-intro-link small{display:block;margin-bottom:2px;color:var(--cyan);font-size:9px;font-weight:900;letter-spacing:1.6px}
+.leonida-intro-link strong{display:block;color:#fff;font-size:14px;font-weight:800}
+.leonida-link-arrow{margin-left:8px;color:var(--pink);font-size:20px;transition:transform .2s}
+.leonida-intro-link:hover .leonida-link-arrow{transform:translateX(4px)}
+@media(max-width:900px){
+ .hero{grid-template-columns:minmax(0,1fr);gap:25px;padding-top:42px}
+ .hero-photo{height:420px;max-height:none;grid-row:2}
+ .hero-title-wrap{max-width:740px}
+ .hero h1.hero-title{font-size:clamp(48px,7.5vw,72px)}
+ .hero-title-first{font-size:clamp(43px,7vw,65px)}
+ .hero-title-second em{font-size:clamp(85px,13vw,125px)}
+}
+@media(max-width:600px){
+ .hero{gap:20px;padding-top:34px}
+ .leonida-intro-link{margin:13px 0 16px;padding:9px 12px 9px 9px}
+ .leonida-link-icon{width:33px;height:33px}
+ .leonida-intro-link strong{font-size:13px}
+ .hero-title-wrap{padding:18px 10px 24px 13px}
+ .hero h1.hero-title{font-size:clamp(40px,10.5vw,58px)}
+ .hero-title-first{font-size:clamp(35px,9.2vw,52px)}
+ .hero-title-second em{font-size:clamp(67px,17.8vw,102px)}
+ .hero-title-sticker{width:48px;height:48px}
+ .hero-photo{height:300px;grid-row:2}
+}
+
 </style>
 </head>
 <body>
@@ -423,7 +462,7 @@ nav a{font-size:12px;letter-spacing:.65px;padding:11px 13px}
 </div></header>
 <main class="wrap">
 <section class="hero">
-<div><div class="eyebrow">Независимый журнал о GTA VI</div>
+<div class="hero-intro-column"><div class="eyebrow">Независимый журнал о GTA VI</div><a class="leonida-intro-link" href="#world"><span class="leonida-link-icon">↗</span><span><small>ИССЛЕДУЙТЕ ШТАТ</small><strong>Что такое Леонида?</strong></span><span class="leonida-link-arrow">→</span></a>
 <div class="hero-title-mark"><span class="hero-title-mark-line"></span><span>THE STATE OF MIND</span><span class="hero-title-mark-no">26° 07\u2032 N / 80° 08\u2032 W</span></div><div class="hero-title-wrap"><span class="hero-ghost" aria-hidden="true">LEONIDA</span><h1 class="hero-title"><span class="hero-title-first">ДОБРО ПОЖАЛОВАТЬ</span><span class="hero-title-pre">ТВОЯ НОВАЯ ТЕРРИТОРИЯ —</span><span class="hero-title-second"><em>ЛЕОНИДА.</em></span></h1><div class="hero-title-sticker"><span>NO RULES.</span><span>JUST STORIES.</span></div></div><div class="hero-title-caption"><span>VICE CITY</span><i></i><span>THE SUNSHINE STATE</span><i></i><span>EST. 2026</span></div>
 <p class="hero-copy">Vice City не спит. Мы собираем подтверждённые новости, внимательно разбираем официальные материалы Rockstar и отделяем факты от фанатских догадок. Без фейков и пустых обещаний.</p>
 <div class="actions"><a class="btn" href="#latest">Читать свежие новости ↗</a><a class="btn ghost" href="#trailers">Смотреть трейлеры ▶</a></div><div class="home-countdown" aria-label="Обратный отсчёт до выхода GTA VI"><div class="home-countdown-copy"><span class="countdown-kicker">ОБРАТНЫЙ ОТСЧЁТ</span><strong>До выхода GTA VI</strong><small>19 ноября 2026 · Леонида ждёт</small></div><div class="home-countdown-time" id="homeCountdown" aria-live="polite"><span><b>—</b><small>дней</small></span><span><b>—</b><small>часов</small></span><span><b>—</b><small>минут</small></span><span><b>—</b><small>секунд</small></span></div><a class="countdown-link" href="walkthroughs.html">Прохождения GTA VI ↗</a></div></div>
