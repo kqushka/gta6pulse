@@ -110,6 +110,24 @@ nav a{font-size:12px}
 .person strong{color:#ffd2e7}
 @media(max-width:600px){.article-image{height:205px}.person{min-height:430px}}
 
+
+/* Make Jason and Lucia profiles stand out */
+#people .section-head h2{font-size:clamp(42px,6vw,58px);font-weight:700;color:#fff;text-shadow:0 3px 24px #ff4fa355}
+#people .section-head p{font-size:16px;font-weight:600;color:#f3eaf5;line-height:1.85}
+#people .person{border:2px solid #ffffff55;box-shadow:0 18px 50px #05030b88}
+#people .person:first-child{border-color:#ff78b788}
+#people .person:nth-child(2){border-color:#67e5e688}
+#people .person:after{inset:15% 0 0;background:linear-gradient(180deg,#100d2010 5%,#100d20b8 48%,#100d20f5 100%)}
+#people .person .person-copy{padding:34px}
+#people .person .tag{display:inline-block;padding:7px 12px;border:1px solid #ffffff66;border-radius:3px;background:#100d20d9;color:#78f2ef;font-size:12px;font-weight:900;letter-spacing:2px;text-shadow:0 1px 10px #000}
+#people .person h3{font-size:clamp(48px,6vw,64px);font-weight:700;letter-spacing:1px;line-height:1;text-shadow:0 4px 18px #000,0 0 22px #ff4fa366;color:#fff;margin:17px 0}
+#people .person:first-child h3{color:#ffd0e7}
+#people .person:nth-child(2) h3{color:#a8f7f1}
+#people .person p{font-size:17px;font-weight:600;line-height:1.9;color:#fff;text-shadow:0 2px 8px #000;max-width:600px}
+#people .person p strong{font-weight:900;color:#ffe18e;text-transform:none}
+#people .person .person-quote{font-weight:700;color:#fff!important;background:#090817b8;padding:13px 16px;border-left:4px solid var(--cyan);border-radius:0 4px 4px 0}
+@media(max-width:600px){#people .person .person-copy{padding:23px}#people .person h3{font-size:46px}#people .person p{font-size:16px}}
+
 </style>
 </head>
 <body>
