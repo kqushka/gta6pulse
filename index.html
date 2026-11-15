@@ -472,6 +472,63 @@ nav a{font-size:12px;letter-spacing:.65px;padding:11px 13px}
 #world .world-source a{color:#80e5e2;text-decoration:none}
 @media(max-width:900px){#world .places{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){#world .world-intro{grid-template-columns:1fr;padding:19px}#world .world-intro h3{font-size:25px}#world .places{grid-template-columns:1fr}#world .place{min-height:300px}}
+
+/* Final readability + hero layout correction */
+body{font-size:18px;line-height:1.8;color:#fff}
+p{color:#eee6f0}
+nav a{font-size:13px;color:#f0e9f2}
+.hero{min-height:0;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);align-items:center;gap:34px;padding:54px 0 64px}
+.hero-intro-column{min-width:0;width:100%}
+.hero-title-wrap{max-width:100%;margin:18px 0 12px;padding:22px 18px 24px 22px}
+.hero h1.hero-title{width:100%;max-width:100%;font-size:clamp(40px,4.7vw,64px);line-height:1.02;letter-spacing:-1px;overflow-wrap:normal}
+.hero-title-first{font-size:clamp(38px,4.3vw,59px);line-height:1.08;white-space:normal}
+.hero-title-pre{font-size:clamp(14px,1.45vw,18px);letter-spacing:1px;line-height:1.35;margin:13px 0 5px}
+.hero-title-second{white-space:normal}
+.hero-title-second em{font-size:clamp(70px,7.4vw,104px);line-height:.95}
+.hero-title-sticker{width:66px;height:66px;right:8px;bottom:8px}
+.hero-title-caption{font-size:9px;gap:8px;flex-wrap:wrap}
+.hero-copy{max-width:650px;font-size:17px;line-height:1.85;color:#fff}
+.leonida-intro-link{max-width:100%;margin-top:16px}
+.hero-photo{width:100%;height:clamp(420px,43vw,540px);min-width:0;grid-row:auto;transform:none;overflow:hidden;border-radius:10px}
+.hero-photo .hero-art{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero-photo:before{background:linear-gradient(180deg,#09081712 35%,#090817a8 100%)}
+.hero-photo .scene-label{font-size:clamp(28px,3vw,40px);left:22px;bottom:24px}
+.hero-photo-index{right:20px;bottom:25px}
+.section-head p{font-size:16px;line-height:1.8;color:#eee5f0}
+.card p,.article p,.feature-copy p,.person p,.place p,.fact span{font-size:16px;line-height:1.8;color:#f0e9f2}
+.card h3,.article h3{font-size:28px}
+.place{min-height:350px}
+#world .place p{font-size:15px;line-height:1.75;color:#fff;text-shadow:0 2px 8px #000}
+#world .place .place-kicker{font-size:11px}
+#world .world-intro p{font-size:16px;line-height:1.85;color:#f0e9f2}
+#world .world-facts span{font-size:14px;color:#fff}
+@media(max-width:900px){
+ .hero{grid-template-columns:minmax(0,1fr);gap:26px;padding:42px 0 52px}
+ .hero-intro-column{max-width:760px}
+ .hero-photo{height:clamp(340px,58vw,470px);grid-row:auto}
+ .hero h1.hero-title{font-size:clamp(44px,7vw,68px)}
+ .hero-title-first{font-size:clamp(40px,6vw,60px)}
+ .hero-title-second em{font-size:clamp(76px,12vw,108px)}
+}
+@media(max-width:600px){
+ body{font-size:16px;line-height:1.75}
+ .hero{gap:22px;padding:32px 0 42px}
+ .hero-title-wrap{margin:14px 0 10px;padding:18px 12px 22px 16px}
+ .hero h1.hero-title{font-size:clamp(38px,10vw,54px);line-height:1.04}
+ .hero-title-first{font-size:clamp(36px,9.4vw,51px)}
+ .hero-title-pre{font-size:13px;letter-spacing:.5px}
+ .hero-title-second em{font-size:clamp(68px,17vw,92px)}
+ .hero-title-sticker{width:48px;height:48px;right:4px;bottom:4px}
+ .hero-photo{height:310px;grid-row:auto}
+ .hero-photo .hero-art{object-position:50% 35%}
+ .hero-photo .scene-label{font-size:28px;left:16px;bottom:18px}
+ .hero-photo-index{font-size:9px;right:14px;bottom:19px}
+ .hero-copy{font-size:16px}
+ .section-head p,.card p,.article p,.feature-copy p,.person p,.place p,.fact span{font-size:15px;line-height:1.75}
+ #world .place p{font-size:15px}
+ #world .world-intro p{font-size:15px}
+}
+
 </style>
 </head>
 <body>
