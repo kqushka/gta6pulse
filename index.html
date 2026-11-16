@@ -1224,6 +1224,14 @@ const translations = {
 "Прохождение":"Walkthroughs",
 "Подготовленная база для пошаговых руководств и будущего трекера 100%.":"A foundation for step-by-step guides and a future 100% completion tracker.",
 "К прохождениям ↗":"Go to walkthroughs ↗"
+,
+"Карта":"Map",
+"База GTA VI":"GTA VI Database",
+"Мой прогресс":"My Progress",
+"Поиск":"Search",
+"Путеводитель":"Guide",
+"Игровой центр":"Activity Hub",
+"GTA6Pulse — Пульс Леониды":"GTA6Pulse — Pulse of Leonida"
 };
 const textNodes = [];
 const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -1231,9 +1239,12 @@ while (walker.nextNode()) {
   const node = walker.currentNode;
   if (node.parentElement && !['SCRIPT','STYLE'].includes(node.parentElement.tagName)) textNodes.push(node);
 }
+const originalPageTitle=document.title;
 function setLanguage(lang) {
   try { localStorage.setItem('gta6pulse_language', lang); } catch(e) {}
   document.documentElement.lang = lang;
+  document.title = lang === 'en' ? (translations[originalPageTitle] || originalPageTitle) : originalPageTitle;
+  document.querySelectorAll('[placeholder],[aria-label],[title]').forEach(el => ['placeholder','aria-label','title'].forEach(attr => { if(el.hasAttribute(attr)){ const key='__gta_'+attr; if(el[key]===undefined) el[key]=el.getAttribute(attr); const original=el[key]; el.setAttribute(attr,lang==='en'?(translations[original]||original):original); }}));
   textNodes.forEach(node => {
     if (node.__originalText === undefined) node.__originalText = node.nodeValue;
     const original = node.__originalText;
