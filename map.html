@@ -353,4 +353,51 @@ header nav a:focus-visible{outline:3px solid #ff4fa3!important;outline-offset:4p
 }
 @media(prefers-reduced-motion:reduce){header nav a,header nav a:after{animation:none!important;transition:none!important}}
 </style>
+
+<style id="map-gallery-frame-design">
+/* Ornate rose-gold gallery frames for the map page */
+body .region{
+ position:relative!important;isolation:isolate!important;overflow:hidden!important;
+ border:2px solid #c98aa8!important;border-radius:15px!important;
+ outline:1px solid #f2d7e3!important;outline-offset:-7px!important;
+ padding:27px!important;
+ background:linear-gradient(145deg,#fff 0%,#fff9fc 58%,#fff0f6 100%)!important;
+ box-shadow:0 12px 30px rgba(91,35,64,.09),inset 0 0 0 5px #fff,inset 0 0 0 7px #f3dce6,inset 0 0 22px rgba(201,138,168,.10)!important;
+ transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease!important;
+}
+body .region:before,body .region:after{
+ content:"✦"!important;position:absolute!important;z-index:0!important;
+ color:#bd7898!important;font-size:17px!important;line-height:1!important;
+ text-shadow:0 1px 5px rgba(169,29,96,.18)!important;pointer-events:none!important;
+}
+body .region:before{top:10px!important;right:13px!important}
+body .region:after{bottom:10px!important;left:13px!important}
+body .region:hover{
+ transform:translateY(-4px)!important;border-color:#b95e88!important;
+ box-shadow:0 18px 38px rgba(91,35,64,.15),inset 0 0 0 5px #fff,inset 0 0 0 7px #edc5d7,inset 0 0 24px rgba(201,138,168,.16)!important;
+}
+body .notice{
+ position:relative!important;border:2px solid #c98aa8!important;border-radius:14px!important;
+ outline:1px solid #f2d7e3!important;outline-offset:-7px!important;
+ box-shadow:0 10px 26px rgba(91,35,64,.09),inset 0 0 0 5px rgba(255,255,255,.7),inset 0 0 0 7px rgba(201,138,168,.17)!important;
+}
+body .controls .filter{
+ position:relative!important;border:1px solid #d5a0b8!important;border-radius:9px!important;
+ box-shadow:0 3px 10px rgba(91,35,64,.07),inset 0 1px 0 #fff!important;
+ transition:transform .22s ease,box-shadow .22s ease!important;
+}
+body .controls .filter:hover{transform:translateY(-2px)!important;box-shadow:0 7px 16px rgba(91,35,64,.13),inset 0 1px 0 #fff!important}
+body .controls .filter.active{border:1px solid #a91d60!important;box-shadow:0 4px 13px rgba(169,29,96,.2),inset 0 0 0 2px rgba(255,255,255,.22)!important}
+body .language-switch{
+ padding:5px!important;border:1px solid #d5a0b8!important;border-radius:12px!important;
+ box-shadow:0 5px 18px rgba(91,35,64,.12),inset 0 0 0 2px #fff!important;
+}
+header nav a{
+ border:1px solid #c98aa8!important;border-radius:9px!important;
+ box-shadow:0 4px 13px rgba(91,35,64,.10),inset 0 0 0 2px rgba(255,255,255,.88),inset 0 0 0 4px rgba(201,138,168,.16)!important;
+}
+header nav a:hover{box-shadow:0 8px 22px rgba(169,29,96,.2),inset 0 0 0 2px #fff,inset 0 0 0 4px rgba(201,138,168,.24)!important}
+@media(max-width:760px){body .region{padding:24px!important}}
+@media(prefers-reduced-motion:reduce){body .region,body .controls .filter{transition:none!important}}
+</style>
 </body></html>
