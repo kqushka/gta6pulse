@@ -1,6 +1,38 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#100d20">
 <link rel="icon" type="image/svg+xml" href="assets/gta6pulse-avatar.svg"><meta name="description" content="Поиск по GTA6Pulse: новости, персонажи, регионы Леониды, трейлеры, база знаний и прохождения GTA VI на русском."><link rel="canonical" href="https://gta6pulse.pages.dev/search.html"><title>Поиск по GTA6Pulse — GTA VI на русском</title><style>
 :root{--line:#ffffff22;--text:#f8f3ee;--muted:#c5b9c9;--pink:#ff4fa3;--cyan:#67e5e6}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 5%,#7c285a55,transparent 35%),linear-gradient(160deg,#100d20,#1a1230 60%,#0b1727);color:var(--text);font:16px/1.7 Arial,sans-serif}.wrap{width:min(900px,calc(100% - 32px));margin:auto}header{padding:18px 0;border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}.brand{color:white;text-decoration:none;font-weight:900;letter-spacing:2px}.brand b{color:var(--pink)}a{color:var(--cyan)}main{padding:55px 0}.eyebrow{color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:3px}h1{font-size:clamp(38px,7vw,65px);line-height:1.05;margin:12px 0 25px}.search{width:100%;padding:17px;border-radius:10px;border:1px solid #ffffff44;background:#ffffff0d;color:white;font-size:18px}.results{display:grid;gap:12px;margin-top:22px}.result{padding:18px;border:1px solid var(--line);background:#ffffff08;border-radius:10px}.result[hidden]{display:none}.result small{color:var(--pink);font-weight:900;letter-spacing:2px}.result h2{font-size:20px;margin:5px 0}.result p{margin:0;color:var(--muted);font-size:14px}#empty{color:var(--muted);display:none}footer{margin-top:40px;border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:13px}
+
+/* GTA6PULSE ORIGINAL LEONIDA DUSK THEME */
+:root{
+ --ink:#f2eadb;--text:#f2eadb;--muted:#b9b7a8;
+ --pink:#d58a57;--cyan:#91b7a5;--orange:#dfad72;--violet:#a99b78;
+ --panel:#202d27;--line:#d8cdb51f;--bg:#111b18;
+}
+html{background:#111b18}
+body{
+ color:#f2eadb!important;
+ background-color:#111b18!important;
+ background-image:
+  radial-gradient(ellipse at 13% 9%,rgba(184,111,66,.22),transparent 36%),
+  radial-gradient(ellipse at 88% 24%,rgba(65,116,96,.22),transparent 39%),
+  repeating-radial-gradient(ellipse at 76% 19%,transparent 0 43px,rgba(206,191,157,.035) 44px 45px,transparent 46px 88px),
+  linear-gradient(145deg,#111b18 0%,#1b2923 49%,#101a1d 100%)!important;
+ background-attachment:fixed!important;
+}
+body:before,body:after{background:none!important;opacity:0!important}
+header,.top{background:rgba(16,27,24,.91)!important;border-color:rgba(216,205,181,.16)!important}
+.section,.region,.item,.entry,.card,.group,.result,.question,.stat,.badge-card,.fact-card,.saved-item{
+ background:linear-gradient(145deg,rgba(39,54,45,.94),rgba(21,34,30,.96))!important;
+ border-color:rgba(216,205,181,.17)!important;
+}
+.btn.primary,.filter.active,.btn.primary:hover{
+ background:linear-gradient(105deg,#bd754c,#8e9876)!important;
+ border-color:transparent!important;color:#fff8ec!important;
+}
+.brand b,.hero h1 em{color:#d58a57!important}
+a{ text-decoration-color:rgba(145,183,165,.45)}
+::selection{background:rgba(213,138,87,.38);color:#fff8ec}
+
 </style></head><body><header><div class="wrap nav"><a class="brand" href="index.html">GTA6<b>PULSE</b> / ПОИСК</a><a href="index.html">На главную</a></div></header><main class="wrap"><div class="eyebrow">SEARCH THE LEONIDA JOURNAL</div><h1>ЧТО ИЩЕМ <span style="color:var(--pink)">СЕГОДНЯ?</span></h1><input id="q" class="search" type="search" placeholder="Например: Люсия, Vice City, трейлер, прохождение…" autofocus><section class="results" id="results">
 <a class="result" href="index.html#latest"><small>НОВОСТИ</small><h2>Последние новости GTA VI</h2><p>Официальные объявления Rockstar и авторские разборы.</p></a>
 <a class="result" href="map.html"><small>КАРТА РЕГИОНОВ</small><h2>Леонида и её шесть регионов</h2><p>Vice City, Leonida Keys, Port Gellhorn, Ambrosia, Grassrivers и Mount Kalaga.</p></a>
