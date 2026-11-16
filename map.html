@@ -310,4 +310,47 @@ body main.wrap > .hero{padding-left:24px!important;padding-right:24px!important}
 @media(max-width:760px){body main.wrap > .hero{padding-left:14px!important;padding-right:14px!important}}
 
 </style>
+
+<style id="map-nav-neon-links">
+/* Animated navigation links on the Leonida map page */
+header nav{
+ display:flex!important;align-items:center!important;justify-content:flex-end!important;
+ flex-wrap:wrap!important;gap:10px!important;font-size:0!important;
+}
+header nav a{
+ position:relative!important;isolation:isolate!important;overflow:hidden!important;
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ min-height:42px!important;padding:9px 16px!important;margin:2px 0!important;
+ border:1px solid #e58ab5!important;border-radius:10px!important;
+ background:linear-gradient(135deg,#fff7fb 0%,#ffe7f1 52%,#fff 100%)!important;
+ color:#84204f!important;-webkit-text-fill-color:#84204f!important;
+ text-decoration:none!important;font-size:14px!important;font-weight:850!important;
+ letter-spacing:.01em!important;box-shadow:0 4px 13px rgba(169,29,96,.09),inset 0 1px 0 #fff!important;
+ transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease!important;
+}
+header nav a:after{
+ content:""!important;position:absolute!important;z-index:-1!important;
+ top:-40%!important;left:-75%!important;width:48%!important;height:180%!important;
+ transform:rotate(22deg)!important;
+ background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent)!important;
+ animation:mapNavShimmer 4.8s ease-in-out infinite!important;
+}
+header nav a:nth-of-type(2):after{animation-delay:.7s!important}
+header nav a:nth-of-type(3):after{animation-delay:1.4s!important}
+header nav a:nth-of-type(4):after{animation-delay:2.1s!important}
+header nav a:hover{
+ transform:translateY(-3px)!important;border-color:#c72b76!important;
+ background:linear-gradient(135deg,#ffe0ed,#ffc4dd 55%,#fff0f7)!important;
+ color:#761943!important;-webkit-text-fill-color:#761943!important;
+ box-shadow:0 8px 22px rgba(169,29,96,.2),0 0 0 3px rgba(217,43,124,.08)!important;
+}
+header nav a:focus-visible{outline:3px solid #ff4fa3!important;outline-offset:4px!important}
+@keyframes mapNavShimmer{0%,65%{left:-75%}100%{left:140%}}
+@media(max-width:760px){
+ header .nav{align-items:flex-start!important}
+ header nav{justify-content:flex-start!important;gap:7px!important;width:100%!important}
+ header nav a{min-height:40px!important;padding:8px 12px!important;font-size:13px!important}
+}
+@media(prefers-reduced-motion:reduce){header nav a,header nav a:after{animation:none!important;transition:none!important}}
+</style>
 </body></html>
