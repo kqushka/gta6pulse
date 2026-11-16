@@ -1407,5 +1407,36 @@ body .guide-promo .guide-promo-inner .btn:hover {
   background:linear-gradient(115deg,#ff79b8,#ed3187)!important;
   color:#fff!important;-webkit-text-fill-color:#fff!important;
 }
+
+/* High-contrast character cards: readable over dark artwork */
+body #people .person:after{
+  inset:0!important;
+  background:linear-gradient(180deg,rgba(10,7,18,.06) 0%,rgba(10,7,18,.48) 38%,rgba(10,7,18,.96) 100%)!important;
+}
+body #people .person .person-copy{position:relative!important;z-index:2!important}
+body #people .person .tag{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  background:rgba(210,35,117,.94)!important;
+  border:1px solid #ff9ac8!important;text-shadow:none!important;
+}
+body #people .person h3,
+body #people .person:first-child h3,
+body #people .person:nth-child(2) h3{
+  color:#ffb5d6!important;-webkit-text-fill-color:#ffb5d6!important;
+  text-shadow:0 2px 12px #000,0 0 18px rgba(255,79,163,.55)!important;
+}
+body #people .person p{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  text-shadow:0 2px 5px #000!important;
+}
+body #people .person p strong{
+  color:#ffd0e5!important;-webkit-text-fill-color:#ffd0e5!important;
+  background:rgba(7,5,13,.72)!important;
+}
+body #people .person .person-quote{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  background:rgba(8,5,15,.94)!important;
+  border-left:4px solid #ff4fa3!important;
+}
 </style>
 </body></html>
