@@ -33,6 +33,84 @@ header,.top{background:rgba(16,27,24,.91)!important;border-color:rgba(216,205,18
 a{ text-decoration-color:rgba(145,183,165,.45)}
 ::selection{background:rgba(213,138,87,.38);color:#fff8ec}
 
+
+/* GTA6PULSE LIGHT LEONIDA THEME */
+:root{
+ color-scheme:light;
+ --ink:#26312e;--text:#26312e;--muted:#68736e;
+ --pink:#b96f4b;--cyan:#477d70;--orange:#bd8154;--violet:#88785e;
+ --panel:#ffffff;--line:rgba(49,66,58,.14);--bg:#f6f4ee;
+ --gold:#ad8652;
+}
+html{background:#f6f4ee!important;color-scheme:light}
+body{
+ color:#26312e!important;
+ background:#f6f4ee!important;
+ background-image:
+  radial-gradient(ellipse at 10% 4%,rgba(212,157,112,.16),transparent 34%),
+  radial-gradient(ellipse at 92% 18%,rgba(116,164,145,.13),transparent 38%),
+  linear-gradient(145deg,#fbfaf6 0%,#f3f2eb 55%,#edf2ed 100%)!important;
+ background-attachment:fixed!important;
+}
+body:before,body:after{opacity:0!important;background:none!important}
+header,.top,.nav,.topin{
+ background:rgba(255,255,255,.92)!important;
+ color:#26312e!important;
+ border-color:rgba(49,66,58,.13)!important;
+ box-shadow:0 8px 28px rgba(39,53,45,.055)!important;
+}
+h1,h2,h3,h4,h5,h6,strong,b,.brand,.brand b,.hero h1,.section h2{
+ color:#26312e!important;
+}
+p,li,label,span,div{ text-shadow:none!important }
+a{color:#477d70;text-decoration-color:rgba(71,125,112,.32)}
+a:hover{color:#a85f3e}
+small,.muted,.meta,.eyebrow,.sub,.desc,.source,.hint,footer,.note,.caption{
+ color:#68736e!important;
+}
+.section,.region,.item,.entry,.card,.group,.result,.question,.stat,.badge-card,.fact-card,.saved-item,
+.panel,.tile,.vehicle,.character,.location,.box,.search-result,.event,.map-panel,.countbox,
+article,.content-card,.feature-card,.info-card,.faq-item,.step,.chapter{
+ background:rgba(255,255,255,.94)!important;
+ color:#26312e!important;
+ border:1px solid rgba(49,66,58,.13)!important;
+ box-shadow:0 10px 30px rgba(39,53,45,.055)!important;
+}
+.hero,.hero-card,.hero-panel{
+ color:#26312e!important;
+}
+input,textarea,select,button:not(.primary):not(.btn-primary){
+ background:#fff!important;color:#26312e!important;
+ border-color:rgba(49,66,58,.2)!important;
+}
+input::placeholder,textarea::placeholder{color:#929b95!important}
+button,.btn,.primary,.btn-primary,.save-region,.save-entry{
+ color:#fff!important;
+ background:linear-gradient(110deg,#b96f4b,#668d79)!important;
+ border-color:transparent!important;
+}
+button:hover,.btn:hover,.primary:hover,.btn-primary:hover{
+ filter:brightness(.96);transform:translateY(-1px)
+}
+.filter,.chip,.tag,.pill,.badge{
+ background:#edf2ed!important;color:#477d70!important;
+ border-color:rgba(71,125,112,.2)!important;
+}
+.filter.active,.active{
+ background:#477d70!important;color:#fff!important;
+}
+table,th,td{border-color:rgba(49,66,58,.14)!important}
+th{background:#edf1eb!important;color:#26312e!important}
+tr:nth-child(even){background:rgba(237,241,235,.48)!important}
+hr{border-color:rgba(49,66,58,.14)!important}
+::selection{background:rgba(185,111,75,.24);color:#26312e}
+@media(prefers-reduced-motion:no-preference){
+ .card,.section,.region,.item,.entry,.result,.saved-item{transition:background .2s ease,border-color .2s ease,box-shadow .2s ease}
+ .card:hover,.section:hover,.region:hover,.item:hover,.entry:hover,.result:hover,.saved-item:hover{
+  box-shadow:0 14px 34px rgba(39,53,45,.09)!important
+ }
+}
+
 </style></head><body><header><div class="wrap nav"><a class="brand" href="index.html">GTA6<b>PULSE</b> / БАЗА</a><nav><a href="index.html">Главная</a> · <a href="map.html">Карта</a> · <a href="progress.html">Прогресс</a></nav></div></header><main class="wrap"><section class="hero"><div class="eyebrow">GTA VI KNOWLEDGE BASE</div><h1>БАЗА ЗНАНИЙ <span style="color:var(--pink)">GTA VI</span></h1><p>Справочник по официально подтверждённым сведениям. Используй поиск и фильтры. Неопубликованные характеристики и слухи не выдаются за факты.</p></section><input id="q" class="search" type="search" placeholder="Поиск: Люсия, Vice City, PS5, трейлер…"><div class="filters"><button class="filter active" data-filter="all">Всё</button><button class="filter" data-filter="Герой">Персонажи</button><button class="filter" data-filter="Регион">Регионы</button><button class="filter" data-filter="Факт">Факты</button><button class="filter" data-filter="Медиа">Медиа</button></div><section class="items" id="items">
 <article class="item" data-category="Герой"><div class="type">ПЕРСОНАЖ</div><h2>Джейсон Дюваль</h2><p>Вырос среди мошенников и преступников. После службы в армии оказался в Леониде и работал на местных наркоторговцев. По официальному профилю Rockstar, он ищет шанс изменить свою жизнь.</p><a href="index.html#people">Профиль на GTA6Pulse ↗</a></article>
 <article class="item" data-category="Герой"><div class="type">ПЕРСОНАЖ</div><h2>Люсия Каминос</h2><p>Отец научил её драться с ранних лет. Борьба за семью привела Люсию в тюрьму Леониды. После освобождения она намерена сама управлять своей судьбой — так её путь описывает Rockstar.</p><a href="index.html#people">Профиль на GTA6Pulse ↗</a></article>
