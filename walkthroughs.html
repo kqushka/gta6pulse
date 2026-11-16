@@ -244,9 +244,12 @@ pre,code{font-size:15px!important}
 "GTA6Pulse — независимый фанатский проект, не связанный с Rockstar Games или Take-Two Interactive. Grand Theft Auto и связанные материалы принадлежат их правообладателям.":"GTA6Pulse is an independent fan project and is not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto and related materials belong to their respective rights holders."
 };
  let current='ru';
+ const originalPageTitle=document.title;
  function applyLanguage(lang){
   current=lang==='en'?'en':'ru';
   document.documentElement.lang=current;
+  document.title=current==='en'?(translations[originalPageTitle]||originalPageTitle):originalPageTitle;
+  document.querySelectorAll('[placeholder],[aria-label],[title]').forEach(el=>['placeholder','aria-label','title'].forEach(attr=>{if(el.hasAttribute(attr)){const key='__gta_'+attr;if(el[key]===undefined)el[key]=el.getAttribute(attr);const original=el[key];el.setAttribute(attr,current==='en'?(translations[original]||original):original)}}));
   const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
   let node;
   while(node=walker.nextNode()){
