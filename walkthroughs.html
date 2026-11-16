@@ -151,6 +151,48 @@ body .lang-option.active{background:#477d70;color:#fff}
 body> .language-switch{position:fixed;top:12px;right:14px;z-index:10000}
 @media(max-width:600px){body> .language-switch{top:8px;right:8px}.language-switch .lang-option{min-width:34px;padding:6px 8px}}
 </style>
+
+<style id="gta6pulse-ultra-readable">
+/* High-contrast typography for the light reading theme */
+:root{color-scheme:light!important;--read-ink:#111827;--read-muted:#374151;--read-line:#d1d5db;--read-paper:#ffffff}
+html,body{background:#fff!important;color:var(--read-ink)!important}
+body{font-family:Arial,Helvetica,sans-serif!important;font-size:19px!important;font-weight:600!important;line-height:1.85!important}
+body:before,body:after{display:none!important}
+header{background:rgba(255,255,255,.97)!important;border-bottom:2px solid #d1d5db!important;backdrop-filter:blur(12px)}
+nav a,header a,.brand,header .brand small{color:#111827!important;font-weight:800!important}
+nav a{font-size:14px!important}
+main,section,.wrap,.hero,.section{color:#111827}
+h1,h2,h3,h4,h5,h6,.section-head h2,.card h3,.article h3,.feature-copy h3{color:#111827!important;font-weight:900!important;line-height:1.2!important}
+h1{font-size:clamp(42px,6vw,72px)!important}
+h2{font-size:clamp(32px,4.5vw,48px)!important}
+h3{font-size:clamp(23px,3vw,30px)!important}
+p,li,dd,dt,label,summary,blockquote,.hero-copy,.section-head p,.feature-copy p,.card p,.article p,.person p,.place p,.facts-intro,.note,.fact span{color:#202b3a!important;font-size:18px!important;font-weight:600!important;line-height:1.85!important}
+small,.muted,.caption,.date,.tag,.eyebrow,.overline{color:#374151!important;font-weight:800!important}
+a{color:#075985!important;font-weight:800}
+a:hover{color:#9a3412!important;text-decoration:underline}
+.card,.article,.fact,.feature,.person,.place,.video,.panel,.tile,.item,.result,.box,.stat,.quiz-card,.question-card,.tool-card,.map-card,.database-card{background:#fff!important;color:#111827!important;border:1px solid #cbd5e1!important;box-shadow:0 5px 18px rgba(15,23,42,.08)!important}
+.card p,.article p,.fact span,.feature-copy p,.section-head p{color:#273449!important}
+input,textarea,select,button{font:inherit}
+input,textarea,select{background:#fff!important;color:#111827!important;border:2px solid #64748b!important;font-size:17px!important;font-weight:600!important}
+input::placeholder,textarea::placeholder{color:#4b5563!important;opacity:1!important}
+button,.btn,.lang,.lang-option{font-weight:900!important}
+.lang,.language-switch{background:#fff!important;border:2px solid #334155!important}
+.lang-option{color:#1f2937!important}
+.lang-option.active{background:#075985!important;color:#fff!important}
+.btn{color:#fff!important}
+.tag,.eyebrow,.overline,.date{font-size:13px!important;letter-spacing:1px!important}
+hr,.divider{border-color:#cbd5e1!important}
+table{color:#111827!important;background:#fff!important}
+th{font-weight:900!important;color:#111827!important}
+td{font-weight:600!important;color:#273449!important}
+pre,code{font-size:15px!important}
+:focus-visible{outline:3px solid #0369a1!important;outline-offset:3px!important}
+@media(max-width:700px){body{font-size:17px!important}p,li,dd,dt,label,summary,blockquote,.hero-copy,.section-head p,.feature-copy p,.card p,.article p,.person p,.place p,.facts-intro,.note,.fact span{font-size:16px!important}.wrap{max-width:100%}}
+/* Image-led cards retain a dark overlay so white captions remain readable */
+.video,.place,.person{background-color:#172033!important}
+.video strong,.video small,.place h3,.place p,.person h3,.person p,.person .tag,.scene-label,.scene-stamp{color:#fff!important;text-shadow:0 2px 8px #000!important}
+</style>
+
 </head>
 <body><div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="lang-option active" data-language="ru" aria-pressed="true">RU</button><button type="button" class="lang-option" data-language="en" aria-pressed="false">EN</button></div>
 <header class="top"><div class="wrap topin"><a class="brand" href="index.html">GTA6<b>PULSE</b><small>THE LEONIDA JOURNAL</small></a><div style="display:flex;gap:18px;flex-wrap:wrap"><a class="back" href="map.html">Карта ↗</a><a class="back" href="database.html">База ↗</a><a class="back" href="progress.html">Прогресс ↗</a><a class="back" href="guide.html">Путеводитель ↗</a><a class="back" href="index.html">← На главную</a></div></div></header>
