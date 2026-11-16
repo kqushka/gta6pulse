@@ -747,6 +747,22 @@ nav a{flex:0 0 auto;white-space:nowrap;font-size:clamp(9px,.78vw,11px);letter-sp
 @media(max-width:600px){.welcome-click-here{font-size:12px;padding:8px 17px}.welcome-leonida-link{gap:9px}}
 
  .guide-promo{padding:28px 0 48px}.guide-promo-inner{padding:30px;border:1px solid #ffffff25;border-radius:12px;background:linear-gradient(115deg,#27152f,#122b39);box-shadow:0 15px 50px #0003}.guide-promo h2{font:700 clamp(27px,4vw,42px)/1.1 Oswald,sans-serif;margin:8px 0}.guide-promo p{color:var(--muted);max-width:700px}.guide-promo .btn{display:inline-flex;margin-top:10px;padding:12px 18px;border:1px solid #65eaff;background:#65eaff;color:#101020;font-weight:900;border-radius:4px}@media(max-width:600px){.guide-promo-inner{padding:20px}}
+
+/* DESKTOP HEADER REPAIR — prevent navigation from pushing page content sideways */
+@media(min-width:761px){
+  header{width:100%;overflow:visible}
+  .nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 18px;padding:12px 0;min-width:0}
+  .nav>.brand{order:1;flex:0 0 auto;white-space:nowrap}
+  .nav>.language-switch{order:2;flex:0 0 auto;margin-left:auto}
+  .nav>nav{order:3;flex:0 0 100%;width:100%;min-width:0;max-width:100%;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 7px;white-space:normal;overflow:visible;padding:5px 8px;box-sizing:border-box}
+  .nav>nav a{flex:0 0 auto;white-space:nowrap;font-size:11px;letter-spacing:.25px;padding:8px 10px;line-height:1.25}
+  .wrap{max-width:1180px}
+}
+@media(min-width:761px) and (max-width:980px){
+  .nav>nav{justify-content:flex-start;gap:4px}
+  .nav>nav a{font-size:10px;padding:7px 8px}
+}
+
 </style>
 </head>
 <body>
