@@ -156,6 +156,9 @@ body .language-switch{display:flex;align-items:center;gap:3px;padding:4px;border
 body .lang-option{min-width:38px;padding:7px 10px;border:0;border-radius:999px;background:transparent;color:#526159;font:800 11px Arial,sans-serif;cursor:pointer}
 body .lang-option.active{background:#477d70;color:#fff}
 
+
+body> .language-switch{position:fixed;top:12px;right:14px;z-index:10000}
+@media(max-width:600px){body> .language-switch{top:8px;right:8px}.language-switch .lang-option{min-width:34px;padding:6px 8px}}
 </style>
 </head>
 <body><div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="lang-option active" data-language="ru" aria-pressed="true">RU</button><button type="button" class="lang-option" data-language="en" aria-pressed="false">EN</button></div>
