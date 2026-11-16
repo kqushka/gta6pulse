@@ -402,4 +402,79 @@ body :is(.filter.active,.chip.active,.lang-option.active,.region-buttons button.
 @media(prefers-reduced-motion:reduce){.walk-cta{transition:none!important}}
 </style>
 
+
+<style id="walkthroughs-antique-book-frame">
+/* Antique book / illuminated manuscript treatment for the walkthrough page */
+body .hero{
+ position:relative;max-width:none!important;margin:34px auto 30px!important;
+ padding:clamp(30px,5vw,58px)!important;
+ background:linear-gradient(135deg,#fffdf7 0%,#fbf4e7 52%,#f5ead7 100%)!important;
+ border:2px solid #a9824d!important;border-radius:5px!important;
+ outline:1px solid rgba(169,130,77,.55);outline-offset:6px;
+ box-shadow:0 16px 42px rgba(64,43,25,.13),inset 0 0 0 7px #fffaf0,inset 0 0 0 9px #d8bd8e!important;
+}
+body .hero:before,body .hero:after{
+ content:"✦";position:absolute;color:#a9824d;font-size:25px;line-height:1;
+}
+body .hero:before{top:13px;left:16px}
+body .hero:after{right:16px;bottom:13px}
+body .hero .eyebrow,body .walk-section-kicker,body .walk-promise-label,
+body .card .num,body .hero .status{
+ margin-left:18px!important;padding-left:12px!important;
+ border-left:3px solid #a9824d!important;
+ letter-spacing:2px!important;
+}
+body .hero h1{padding-left:18px!important;margin-top:20px!important}
+body .hero>p{padding-left:18px!important}
+body .hero .status{margin-top:12px!important}
+body .countbox{
+ border:1px solid #c4a16b!important;border-radius:4px!important;
+ background:linear-gradient(110deg,#f8edda,#fffaf0)!important;
+ box-shadow:inset 0 0 0 4px rgba(196,161,107,.13)!important;
+ padding:22px 26px 22px 34px!important;
+}
+body .section{position:relative;margin:32px 0!important;padding:clamp(22px,3.5vw,36px)!important}
+body .section:has(.walk-feature-grid),
+body .section:has(.walk-editorial-grid),
+body .section:has(.sources){
+ border:1px solid #c8aa78!important;border-radius:5px!important;
+ background:linear-gradient(145deg,#fffdf8,#f8f0e2)!important;
+ box-shadow:0 12px 30px rgba(64,43,25,.09),inset 0 0 0 5px rgba(255,255,255,.85),inset 0 0 0 7px rgba(190,154,99,.28)!important;
+}
+body .card,body .walk-feature,body .walk-editorial{
+ position:relative!important;border:1px solid #c8aa78!important;border-radius:4px!important;
+ background:linear-gradient(145deg,#fffdf8 0%,#f7efdf 100%)!important;
+ box-shadow:0 7px 17px rgba(64,43,25,.09),inset 0 0 0 4px rgba(255,255,255,.9)!important;
+}
+body .card{padding:25px 23px 24px 29px!important}
+body .walk-feature{padding:25px 22px 24px 29px!important}
+body .card:before,body .walk-feature:before,body .walk-editorial:before{
+ content:"";position:absolute;inset:6px;pointer-events:none;border:1px solid rgba(169,130,77,.24)
+}
+body .walk-promise,body .walk-launch{
+ border:2px solid #a9824d!important;border-radius:5px!important;
+ background:linear-gradient(135deg,#fffaf0,#f3e6cf)!important;
+ box-shadow:0 12px 30px rgba(64,43,25,.11),inset 0 0 0 5px rgba(255,255,255,.8),inset 0 0 0 7px rgba(169,130,77,.22)!important;
+ padding-left:clamp(28px,4vw,48px)!important;
+}
+body .walk-promise-label{display:block!important;margin-left:0!important;padding-left:13px!important}
+body .walk-launch .walk-section-kicker{margin-left:0!important}
+body .notice{
+ border:1px solid #c8aa78!important;border-left:5px solid #a9824d!important;
+ border-radius:4px!important;background:#fbf4e7!important;
+ box-shadow:inset 0 0 0 4px rgba(255,255,255,.8)!important;
+ padding:22px 26px 22px 34px!important;
+}
+body .section h2{padding-left:15px!important;border-left:3px solid #a9824d!important}
+body .walk-feature h3,body .walk-editorial h3,body .card h3{color:#35291f!important}
+body .walk-feature p,body .walk-editorial p,body .card p{color:#51483d!important}
+@media(max-width:760px){
+ body .hero{margin:22px auto!important;padding:27px 20px!important}
+ body .hero h1,body .hero>p{padding-left:12px!important}
+ body .section{padding:22px 16px!important}
+ body .section h2{padding-left:11px!important}
+ body .card,body .walk-feature{padding:22px 17px 20px 23px!important}
+}
+</style>
+
 </body></html>
