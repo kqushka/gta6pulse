@@ -234,4 +234,47 @@ const boxes=[...document.querySelectorAll('input[data-key]')],key='gta6pulse_pro
  new MutationObserver(()=>{if(current==='en')applyLanguage('en')}).observe(document.body,{childList:true,subtree:true});
 })();
 </script>
+
+<style id="gta6pulse-pink-controls">
+/* GTA VI-inspired pink controls — shared across every page */
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,.welcome-click-here,input[type="button"],input[type="submit"],input[type="reset"],[role="button"]) {
+  background:linear-gradient(115deg,#ff4fa3 0%,#ed3187 58%,#c92572 100%)!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  border:1px solid #ff8fc4!important;
+  box-shadow:0 3px 14px rgba(237,49,135,.20)!important;
+}
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,.welcome-click-here,input[type="button"],input[type="submit"],input[type="reset"],[role="button"]):hover {
+  background:linear-gradient(115deg,#ff79b8 0%,#ff4fa3 58%,#df287f 100%)!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  border-color:#ffc0dc!important;
+  filter:none!important;transform:translateY(-1px);
+}
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,.welcome-click-here,input[type="button"],input[type="submit"],input[type="reset"],[role="button"]):active {
+  background:#c92572!important;transform:translateY(0) scale(.985);
+}
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,.welcome-click-here,input[type="button"],input[type="submit"],input[type="reset"],[role="button"]):disabled {
+  opacity:.48!important;cursor:not-allowed!important;filter:saturate(.55)!important;
+}
+body :is(.filter,.chip,.tag,.pill,.badge,.status) {
+  background:#fff0f7!important;color:#9d245d!important;-webkit-text-fill-color:#9d245d!important;
+  border-color:#f4b4d1!important;
+}
+body :is(.filter.active,.chip.active,.lang-option.active,.region-buttons button.active,[role="tab"][aria-selected="true"]) {
+  background:linear-gradient(115deg,#ff4fa3,#d92b7c)!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  border-color:#ff9ac8!important;
+}
+body .lang-option:not(.active) {
+  background:transparent!important;color:#8e315e!important;-webkit-text-fill-color:#8e315e!important;
+}
+body :focus-visible {outline:3px solid #ff4fa3!important;outline-offset:3px!important}
+body .guide-promo .guide-promo-inner .btn {
+  background:linear-gradient(115deg,#ff4fa3,#d92b7c)!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #ff9ac8!important;
+}
+body .guide-promo .guide-promo-inner .btn:hover {
+  background:linear-gradient(115deg,#ff79b8,#ed3187)!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+}
+</style>
 </body></html>
