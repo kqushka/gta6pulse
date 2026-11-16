@@ -129,112 +129,57 @@ body .lang-option.active{background:#477d70;color:#fff}
 body> .language-switch{position:fixed;top:12px;right:14px;z-index:10000}
 @media(max-width:600px){body> .language-switch{top:8px;right:8px}.language-switch .lang-option{min-width:34px;padding:6px 8px}}
 </style>
-<style id="gta6pulse-ultra-readable">
-/* High-contrast typography for the light reading theme */
-:root{color-scheme:light!important;--read-ink:#111827;--read-muted:#374151;--read-line:#d1d5db;--read-paper:#ffffff}
-html,body{background:#fff!important;color:var(--read-ink)!important}
-body{font-family:Arial,Helvetica,sans-serif!important;font-size:19px!important;font-weight:600!important;line-height:1.85!important}
-body:before,body:after{display:none!important}
-header{background:rgba(255,255,255,.97)!important;border-bottom:2px solid #d1d5db!important;backdrop-filter:blur(12px)}
-nav a,header a,.brand,header .brand small{color:#111827!important;font-weight:800!important}
-nav a{font-size:14px!important}
-main,section,.wrap,.hero,.section{color:#111827}
-h1,h2,h3,h4,h5,h6,.section-head h2,.card h3,.article h3,.feature-copy h3{color:#111827!important;font-weight:900!important;line-height:1.2!important}
-h1{font-size:clamp(42px,6vw,72px)!important}
-h2{font-size:clamp(32px,4.5vw,48px)!important}
-h3{font-size:clamp(23px,3vw,30px)!important}
-p,li,dd,dt,label,summary,blockquote,.hero-copy,.section-head p,.feature-copy p,.card p,.article p,.person p,.place p,.facts-intro,.note,.fact span{color:#202b3a!important;font-size:18px!important;font-weight:600!important;line-height:1.85!important}
-small,.muted,.caption,.date,.tag,.eyebrow,.overline{color:#374151!important;font-weight:800!important}
-a{color:#075985!important;font-weight:800}
-a:hover{color:#9a3412!important;text-decoration:underline}
-.card,.article,.fact,.feature,.person,.place,.video,.panel,.tile,.item,.result,.box,.stat,.quiz-card,.question-card,.tool-card,.map-card,.database-card{background:#fff!important;color:#111827!important;border:1px solid #cbd5e1!important;box-shadow:0 5px 18px rgba(15,23,42,.08)!important}
-.card p,.article p,.fact span,.feature-copy p,.section-head p{color:#273449!important}
-input,textarea,select,button{font:inherit}
-input,textarea,select{background:#fff!important;color:#111827!important;border:2px solid #64748b!important;font-size:17px!important;font-weight:600!important}
-input::placeholder,textarea::placeholder{color:#4b5563!important;opacity:1!important}
-button,.btn,.lang,.lang-option{font-weight:900!important}
-.lang,.language-switch{background:#fff!important;border:2px solid #334155!important}
-.lang-option{color:#1f2937!important}
-.lang-option.active{background:#075985!important;color:#fff!important}
-.btn{color:#fff!important}
-.tag,.eyebrow,.overline,.date{font-size:13px!important;letter-spacing:1px!important}
-hr,.divider{border-color:#cbd5e1!important}
-table{color:#111827!important;background:#fff!important}
-th{font-weight:900!important;color:#111827!important}
-td{font-weight:600!important;color:#273449!important}
-pre,code{font-size:15px!important}
-:focus-visible{outline:3px solid #0369a1!important;outline-offset:3px!important}
-@media(max-width:700px){body{font-size:17px!important}p,li,dd,dt,label,summary,blockquote,.hero-copy,.section-head p,.feature-copy p,.card p,.article p,.person p,.place p,.facts-intro,.note,.fact span{font-size:16px!important}.wrap{max-width:100%}}
-/* Image-led cards retain a dark overlay so white captions remain readable */
-.video,.place,.person{background-color:#172033!important}
-.video strong,.video small,.place h3,.place p,.person h3,.person p,.person .tag,.scene-label,.scene-stamp{color:#fff!important;text-shadow:0 2px 8px #000!important}
-</style>
-
-
-<style id="gta6pulse-final-type-system">
-/* One consistent, readable type system across every page */
-html,body{font-family:Inter,Arial,Helvetica,sans-serif!important;color:#111827!important}
-body{font-size:18px!important;font-weight:500!important;line-height:1.75!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-main,main p,main li,main dd,main dt,main label,main summary,main blockquote,
-main .description,main .intro,main .muted,main .caption,main .note,
-main .card,main .panel,main .tile,main .item,main .result,main .stat,
-main .article,main .fact,main .feature-copy,main .section-head p{
-  font-family:Inter,Arial,Helvetica,sans-serif!important;
-}
-p,li,dd,dt,label,summary,blockquote{font-size:18px!important;line-height:1.75!important;font-weight:500!important;color:#1f2937!important}
-h1,h2,h3,h4,h5,h6,.section-title,.card-title{
-  font-family:Inter,Arial,Helvetica,sans-serif!important;
-  color:#111827!important;font-weight:850!important;line-height:1.22!important;
-  letter-spacing:-.025em;
-}
-h1{font-size:clamp(38px,5.2vw,64px)!important}
-h2{font-size:clamp(29px,3.8vw,42px)!important}
-h3{font-size:clamp(22px,2.5vw,29px)!important}
-small,.small,.muted,.caption,.date,.tag,.eyebrow,.overline,.meta,.hint{
-  font-family:Inter,Arial,Helvetica,sans-serif!important;
-  color:#374151!important;font-size:14px!important;font-weight:650!important;line-height:1.55!important;
-}
-a{color:#075985}
-a:hover{color:#9a3412}
-input,textarea,select,button{font-family:Inter,Arial,Helvetica,sans-serif!important}
-input,textarea,select{font-size:17px!important;line-height:1.5!important;font-weight:500!important}
-button{font-size:15px!important;font-weight:750!important;line-height:1.35!important}
-th{font-weight:800!important;color:#111827!important}
-td{font-weight:500!important;color:#1f2937!important}
-code,pre,kbd,samp{font-family:ui-monospace,SFMono-Regular,Consolas,monospace!important}
-code{font-size:.9em!important}
+<style id="gta6pulse-unified-readability">
+/* Single source of truth: readable type, light surfaces, dark ink, deliberate dark media cards */
+:root{color-scheme:light;--gp-ink:#202b27;--gp-muted:#52615a;--gp-paper:#fff;--gp-page:#f6f4ee;--gp-line:#cbd5e1;--gp-link:#075985;--gp-accent:#477d70}
+html,body{background:var(--gp-page)!important;color:var(--gp-ink)!important;font-family:Inter,Arial,Helvetica,sans-serif!important}
+body{font-size:17px!important;font-weight:400!important;line-height:1.68!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body :is(p,li,dd,dt,label,summary,blockquote,figcaption){font-family:Inter,Arial,Helvetica,sans-serif!important;color:var(--gp-ink)!important;-webkit-text-fill-color:var(--gp-ink)!important;font-size:17px!important;font-weight:400!important;line-height:1.68!important;text-shadow:none!important;opacity:1!important}
+body :is(h1,h2,h3,h4,h5,h6,.section-title,.card-title){font-family:Inter,Arial,Helvetica,sans-serif!important;color:#17231f!important;-webkit-text-fill-color:#17231f!important;font-weight:750!important;line-height:1.2!important;letter-spacing:-.02em!important;text-shadow:none!important;opacity:1!important}
+body h1{font-size:clamp(36px,5.2vw,62px)!important}
+body h2{font-size:clamp(28px,3.8vw,42px)!important}
+body h3{font-size:clamp(21px,2.5vw,28px)!important}
+body :is(small,.small,.muted,.caption,.date,.meta,.hint,.eyebrow,.overline,.source,.sub,.desc,.note){color:var(--gp-muted)!important;-webkit-text-fill-color:var(--gp-muted)!important;font-size:14px!important;font-weight:550!important;line-height:1.5!important;text-shadow:none!important;opacity:1!important}
+body a:not(.btn):not(.button){color:var(--gp-link)!important;-webkit-text-fill-color:var(--gp-link)!important;font-weight:650!important}
+body a:not(.btn):not(.button):hover{color:#9a3412!important;-webkit-text-fill-color:#9a3412!important}
+header,.top,.nav,.topin{background:rgba(255,255,255,.97)!important;color:var(--gp-ink)!important;border-color:var(--gp-line)!important;box-shadow:0 5px 22px rgba(15,23,42,.07)!important}
+header :is(a,.brand,.brand small,nav a){color:#17231f!important;-webkit-text-fill-color:#17231f!important}
 header .brand{font-family:Oswald,Inter,Arial,sans-serif!important;font-weight:800!important;letter-spacing:1.2px!important}
-header .brand small{font-family:Inter,Arial,sans-serif!important;font-size:10px!important;font-weight:800!important;color:#374151!important;letter-spacing:2.8px!important;margin-top:7px!important;line-height:1.35!important}
-header nav a{font-family:Inter,Arial,sans-serif!important;font-weight:750!important;color:#1f2937!important}
-.lang-option{font-family:Inter,Arial,sans-serif!important}
-.video,.place,.person{background-color:#172033!important}
-.video strong,.video small,.place h3,.place p,.person h3,.person p,.person .tag,
-.scene-label,.scene-stamp,.video a,.place a,.person a{
-  color:#fff!important;text-shadow:0 2px 8px #000!important;
-}
+header .brand small{display:block!important;font-family:Inter,Arial,sans-serif!important;font-size:10px!important;font-weight:750!important;letter-spacing:2.4px!important;line-height:1.35!important;margin-top:7px!important}
+header nav a{font-size:14px!important;font-weight:700!important}
+body :is(.section,.region,.item,.entry,.card,.group,.result,.question,.stat,.badge-card,.fact-card,.saved-item,.panel,.tile,.vehicle,.character,.location,.box,.search-result,.event,.map-panel,.countbox,article,.content-card,.feature-card,.info-card,.faq-item,.step,.chapter,.article,.fact,.feature,.quiz-card,.question-card,.tool-card,.database-card){background:#fff!important;color:var(--gp-ink)!important;border:1px solid var(--gp-line)!important;box-shadow:0 5px 18px rgba(15,23,42,.055)!important}
+body :is(.section,.region,.item,.entry,.card,.group,.result,.question,.stat,.badge-card,.fact-card,.saved-item,.panel,.tile,.vehicle,.character,.location,.box,.search-result,.event,.map-panel,.countbox,article,.content-card,.feature-card,.info-card,.faq-item,.step,.chapter,.article,.fact,.feature,.quiz-card,.question-card,.tool-card,.database-card) :is(p,li,span,strong,b,em,small,a,label,dt,dd,figcaption,time,h1,h2,h3,h4,h5,h6){color:var(--gp-ink)!important;-webkit-text-fill-color:var(--gp-ink)!important;text-shadow:none!important;opacity:1!important}
+body :is(input,textarea,select){font-family:Inter,Arial,Helvetica,sans-serif!important;background:#fff!important;color:var(--gp-ink)!important;-webkit-text-fill-color:var(--gp-ink)!important;border:1.5px solid #64748b!important;border-radius:6px!important;font-size:16px!important;font-weight:450!important;line-height:1.5!important}
+body :is(input,textarea)::placeholder{color:#64748b!important;-webkit-text-fill-color:#64748b!important;opacity:1!important}
+body :is(button,.btn,.primary,.btn-primary,.save-region,.save-entry,.welcome-click-here){font-family:Inter,Arial,Helvetica,sans-serif!important;background:#477d70!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #356557!important;font-size:14px!important;font-weight:700!important;line-height:1.35!important;text-shadow:none!important;opacity:1!important}
+body :is(button,.btn,.primary,.btn-primary,.save-region,.save-entry):hover{background:#356557!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+body :is(.language-switch,.lang){background:#fff!important;border:1.5px solid #64748b!important}
+body .lang-option{background:transparent!important;color:#334155!important;-webkit-text-fill-color:#334155!important;font:700 12px Inter,Arial,sans-serif!important}
+body .lang-option.active{background:#477d70!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+body :is(.filter,.chip,.tag,.pill,.badge,.status){background:#edf2ed!important;color:#315f53!important;-webkit-text-fill-color:#315f53!important;border:1px solid #c5d8ce!important;font-weight:650!important}
+body :is(.filter.active,.active){background:#477d70!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+body table{background:#fff!important;color:var(--gp-ink)!important;border-color:var(--gp-line)!important}
+body th{background:#edf2ed!important;color:#17231f!important;-webkit-text-fill-color:#17231f!important;font-weight:750!important}
+body td{color:#273449!important;-webkit-text-fill-color:#273449!important}
+body tr:nth-child(even){background:#f7f9f6!important}
+body :is(.video,.place,.person){background-color:#172d27!important;color:#fff!important;border-color:#36594d!important}
+body :is(.video,.place,.person) :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,em,small,a,label,figcaption,.tag,.date,.meta,.caption){color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 1px 3px rgba(0,0,0,.65)!important;opacity:1!important}
+body :is(.video,.place,.person) :is(.tag,.pill,.badge){background:rgba(0,0,0,.35)!important;border-color:rgba(255,255,255,.35)!important}
+body #people .section-head :is(h2,p){color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 1px 4px rgba(0,0,0,.65)!important}
+body #people .person{background:#172d27!important}
+body footer{color:#52615a!important}
+body :focus-visible{outline:3px solid #075985!important;outline-offset:3px!important}
+body hr{border-color:var(--gp-line)!important}
 @media(max-width:700px){
- body{font-size:17px!important;line-height:1.7!important}
- p,li,dd,dt,label,summary,blockquote{font-size:16px!important;line-height:1.7!important}
- h1{font-size:clamp(34px,9vw,48px)!important}
- h2{font-size:clamp(26px,7vw,34px)!important}
- h3{font-size:21px!important}
- small,.small,.muted,.caption,.date,.tag,.eyebrow,.overline,.meta,.hint{font-size:13px!important}
+ body{font-size:16px!important;line-height:1.65!important}
+ body :is(p,li,dd,dt,label,summary,blockquote,figcaption){font-size:16px!important;line-height:1.65!important}
+ body h1{font-size:clamp(32px,8.5vw,46px)!important}
+ body h2{font-size:clamp(25px,6.5vw,34px)!important}
+ body h3{font-size:20px!important}
+ body :is(small,.small,.muted,.caption,.date,.meta,.hint,.eyebrow,.overline,.source,.sub,.desc,.note){font-size:13px!important}
+ header nav a{font-size:12px!important}
 }
 </style>
-
-
-<style id="gta6pulse-white-background-contrast">
-html,body{background:#f6f4ee!important;color:#172033!important}
-body p,body li,body dd,body dt,body label,body summary,body blockquote,body .muted,body .description,body .intro,body .caption,body .note,body .section-head p,body .card p,body .article p,body .feature-copy p,body .person p,body .place p,body .world-intro p,body .fact span,body .result p,body .panel p,body .tile p,body .item p,body .quiz-card p,body .question-card p,body .tool-card p,body .map-card p,body .database-card p{color:#273449!important;-webkit-text-fill-color:#273449!important;opacity:1!important;text-shadow:none!important;font-weight:500!important;line-height:1.7!important}
-body h1,body h2,body h3,body h4,body h5,body h6,body .section-title,body .card-title,body .section-head h2,body .card h3,body .article h3,body .feature-copy h3,body .person h3,body .place h3,body .world-intro h3{color:#111827!important;-webkit-text-fill-color:#111827!important;opacity:1!important;text-shadow:none!important;font-weight:850!important;line-height:1.25!important}
-body small,body .small,body .date,body .tag,body .eyebrow,body .overline,body .meta,body .hint,body .caption,body .place-kicker,body .status,body .label{color:#334155!important;-webkit-text-fill-color:#334155!important;opacity:1!important;text-shadow:none!important;font-weight:750!important}
-body a:not(.btn):not(.button){color:#075985!important}body a:not(.btn):not(.button):hover{color:#9a3412!important}
-body .card,body .article,body .fact,body .feature,body .person,body .place,body .video,body .panel,body .tile,body .item,body .result,body .box,body .stat,body .quiz-card,body .question-card,body .tool-card,body .map-card,body .database-card{background:#fff!important;color:#172033!important;border-color:#cbd5e1!important}
-body input,body textarea,body select{background:#fff!important;color:#172033!important;-webkit-text-fill-color:#172033!important;border:2px solid #64748b!important;font-size:17px!important;font-weight:600!important}
-body input::placeholder,body textarea::placeholder{color:#64748b!important;opacity:1!important}body button{opacity:1!important}body th{color:#111827!important}body td{color:#273449!important}
-@media(max-width:700px){body p,body li,body dd,body dt,body label,body summary{font-size:16px!important;line-height:1.7!important}body small,body .small,body .date,body .tag,body .eyebrow,body .overline,body .meta,body .hint{font-size:13px!important}}
-</style>
-
 </head><body><div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="lang-option active" data-language="ru" aria-pressed="true">RU</button><button type="button" class="lang-option" data-language="en" aria-pressed="false">EN</button></div><header><div class="wrap nav"><a class="brand" href="index.html">GTA6<b>PULSE</b> / РАЗБОРЫ</a><nav><a href="index.html">Главная</a> · <a href="database.html">База</a> · <a href="map.html">Карта</a></nav></div></header><main class="wrap"><section class="hero"><div class="eyebrow">TRAILER BREAKDOWN · PRIMARY SOURCES</div><h1>СМОТРИМ <span style="color:var(--pink)">ВНИМАТЕЛЬНО</span></h1><p>Здесь разбираем официальные видео Rockstar: отделяем то, что прямо показано или заявлено, от наших наблюдений и предположений. Мы не приписываем кадрам несуществующие игровые механики.</p><div class="note"><strong>Как читать:</strong> «Подтверждено» означает, что деталь прямо следует из официального источника. «Наблюдение» — визуальная деталь кадра. «Интерпретация» — возможное объяснение, которое не является фактом.</div></section>
 <article class="entry"><div class="date">15 ОКТЯБРЯ 2026 · OFFICIAL LAUNCH TRAILER</div><h2>Launch Trailer — финальный официальный трейлер перед релизом</h2><p>Rockstar опубликовала Launch Trailer 15 октября 2026 года. Ролик размещён в официальной медиатеке GTA VI и на официальных каналах компании.</p><div class="cols"><div class="fact"><strong>Подтверждено</strong><p>Это официальный Launch Trailer; его можно открыть на официальной странице Rockstar. Сам факт публикации и дата проверяются по источнику.</p></div><div class="read"><strong>Как анализируем</strong><p>В следующих обновлениях добавим разбор отдельных кадров и связей между персонажами, локациями и официальными описаниями — без выдуманных таймкодов.</p></div></div><a class="source" href="https://www.rockstargames.com/VI/media/videos" target="_blank" rel="noopener">Открыть видео у Rockstar ↗</a></article>
 <article class="entry"><div class="date">27 АВГУСТА 2026 · AN EXTENDED LOOK</div><h2>An Extended Look — расширенный взгляд на мир игры</h2><p>Rockstar сообщила, что видео полностью собрано из игрового материала, записанного на PlayStation 5. Это официальное описание самого ролика.</p><div class="cols"><div class="fact"><strong>Подтверждено Rockstar</strong><p>Видео демонстрирует игровой материал, снятый на PS5. Это не означает, что все показанные кадры отражают окончательные настройки или производительность на всех платформах.</p></div><div class="read"><strong>Осторожная интерпретация</strong><p>Ролик полезен для визуального изучения окружения и персонажей. Выводы о точных механиках делаем только при наличии прямого подтверждения.</p></div></div><a class="source" href="https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing" target="_blank" rel="noopener">Первоисточник Newswire ↗</a></article>
