@@ -260,5 +260,21 @@ body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,.wel
 body :is(.filter.active,.chip.active,.lang-option.active,.region-buttons button.active,[role=tab][aria-selected=true]){
  background:linear-gradient(115deg,#d92b7c,#a91d60)!important;color:#fff!important;-webkit-text-fill-color:#fff!important
 }
+
+/* Map page: explicit contrast for the map notice and all content below it */
+body .notice{background:linear-gradient(135deg,#fff0f7 0%,#ffe3ef 100%)!important;border:2px solid #d94b8d!important;border-left:7px solid #a91d60!important;border-radius:12px!important;color:#30212b!important;-webkit-text-fill-color:#30212b!important;padding:19px 22px!important;font-size:16px!important;font-weight:600!important;line-height:1.8!important;box-shadow:0 8px 24px rgba(169,29,96,.10)!important}
+body .notice strong{display:inline-block;color:#8e174f!important;-webkit-text-fill-color:#8e174f!important;font-size:18px!important;font-weight:900!important;margin-right:5px!important}
+body .region{background:#fff!important;border:1px solid #e7c5d5!important;border-top:4px solid #c72b76!important;color:#302733!important;box-shadow:0 8px 24px rgba(54,25,43,.07)!important}
+body .region :is(h2,p,small,.source,.num){opacity:1!important;text-shadow:none!important}
+body .region h2{color:#30212b!important;-webkit-text-fill-color:#30212b!important;font-weight:850!important}
+body .region p{color:#514450!important;-webkit-text-fill-color:#514450!important;font-size:15px!important;line-height:1.75!important}
+body .region small{display:inline-block;color:#84204f!important;-webkit-text-fill-color:#84204f!important;background:#fde8f1!important;border:1px solid #f0bfd5!important;border-radius:6px!important;padding:5px 8px!important;font-size:13px!important;font-weight:750!important}
+body .region .num{color:#a51f62!important;-webkit-text-fill-color:#a51f62!important;font-weight:900!important}
+body .region .source a{color:#941b58!important;-webkit-text-fill-color:#941b58!important;font-weight:750!important;text-decoration:underline!important;text-underline-offset:3px!important}
+body .region .save-region{color:#fff!important;-webkit-text-fill-color:#fff!important}
+body .controls .filter{background:#fff0f7!important;border:1px solid #d98caf!important;color:#762047!important;-webkit-text-fill-color:#762047!important;font-weight:800!important}
+body .controls .filter.active{background:linear-gradient(115deg,#d92b7c,#a91d60)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-color:#a91d60!important}
+@media(max-width:700px){body .notice{font-size:15px!important;line-height:1.75!important;padding:16px!important}body .notice strong{font-size:17px!important}body .region p{font-size:15px!important}}
+
 </style>
 </body></html>
