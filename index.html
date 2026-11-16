@@ -1075,6 +1075,7 @@ while (walker.nextNode()) {
   if (node.parentElement && !['SCRIPT','STYLE'].includes(node.parentElement.tagName)) textNodes.push(node);
 }
 function setLanguage(lang) {
+  try { localStorage.setItem('gta6pulse_language', lang); } catch(e) {}
   document.documentElement.lang = lang;
   textNodes.forEach(node => {
     if (node.__originalText === undefined) node.__originalText = node.nodeValue;
@@ -1112,6 +1113,6 @@ function updateHomeCountdown() {
 updateHomeCountdown();
 setInterval(updateHomeCountdown, 1000);
 document.querySelectorAll('.lang-option').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
-setLanguage('ru');
+let preferredLanguage='ru';try{preferredLanguage=localStorage.getItem('gta6pulse_language')||'ru'}catch(e){}setLanguage(preferredLanguage);
 </script>
 </body></html>
