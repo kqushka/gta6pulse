@@ -244,4 +244,16 @@ body .guide-promo .guide-promo-inner .btn:hover {
   color:#fff!important;-webkit-text-fill-color:#fff!important;
 }
 </style>
+<style id="gta6pulse-contrast-fix">
+/* Pink actions use a darker pink stop so white labels meet readable contrast */
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,.welcome-click-here,input[type=button],input[type=submit],input[type=reset],[role=button]){
+ background:linear-gradient(115deg,#d92b7c 0%,#a91d60 100%)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-color:#e76aa4!important
+}
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,.welcome-click-here,input[type=button],input[type=submit],input[type=reset],[role=button]):hover{
+ background:linear-gradient(115deg,#c72b76 0%,#8e1a54 100%)!important;color:#fff!important;-webkit-text-fill-color:#fff!important
+}
+body :is(.filter.active,.chip.active,.lang-option.active,.region-buttons button.active,[role=tab][aria-selected=true]){
+ background:linear-gradient(115deg,#d92b7c,#a91d60)!important;color:#fff!important;-webkit-text-fill-color:#fff!important
+}
+</style>
 </body></html>
