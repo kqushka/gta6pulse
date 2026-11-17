@@ -375,4 +375,36 @@ body :is(.filter.active,.chip.active,.lang-option.active,.region-buttons button.
  background:linear-gradient(115deg,#d92b7c,#a91d60)!important;color:#fff!important;-webkit-text-fill-color:#fff!important
 }
 </style>
+<style id="gta6pulse-final-contrast-audit">
+/* Final accessibility pass: explicit foreground/background pairs, no translucent text surfaces */
+:root{color-scheme:light}
+html,body{background:#f4f1eb!important;color:#202522!important}
+body{font-family:Inter,Arial,sans-serif!important}
+body :is(p,li,dd,dt,label,summary,figcaption,blockquote){color:#303a35!important;-webkit-text-fill-color:#303a35!important;opacity:1!important;text-shadow:none!important}
+body :is(h1,h2,h3,h4,h5,h6,strong,b){color:#202923!important;-webkit-text-fill-color:#202923!important;opacity:1!important;text-shadow:none!important}
+body :is(small,.muted,.meta,.hint,.caption,.description,.subtle,.secondary,.source,.date,.overline,.eyebrow){color:#526057!important;-webkit-text-fill-color:#526057!important;opacity:1!important;text-shadow:none!important}
+body a:not(.btn):not(.button):not([class*="btn"]):not(.lang-option){color:#075b68!important;-webkit-text-fill-color:#075b68!important;text-decoration-thickness:1.5px;text-underline-offset:3px}
+body a:not(.btn):not(.button):not([class*="btn"]):not(.lang-option):hover{color:#9b285d!important;-webkit-text-fill-color:#9b285d!important}
+body :is(article,.card,.panel,.tile,.item,.entry,.news-card,.feature-card,.content-card,.stat-card,.search-result,.result-card,.faq-item,details,.accordion,.region-card,.character-card,.database-card,.progress-card,.quiz-card,.question-card,.map-panel,.box,.group,.step,.chapter,.article,.fact,.feature,.countbox,.section){background:#fff!important;color:#26332d!important;border:1px solid #c8d0ca!important;box-shadow:0 5px 18px rgba(29,45,37,.09)!important}
+body :is(article,.card,.panel,.tile,.item,.entry,.news-card,.feature-card,.content-card,.stat-card,.search-result,.result-card,.faq-item,details,.accordion,.region-card,.character-card,.database-card,.progress-card,.quiz-card,.question-card,.map-panel,.box,.group,.step,.chapter,.article,.fact,.feature,.countbox,.section) :is(p,li,span,strong,b,em,small,a,label,dt,dd,figcaption,time,h1,h2,h3,h4,h5,h6){opacity:1!important;text-shadow:none!important}
+body :is(input,textarea,select){background:#fff!important;color:#202923!important;-webkit-text-fill-color:#202923!important;border:1.5px solid #65766d!important}
+body :is(input,textarea,select)::placeholder{color:#657169!important;-webkit-text-fill-color:#657169!important;opacity:1!important}
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,input[type=button],input[type=submit],input[type=reset],[role=button]){background:#a91d60!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #86164b!important;text-shadow:none!important;opacity:1!important}
+body :is(button,.btn,.button,.primary,.btn-primary,.save-region,.save-entry,input[type=button],input[type=submit],input[type=reset],[role=button]):hover{background:#86164b!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+body :is(.filter,.chip,.tag,.pill,.badge,.status){background:#fff0f6!important;color:#84204d!important;-webkit-text-fill-color:#84204d!important;border:1px solid #d98eaf!important;opacity:1!important}
+body :is(.filter.active,.chip.active,.lang-option.active,[role=tab][aria-selected=true]){background:#86164b!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+body :is(.language-switch,.lang){background:#fff!important;border:1.5px solid #9aa9a0!important}
+body .lang-option:not(.active){background:#fff!important;color:#34483f!important;-webkit-text-fill-color:#34483f!important}
+body table{background:#fff!important;color:#26332d!important;border-color:#aebbb2!important}
+body th{background:#e8eee9!important;color:#202923!important;-webkit-text-fill-color:#202923!important}
+body td{color:#303a35!important;-webkit-text-fill-color:#303a35!important}
+body tr:nth-child(even){background:#f3f6f3!important}
+body :focus-visible{outline:3px solid #a91d60!important;outline-offset:3px!important}
+/* Keep photo-led cards dark, with a solid lower scrim behind white text */
+body :is(.video,.place,.person){background-color:#241a2b!important;color:#fff!important;border-color:#a94775!important}
+body :is(.video,.place,.person):after{background:linear-gradient(180deg,rgba(12,8,18,.08) 0%,rgba(12,8,18,.48) 42%,rgba(12,8,18,.96) 100%)!important}
+body :is(.video,.place,.person) :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,em,small,a,label,figcaption,.tag,.date,.meta,.caption){color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 1px 3px #000!important;opacity:1!important}
+body :is(.video,.place,.person) :is(.tag,.pill,.badge){background:#7d174b!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #f2a8ca!important}
+body footer{color:#46534b!important}
+</style>
 </body></html>
