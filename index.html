@@ -972,6 +972,20 @@ body .lang-option.active{background:#075f70!important;color:#fff!important}
 .gp-journey a{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:9px;background:linear-gradient(110deg,#ec4b94,#b82769);border:1px solid #b82769;color:#fff!important;-webkit-text-fill-color:#fff!important;font-weight:850;text-decoration:none;box-shadow:0 5px 14px rgba(184,39,105,.2)}
 .gp-journey a:hover{filter:brightness(1.08);transform:translateY(-1px)}
 @media(max-width:650px){.gp-journey{margin:24px 12px;padding:20px;display:block}.gp-journey a{display:flex;margin-top:17px;width:100%;box-sizing:border-box}.gp-journey p{font-size:14px}}
+</style><style id="gta6pulse-tour-celebration">
+.gp-celebration{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 45%,rgba(54,24,57,.88),rgba(10,8,22,.97));overflow:hidden;color:#fff;isolation:isolate}
+.gp-celebration[hidden]{display:none}
+.gp-celebration-card{position:relative;z-index:3;max-width:620px;width:min(100%,620px);padding:clamp(26px,5vw,48px);text-align:center;border:2px solid #ff8fc1;border-radius:24px;background:linear-gradient(145deg,rgba(45,24,48,.97),rgba(24,18,42,.97));box-shadow:0 0 0 6px rgba(255,143,193,.12),0 20px 80px #0009}
+.gp-celebration-kicker{display:block;color:#ff9ac8;font-size:12px;font-weight:900;letter-spacing:3px;margin-bottom:13px}
+.gp-celebration-card h2{margin:0 0 14px;color:#fff;font-size:clamp(29px,6vw,48px);line-height:1.08}
+.gp-celebration-card p{margin:0 auto 24px;max-width:490px;color:#f6eaf2;font-size:clamp(16px,2.6vw,19px);line-height:1.6}
+.gp-celebration-card strong{color:#ff9ac8}
+.gp-celebration-close{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border:1px solid #ff9ac8;border-radius:10px;background:linear-gradient(110deg,#f34d9c,#b72d76);color:white;font-weight:900;font-size:15px;cursor:pointer}
+.gp-firework{position:absolute;z-index:1;left:var(--x);top:var(--y);width:12px;height:12px;border-radius:50%;opacity:0;transform:scale(.1);background:radial-gradient(circle,#fff 0 2%,transparent 3%);box-shadow:0 0 12px 3px #ff83bd,0 -54px 0 -4px #ff9bc9,38px -38px 0 -4px #ffe18c,54px 0 0 -4px #81eaff,38px 38px 0 -4px #c4a2ff,0 54px 0 -4px #ff9bc9,-38px 38px 0 -4px #ffe18c,-54px 0 0 -4px #81eaff,-38px -38px 0 -4px #c4a2ff;animation:gp-firework-pop 2.2s ease-out infinite;animation-delay:var(--delay)}
+@keyframes gp-firework-pop{0%{opacity:0;transform:scale(.1) rotate(0)}12%{opacity:1}65%{opacity:.9;transform:scale(1.15) rotate(35deg)}100%{opacity:0;transform:scale(1.65) rotate(70deg)}}
+.gp-celebration-confetti{position:absolute;inset:-20% 0 0;z-index:2;pointer-events:none;background-image:radial-gradient(circle,#ff8fc1 2px,transparent 3px),radial-gradient(circle,#ffe18c 2px,transparent 3px),radial-gradient(circle,#8ceaff 2px,transparent 3px),radial-gradient(circle,#c4a2ff 2px,transparent 3px);background-size:83px 97px,113px 127px,137px 109px,157px 139px;background-position:0 0,30px 50px,70px 10px,10px 80px;animation:gp-confetti-fall 5s linear infinite;opacity:.8}
+@keyframes gp-confetti-fall{from{transform:translateY(-5%)}to{transform:translateY(28%)}}
+@media(prefers-reduced-motion:reduce){.gp-firework,.gp-celebration-confetti{animation:none}.gp-firework{opacity:.8;transform:scale(1)}}
 </style></head>
 <body>
 <header><div class="wrap nav">
@@ -1580,5 +1594,15 @@ const add=(el,cfg)=>{if(el&&!el.parentElement.querySelector(':scope > .gp-journe
 const world=document.getElementById('world'),trailers=document.getElementById('trailers');
  add(world,{title:'А теперь посмотрим трейлеры',desc:'Ты познакомился с Леонидой. Следующий шаг — официальные видео и первые детали мира GTA VI.',href:'#trailers',cta:'Смотреть трейлеры'});
  add(trailers,{title:'Проверим, что ты уже знаешь?',desc:'Переходи в игровой центр: тебя ждёт викторина по GTA VI, достижения и личная коллекция.',href:'pulse.html#quiz',cta:'Пройти опрос'});
+})();
+</script><script id="gta6pulse-tour-celebration-script">
+(()=>{const params=new URLSearchParams(location.search);if(params.get('tourComplete')!=='1')return;
+const overlay=document.createElement('div');overlay.className='gp-celebration';overlay.setAttribute('role','dialog');overlay.setAttribute('aria-modal','true');overlay.setAttribute('aria-labelledby','gp-celebration-title');
+overlay.innerHTML='<div class="gp-celebration-confetti" aria-hidden="true"></div><i class="gp-firework" style="--x:15%;--y:22%;--delay:0s"></i><i class="gp-firework" style="--x:82%;--y:20%;--delay:.5s"></i><i class="gp-firework" style="--x:23%;--y:76%;--delay:1s"></i><i class="gp-firework" style="--x:78%;--y:73%;--delay:1.4s"></i><i class="gp-firework" style="--x:50%;--y:12%;--delay:.8s"></i><div class="gp-celebration-card"><span class="gp-celebration-kicker">GTA6PULSE · МИССИЯ ВЫПОЛНЕНА</span><h2 id="gp-celebration-title">ПОЗДРАВЛЯЕМ!</h2><p>Ты прошёл весь краткий экскурс по <strong>GTA VI</strong>! Теперь ты настоящий профессиональный игрок — по крайней мере, в знаниях о Леониде.</p><button class="gp-celebration-close" type="button">Ура! Вернуться на главную</button></div>';
+document.body.appendChild(overlay);document.body.style.overflow='hidden';
+const close=()=>{overlay.remove();document.body.style.overflow='';};
+overlay.querySelector('button').addEventListener('click',close);
+document.addEventListener('keydown',function esc(e){if(e.key==='Escape'){close();document.removeEventListener('keydown',esc)}});
+history.replaceState(null,'',location.pathname+'#latest');
 })();
 </script></body></html>
