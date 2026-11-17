@@ -561,6 +561,6 @@ body .countbox .count{
 const add=(el,cfg)=>{if(el&&!el.parentElement.querySelector(':scope > .gp-journey'))el.insertAdjacentElement('afterend',make(cfg.title,cfg.desc,cfg.href,cfg.cta))};
 const footer=document.querySelector('footer'),main=document.querySelector('main');
  const target=footer||main;
- if(target)target.insertAdjacentElement('beforebegin',make("Экскурсия завершена — возвращайся за новостями","Следи за новыми материалами GTA6Pulse: мы будем пополнять сайт проверенной информацией.","index.html#latest","Вернуться к новостям"));
+ if(target)target.insertAdjacentElement('beforebegin',make("Экскурсия завершена — возвращайся за новостями","Следи за новыми материалами GTA6Pulse: мы будем пополнять сайт проверенной информацией.","index.html?tourComplete=1#latest","Завершить экскурсию"));
 })();
 </script></body></html>
