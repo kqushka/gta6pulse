@@ -181,7 +181,8 @@ const boxes=[...document.querySelectorAll('input[data-key]')],key='gta6pulse_pro
 "Посмотрел Launch Trailer":"Watched the Launch Trailer",
 "Открыть медиатеку Rockstar ↗":"Open Rockstar media library ↗"
 };
- let current='ru';
+ Object.assign(translations, {"0 из 0 отмечено · 0%":"0 of 0 completed · 0%"} );
+let current='ru';
  const originalPageTitle=document.title;
  function applyLanguage(lang){
   current=lang==='en'?'en':'ru';
