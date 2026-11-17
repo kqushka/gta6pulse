@@ -204,7 +204,14 @@ body .lang-option{color:#263b33!important}
 body .lang-option.active{background:#075f70!important;color:#fff!important}
 @media(prefers-reduced-motion:reduce){body *,body *:before,body *:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
-</head>
+<style id="gta6pulse-guided-tour">
+.gp-journey{box-sizing:border-box;max-width:1120px;margin:34px auto;padding:25px 28px;border:2px solid #c94a82;border-radius:17px;background:linear-gradient(125deg,#fffaf5 0%,#f9e8f0 100%);box-shadow:0 12px 32px rgba(91,29,61,.12);color:#2b2029;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.gp-journey-copy{min-width:0}.gp-journey-kicker{display:block;margin-bottom:7px;color:#9a285d;font-size:11px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase}
+.gp-journey h2{margin:0 0 8px;color:#2b2029;font-size:clamp(20px,3vw,27px);line-height:1.2}.gp-journey p{margin:0;color:#594752;font-size:15px;line-height:1.55}
+.gp-journey a{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:9px;background:linear-gradient(110deg,#ec4b94,#b82769);border:1px solid #b82769;color:#fff!important;-webkit-text-fill-color:#fff!important;font-weight:850;text-decoration:none;box-shadow:0 5px 14px rgba(184,39,105,.2)}
+.gp-journey a:hover{filter:brightness(1.08);transform:translateY(-1px)}
+@media(max-width:650px){.gp-journey{margin:24px 12px;padding:20px;display:block}.gp-journey a{display:flex;margin-top:17px;width:100%;box-sizing:border-box}.gp-journey p{font-size:14px}}
+</style></head>
 <body><div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="lang-option active" data-language="ru" aria-pressed="true">RU</button><button type="button" class="lang-option" data-language="en" aria-pressed="false">EN</button></div>
 <header><div class="wrap nav"><a class="brand" href="index.html">GTA6<b>PULSE</b></a><nav aria-label="Основная навигация"><a href="index.html">Главная</a><a href="#map">Леонида</a><a href="#vehicles">Транспорт</a><a href="#characters">Герои</a><a href="#secrets">Секреты</a><a href="#gallery">Галерея</a><a href="walkthroughs.html">Прохождения</a></nav></div></header>
 <main class="wrap">
@@ -407,4 +414,11 @@ body :is(.video,.place,.person) :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,em,smal
 body :is(.video,.place,.person) :is(.tag,.pill,.badge){background:#7d174b!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #f2a8ca!important}
 body footer{color:#46534b!important}
 </style>
-</body></html>
+<script id="gta6pulse-guided-tour-script">
+(()=>{const make=(title,desc,href,cta)=>{const box=document.createElement('section');box.className='gp-journey';box.setAttribute('aria-label','Следующий шаг по сайту');box.innerHTML='<div class="gp-journey-copy"><span class="gp-journey-kicker">GTA6PULSE · ТВОЙ МАРШРУТ</span><h2>'+title+'</h2><p>'+desc+'</p></div><a href="'+href+'">'+cta+' →</a>';return box};
+const add=(el,cfg)=>{if(el&&!el.parentElement.querySelector(':scope > .gp-journey'))el.insertAdjacentElement('afterend',make(cfg.title,cfg.desc,cfg.href,cfg.cta))};
+const footer=document.querySelector('footer'),main=document.querySelector('main');
+ const target=footer||main;
+ if(target)target.insertAdjacentElement('beforebegin',make("Готов к следующему этапу?","Перейдём к разделу прохождений. Он подготовлен для будущих миссий и пошаговых руководств.","walkthroughs.html","Перейти к прохождениям"));
+})();
+</script></body></html>
