@@ -256,7 +256,8 @@ renderQuiz();renderCollection();
 "Официальная медиатека ↗":"Official media library ↗",
 "GTA6Pulse — независимый фанатский проект, не связанный с Rockstar Games. Статусы относятся к информации, приведённой на этой странице, и не заменяют проверку свежих объявлений.":"GTA6Pulse is an independent fan project and is not affiliated with Rockstar Games. Status labels refer to information on this page and do not replace checking the latest announcements."
 };
- let current='ru';
+ Object.assign(translations, {"0 / 5 отвечено":"0 / 5 answered","19 НОЯБРЯ 2026":"NOVEMBER 19, 2026"} );
+let current='ru';
  const originalPageTitle=document.title;
  function applyLanguage(lang){
   current=lang==='en'?'en':'ru';
