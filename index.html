@@ -1588,36 +1588,44 @@ body .feature-copy .date{display:inline-block!important;padding:7px 10px!importa
  body .home-countdown .home-countdown-time small{font-size:10px!important}
 }
 </style>
-<style id="gta6pulse-tour-invitation">
-.gp-tour-invite{position:fixed;inset:0;z-index:99998;display:grid;place-items:center;padding:20px;background:rgba(10,9,20,.84);backdrop-filter:blur(8px);color:#fff}
-.gp-tour-invite-card{width:min(100%,560px);padding:clamp(25px,5vw,42px);border:2px solid #ff91c4;border-radius:22px;text-align:center;background:linear-gradient(145deg,#30203b,#17172b);box-shadow:0 20px 80px #000b,0 0 35px #ff4fa344}
-.gp-tour-invite-kicker{color:#ff9ac8;font-size:11px;font-weight:900;letter-spacing:3px}
-.gp-tour-invite-card h2{margin:12px 0;color:#fff;font-size:clamp(27px,6vw,40px);line-height:1.1}
-.gp-tour-invite-card p{color:#f4eaf1;font-size:16px;line-height:1.6;margin:0 auto 24px;max-width:440px}
-.gp-tour-invite-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.gp-tour-invite-actions button{padding:13px 22px;border-radius:10px;font-weight:900;font-size:15px;cursor:pointer}
-.gp-tour-start{border:1px solid #ff9ac8;background:linear-gradient(110deg,#f34d9c,#b72d76);color:#fff}
-.gp-tour-later{border:1px solid #d9c5d4;background:#ffffff12;color:#fff}
-@media(max-width:480px){.gp-tour-invite-actions{flex-direction:column}.gp-tour-invite-actions button{width:100%}}
+<style id="gta6pulse-tour-visibility-fix">
+.gp-journey{position:relative!important;z-index:5!important;display:flex!important;visibility:visible!important;opacity:1!important;box-sizing:border-box!important;width:min(1120px,calc(100% - 28px))!important;max-width:1120px!important;margin:30px auto!important;padding:25px 28px!important;gap:22px!important;align-items:center!important;justify-content:space-between!important;background:#fff7ed!important;border:3px solid #9b285d!important;border-radius:17px!important;box-shadow:0 10px 30px rgba(20,15,25,.22)!important;color:#241923!important}
+.gp-journey *{opacity:1!important;visibility:visible!important}
+.gp-journey .gp-journey-kicker{display:block!important;color:#7b1749!important;font-size:12px!important;font-weight:950!important;letter-spacing:1.5px!important}
+.gp-journey h2{margin:5px 0 8px!important;color:#211520!important;font-size:clamp(21px,3vw,29px)!important;line-height:1.2!important}
+.gp-journey p{margin:0!important;color:#382b34!important;font-size:16px!important;line-height:1.55!important}
+.gp-journey a{flex:0 0 auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:48px!important;padding:13px 22px!important;border:2px solid #761344!important;border-radius:10px!important;background:#a91d60!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-weight:950!important;font-size:16px!important;text-decoration:none!important;box-shadow:0 4px 0 #641039!important}
+.gp-journey a:hover{background:#7d174b!important;transform:translateY(-1px)}
+.gp-tour-invite{background:rgba(8,12,18,.88)!important;backdrop-filter:blur(7px)!important}
+.gp-tour-invite-card{background:#fff8ef!important;border:3px solid #9b285d!important;color:#241923!important;box-shadow:0 18px 65px #000b!important}
+.gp-tour-invite-card h2{color:#241923!important;text-shadow:none!important}
+.gp-tour-invite-card p{color:#382b34!important;text-shadow:none!important;font-weight:600!important}
+.gp-tour-invite-kicker{color:#861747!important}
+.gp-tour-invite-actions button{min-height:50px!important;font-weight:950!important}
+.gp-tour-start{background:#a91d60!important;color:#fff!important;border:2px solid #761344!important}
+.gp-tour-later{background:#fff!important;color:#241923!important;border:2px solid #57424f!important}
+@media(max-width:650px){.gp-journey{display:block!important;width:calc(100% - 24px)!important;margin:22px 12px!important;padding:20px!important}.gp-journey a{display:flex!important;width:100%!important;box-sizing:border-box!important;margin-top:17px!important}.gp-journey p{font-size:15px!important}}
 </style>
 <script id="gta6pulse-tour-invitation-script">
-(()=>{const params=new URLSearchParams(location.search);if(params.get('tourComplete')==='1')return;
-let seen=false;try{seen=localStorage.getItem('gpTourInviteSeen')==='1'}catch(e){}
-if(seen)return;
+(()=>{const params=new URLSearchParams(location.search);if(params.get('tourComplete')==='1')return;let seen=false;try{seen=localStorage.getItem('gpTourInviteSeen')==='1'}catch(e){}if(seen)return;
 const overlay=document.createElement('div');overlay.className='gp-tour-invite';overlay.setAttribute('role','dialog');overlay.setAttribute('aria-modal','true');overlay.setAttribute('aria-labelledby','gp-tour-invite-title');
-overlay.innerHTML='<div class="gp-tour-invite-card"><span class="gp-tour-invite-kicker">GTA6PULSE · МАРШРУТ НОВИЧКА</span><h2 id="gp-tour-invite-title">Впервые в Леониде?</h2><p>Пройди короткий экскурс по всем разделам GTA6Pulse: трейлеры, викторина, карта, база знаний и другие материалы. В конце тебя ждёт сюрприз!</p><div class="gp-tour-invite-actions"><button class="gp-tour-start" type="button">Погнали!</button><button class="gp-tour-later" type="button">Пройду позже</button></div></div>';
-document.body.appendChild(overlay);
-const dismiss=()=>{try{localStorage.setItem('gpTourInviteSeen','1')}catch(e){}overlay.remove()};
+overlay.innerHTML='<div class="gp-tour-invite-card" style="background:#fff8ef!important;color:#241923!important"><span class="gp-tour-invite-kicker" style="color:#861747!important">GTA6PULSE · КРАТКИЙ ЭКСКУРС</span><h2 id="gp-tour-invite-title" style="color:#241923!important">Впервые в Леониде?</h2><p style="color:#382b34!important">Пройди короткий маршрут по всем разделам сайта: трейлеры, новости, герои, карта, викторина и полезные материалы. В конце тебя ждёт салют!</p><div class="gp-tour-invite-actions"><button class="gp-tour-start" type="button" style="background:#a91d60!important;color:#fff!important">Погнали!</button><button class="gp-tour-later" type="button" style="background:#fff!important;color:#241923!important">Пройду позже</button></div></div>';
+document.body.appendChild(overlay);const dismiss=()=>{try{localStorage.setItem('gpTourInviteSeen','1')}catch(e){}overlay.remove()};
 overlay.querySelector('.gp-tour-start').addEventListener('click',()=>{dismiss();location.hash='world';document.getElementById('world')?.scrollIntoView({behavior:'smooth',block:'start'})});
 overlay.querySelector('.gp-tour-later').addEventListener('click',dismiss);
 document.addEventListener('keydown',function esc(e){if(e.key==='Escape'&&overlay.isConnected){dismiss();document.removeEventListener('keydown',esc)}});
 })();
 </script><script id="gta6pulse-guided-tour-script">
-(()=>{const make=(title,desc,href,cta)=>{const box=document.createElement('section');box.className='gp-journey';box.setAttribute('aria-label','Следующий шаг по сайту');box.innerHTML='<div class="gp-journey-copy"><span class="gp-journey-kicker">GTA6PULSE · ТВОЙ МАРШРУТ</span><h2>'+title+'</h2><p>'+desc+'</p></div><a href="'+href+'">'+cta+' →</a>';return box};
-const add=(el,cfg)=>{if(el&&!el.parentElement.querySelector(':scope > .gp-journey'))el.insertAdjacentElement('afterend',make(cfg.title,cfg.desc,cfg.href,cfg.cta))};
-const world=document.getElementById('world'),trailers=document.getElementById('trailers');
- add(world,{title:'А теперь посмотрим трейлеры',desc:'Ты познакомился с Леонидой. Следующий шаг — официальные видео и первые детали мира GTA VI.',href:'#trailers',cta:'Смотреть трейлеры'});
- add(trailers,{title:'Проверим, что ты уже знаешь?',desc:'Переходи в игровой центр: тебя ждёт викторина по GTA VI, достижения и личная коллекция.',href:'pulse.html#quiz',cta:'Пройти опрос'});
+(()=>{const make=(title,desc,href,cta)=>{const box=document.createElement('section');box.className='gp-journey';box.setAttribute('aria-label','Следующий раздел экскурсии');box.innerHTML='<div class="gp-journey-copy"><span class="gp-journey-kicker">ШАГ ЭКСКУРСИИ · GTA6PULSE</span><h2>'+title+'</h2><p>'+desc+'</p></div><a href="'+href+'">'+cta+' →</a>';return box};
+const steps=[
+['world','Трейлеры GTA VI','Ты познакомился с Леонидой. Теперь посмотри официальные ролики Rockstar и первые кадры игры.','#trailers','Перейти к трейлерам'],
+['trailers','Новости и события GTA VI','Трейлеры просмотрены. Следующий раздел — важные новости и подтверждённые события вокруг игры.','#stories','Читать новости'],
+['stories','Главные герои','Теперь познакомься с Джейсоном и Люсией — центральными персонажами GTA VI.','#people','Узнать о героях'],
+['people','Что известно об игре','Разберём подтверждённые факты, платформы и дату выхода без слухов.','#facts','Смотреть факты'],
+['facts','Теории и наблюдения','Факты изучены. Теперь можно перейти к наблюдениям и версиям, отдельно от официальной информации.','#theories','Перейти к теориям'],
+['theories','Проверь свои знания','Главная изучена! Переходи в игровой центр и пройди викторину по GTA VI.','pulse.html#quiz','Пройти викторину']
+];
+steps.forEach(([id,title,desc,href,cta])=>{const el=document.getElementById(id);if(!el||el.dataset.gpTourCard)return;el.dataset.gpTourCard='1';el.insertAdjacentElement('afterend',make(title,desc,href,cta))});
 })();
 </script><script id="gta6pulse-tour-celebration-script">
 (()=>{const params=new URLSearchParams(location.search);if(params.get('tourComplete')!=='1')return;
