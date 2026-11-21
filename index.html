@@ -1659,4 +1659,11 @@ body :is(.home-countdown,.home-countdown-copy,.home-countdown-time,.home-countdo
 }
 </style>
 
+
+<style id="gta6pulse-white-contrast-fix">
+/* Contrast repair: readable white text on dark/pink surfaces and gradient buttons */
+body :is(.btn,.button,.read,.cta,.cta-button,.hero h1 em,.hero-copy,.feature-copy,.video,.place,.person,.scene-label,.scene-stamp,.tagline,.pink-panel,.dark-panel,.gradient-panel){color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 1px 3px rgba(0,0,0,.65)!important;}
+body :is(.btn,.button,.read,.cta,.cta-button,.tag,.badge,.pill,.chip)[style*="pink"],body :is(.btn,.button,.read,.cta,.cta-button,.tag,.badge,.pill,.chip)[style*="#ff"],body :is(.btn,.button,.read,.cta,.cta-button,.tag,.badge,.pill,.chip)[style*="linear-gradient"]{color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 1px 3px rgba(0,0,0,.7)!important;}
+body :is(.btn,.button,.read,.cta,.cta-button){font-weight:800!important}
+</style>
 </body></html>
