@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url><loc>https://gta6pulse.ru/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>https://gta6pulse.ru/map.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 <url><loc>https://gta6pulse.ru/database.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -28,4 +28,16 @@
 <url><loc>https://gta6pulse.ru/gta6-completion-checklist-en.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://gta6pulse.ru/gta6-chapter-1-before-tourist-trap.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://gta6pulse.ru/gta6-chapter-1-before-tourist-trap-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url>
+<loc>https://gta6pulse.ru/gta6-pick-up-a-gun.html</loc><lastmod>2026-11-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<xhtml:link rel="alternate" hreflang="ru" href="https://gta6pulse.ru/gta6-pick-up-a-gun.html"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://gta6pulse.ru/gta6-pick-up-a-gun-en.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://gta6pulse.ru/gta6-pick-up-a-gun.html"/>
+</url>
+<url>
+<loc>https://gta6pulse.ru/gta6-pick-up-a-gun-en.html</loc><lastmod>2026-11-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<xhtml:link rel="alternate" hreflang="ru" href="https://gta6pulse.ru/gta6-pick-up-a-gun.html"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://gta6pulse.ru/gta6-pick-up-a-gun-en.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://gta6pulse.ru/gta6-pick-up-a-gun.html"/>
+</url>
 </urlset>
